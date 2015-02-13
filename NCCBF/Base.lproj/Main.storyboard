@@ -102,7 +102,7 @@
                     <navigationItem key="navigationItem" id="MoR-9N-cTO"/>
                     <connections>
                         <outlet property="detailPosterView" destination="iaM-7N-qni" id="yhl-R2-a1S"/>
-                        <outlet property="eventDetailLabel" destination="T9H-0G-2LI" id="XMr-nD-XX7"/>
+                        <outlet property="eventDescriptionLabel" destination="T9H-0G-2LI" id="02H-Rw-ScS"/>
                         <outlet property="titleLabel" destination="yNg-UY-6an" id="dgU-Zj-bsp"/>
                     </connections>
                 </viewController>

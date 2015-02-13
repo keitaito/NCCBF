@@ -8,6 +8,8 @@
 
 #import "EventTableViewController.h"
 #import "EventCell.h"
+#import "EventDetailViewController.h"
+#import "Event.h"
 
 @interface EventTableViewController ()
 
@@ -74,6 +76,24 @@
     return cell;
 }
 
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
+        NSLog(@"showEventDetailView");
+        
+        EventDetailViewController *eventDetailViewController = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSString *eventTitle = self.events[indexPath.row];
+        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
+        eventDetailViewController.eventDetail = eventDetail;
+    }
+}
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -110,17 +130,7 @@
 */
 
 
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
-        NSLog(@"showEventDetailView");
-    }
-}
 
 
 @end

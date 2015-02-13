@@ -16,6 +16,7 @@
 		235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751161A8DA7F300192D24 /* EventTableViewController.m */; };
 		2357511A1A8DABF600192D24 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751191A8DABF600192D24 /* EventCell.m */; };
 		2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511C1A8DB81E00192D24 /* EventDetailViewController.m */; };
+		235751201A8DBD7600192D24 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511F1A8DBD7600192D24 /* Event.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		235751191A8DABF600192D24 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
 		2357511B1A8DB81E00192D24 /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
 		2357511C1A8DB81E00192D24 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
+		2357511E1A8DBD7600192D24 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		2357511F1A8DBD7600192D24 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				235751191A8DABF600192D24 /* EventCell.m */,
 				2357511B1A8DB81E00192D24 /* EventDetailViewController.h */,
 				2357511C1A8DB81E00192D24 /* EventDetailViewController.m */,
+				2357511E1A8DBD7600192D24 /* Event.h */,
+				2357511F1A8DBD7600192D24 /* Event.m */,
 				235750F61A8DA24C00192D24 /* Images.xcassets */,
 				235750F81A8DA24C00192D24 /* LaunchScreen.xib */,
 				235750E91A8DA24C00192D24 /* Supporting Files */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235751201A8DBD7600192D24 /* Event.m in Sources */,
 				2357511A1A8DABF600192D24 /* EventCell.m in Sources */,
 				2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */,
 				235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */,
