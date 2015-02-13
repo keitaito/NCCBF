@@ -7,6 +7,7 @@
 //
 
 #import "EventTableViewController.h"
+#import "EventCell.h"
 
 @interface EventTableViewController ()
 
@@ -57,10 +58,18 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventCell" forIndexPath:indexPath];
+    EventCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    cell.textLabel.text = self.events[indexPath.row];
+    
+    // Set title label.
+    cell.titleLabel.text = self.events[indexPath.row];
+    
+    // Set poster view.
+//    NSString *pathForImage = [[NSBundle mainBundle] pathForResource:@"sample-image" ofType:@"jpg"];
+//    UIImage *poster = [UIImage imageWithContentsOfFile:pathForImage];
+    UIImage *poster = [UIImage imageNamed:@"sample-image"];
+    cell.posterView.image = poster;
     
     return cell;
 }
