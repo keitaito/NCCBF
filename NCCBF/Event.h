@@ -11,7 +11,7 @@
 @interface Event : NSObject
 
 @property (nonatomic, strong) NSString *title;
-//@property (nonatomic, strong) NSString *eventDescription;
+@property (nonatomic, strong) NSString *eventDescription;
 
 - (id)initWithEventTitle:(NSString *)title;
 

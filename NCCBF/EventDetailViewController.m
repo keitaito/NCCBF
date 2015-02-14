@@ -20,6 +20,7 @@
     self.detailPosterView.image = [UIImage imageNamed:@"sample-image"];
     
     self.titleLabel.text = self.eventDetail.title;
+    self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
 }
 
 - (void)didReceiveMemoryWarning {

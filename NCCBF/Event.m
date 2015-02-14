@@ -15,7 +15,7 @@
     
     if (self) {
         self.title = title;
-//        self.eventDescription = dictionary[@"eventDescription"];
+        self.eventDescription = @"eventDescription";
 
     }
     
