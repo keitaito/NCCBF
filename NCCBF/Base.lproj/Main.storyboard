@@ -146,7 +146,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="Wzo-cl-bBd"/>
+                    <tabBarItem key="tabBarItem" title="Map" id="Wzo-cl-bBd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Mx-ZBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -161,17 +161,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="contacts" id="1yW-eh-LRO"/>
+                    <tabBarItem key="tabBarItem" title="Social" id="1yW-eh-LRO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TM6-f9-kuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="530" y="-546"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Events-->
         <scene sceneID="ENk-LD-zom">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V4C-XI-Vwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="YiA-5g-Kcd"/>
+                    <tabBarItem key="tabBarItem" title="Events" id="YiA-5g-Kcd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e1C-6q-1RW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -186,11 +186,11 @@
             </objects>
             <point key="canvasLocation" x="503" y="-2954"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Schedule-->
         <scene sceneID="Imd-gz-57a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tt0-pA-fB6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="mostRecent" id="CMF-A6-He6"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" id="CMF-A6-He6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P4t-f7-IUT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

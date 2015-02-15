@@ -19,7 +19,7 @@
 
     }
     
-    NSLog(@"an instance of Event initialized");
+    NSLog(@"an instance of Event class initialized");
     
     return self;
 }
