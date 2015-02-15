@@ -10,4 +10,5 @@
 
 @interface ScheduleTableViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @end
