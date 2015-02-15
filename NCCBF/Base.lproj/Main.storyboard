@@ -152,17 +152,19 @@
         <!--MapViewController-->
         <scene sceneID="RbA-ZL-7PQ">
             <objects>
-                <viewController id="jVN-0u-I2d" userLabel="MapViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gg3-lU-1Jo">
+                <viewController id="jVN-0u-I2d" userLabel="MapViewController" customClass="MapViewController" sceneMemberID="viewController">
+                    <mapView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="SLB-aM-Eg1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                    </mapView>
                     <tabBarItem key="tabBarItem" title="Map" id="Wzo-cl-bBd"/>
+                    <connections>
+                        <outlet property="mapView" destination="SLB-aM-Eg1" id="JEI-58-cDG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Mx-ZBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="623" y="-1466"/>
+            <point key="canvasLocation" x="628" y="-1454"/>
         </scene>
         <!--SocialMediaViewController-->
         <scene sceneID="XMS-Hz-mxM">
