@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EventCell : UITableViewCell
+@interface EventTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *posterView;

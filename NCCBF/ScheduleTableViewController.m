@@ -1,36 +1,21 @@
 //
-//  EventTableViewController.m
+//  ScheduleTableViewController.m
 //  NCCBF
 //
-//  Created by Keita on 2/12/15.
+//  Created by Keita on 2/14/15.
 //  Copyright (c) 2015 Keita Ito. All rights reserved.
 //
 
-#import "EventTableViewController.h"
-#import "EventTableViewCell.h"
-#import "EventDetailViewController.h"
-#import "Event.h"
+#import "ScheduleTableViewController.h"
 
-@interface EventTableViewController ()
-
-@property (nonatomic, strong) NSArray *events;
+@interface ScheduleTableViewController ()
 
 @end
 
-@implementation EventTableViewController
+@implementation ScheduleTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.events = @[@"Apple",
-                    @"Banana",
-                    @"Orange",
-                    @"Strawberry",
-                    @"Grape",
-                    @"Watermelon",
-                    @"Peach",
-                    @"Blueberry",
-                    @"Raspberry"];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -47,53 +32,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//#warning Potentially incomplete method implementation.
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-//#warning Incomplete method implementation.
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.events count];
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    EventTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"EventCell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
     // Configure the cell...
     
-    // Set title label.
-    cell.titleLabel.text = self.events[indexPath.row];
-    
-    // Set poster view.
-//    NSString *pathForImage = [[NSBundle mainBundle] pathForResource:@"sample-image" ofType:@"jpg"];
-//    UIImage *poster = [UIImage imageWithContentsOfFile:pathForImage];
-    UIImage *poster = [UIImage imageNamed:@"sample-image"];
-    cell.posterView.image = poster;
-    
     return cell;
 }
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
-        NSLog(@"showEventDetailView");
-        
-        EventDetailViewController *eventDetailViewController = [segue destinationViewController];
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *eventTitle = self.events[indexPath.row];
-        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
-        eventDetailViewController.eventDetail = eventDetail;
-    }
-}
-
+*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -129,8 +87,14 @@
 }
 */
 
+/*
+#pragma mark - Navigation
 
-
-
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end

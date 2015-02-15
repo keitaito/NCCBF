@@ -14,9 +14,11 @@
 		235750FA1A8DA24C00192D24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235750F81A8DA24C00192D24 /* LaunchScreen.xib */; };
 		235751061A8DA24C00192D24 /* NCCBFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751051A8DA24C00192D24 /* NCCBFTests.m */; };
 		235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751161A8DA7F300192D24 /* EventTableViewController.m */; };
-		2357511A1A8DABF600192D24 /* EventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751191A8DABF600192D24 /* EventCell.m */; };
+		2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751191A8DABF600192D24 /* EventTableViewCell.m */; };
 		2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511C1A8DB81E00192D24 /* EventDetailViewController.m */; };
 		235751201A8DBD7600192D24 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511F1A8DBD7600192D24 /* Event.m */; };
+		2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB191A90431300571BC9 /* ScheduleTableViewController.m */; };
+		2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB1C1A90443700571BC9 /* ScheduleTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,12 +45,16 @@
 		235751051A8DA24C00192D24 /* NCCBFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCCBFTests.m; sourceTree = "<group>"; };
 		235751151A8DA7F300192D24 /* EventTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewController.h; sourceTree = "<group>"; };
 		235751161A8DA7F300192D24 /* EventTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewController.m; sourceTree = "<group>"; };
-		235751181A8DABF600192D24 /* EventCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCell.h; sourceTree = "<group>"; };
-		235751191A8DABF600192D24 /* EventCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCell.m; sourceTree = "<group>"; };
+		235751181A8DABF600192D24 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		235751191A8DABF600192D24 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		2357511B1A8DB81E00192D24 /* EventDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewController.h; sourceTree = "<group>"; };
 		2357511C1A8DB81E00192D24 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
 		2357511E1A8DBD7600192D24 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		2357511F1A8DBD7600192D24 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		2378BB181A90431300571BC9 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
+		2378BB191A90431300571BC9 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
+		2378BB1B1A90443700571BC9 /* ScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewCell.h; sourceTree = "<group>"; };
+		2378BB1C1A90443700571BC9 /* ScheduleTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,14 +99,10 @@
 				235750ED1A8DA24C00192D24 /* AppDelegate.h */,
 				235750EE1A8DA24C00192D24 /* AppDelegate.m */,
 				235750F31A8DA24C00192D24 /* Main.storyboard */,
-				235751151A8DA7F300192D24 /* EventTableViewController.h */,
-				235751161A8DA7F300192D24 /* EventTableViewController.m */,
-				235751181A8DABF600192D24 /* EventCell.h */,
-				235751191A8DABF600192D24 /* EventCell.m */,
-				2357511B1A8DB81E00192D24 /* EventDetailViewController.h */,
-				2357511C1A8DB81E00192D24 /* EventDetailViewController.m */,
 				2357511E1A8DBD7600192D24 /* Event.h */,
 				2357511F1A8DBD7600192D24 /* Event.m */,
+				2378BB161A90426000571BC9 /* EventTable */,
+				2378BB171A90429300571BC9 /* ScheduleTable */,
 				235750F61A8DA24C00192D24 /* Images.xcassets */,
 				235750F81A8DA24C00192D24 /* LaunchScreen.xib */,
 				235750E91A8DA24C00192D24 /* Supporting Files */,
@@ -132,6 +134,30 @@
 				235751041A8DA24C00192D24 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2378BB161A90426000571BC9 /* EventTable */ = {
+			isa = PBXGroup;
+			children = (
+				235751151A8DA7F300192D24 /* EventTableViewController.h */,
+				235751161A8DA7F300192D24 /* EventTableViewController.m */,
+				235751181A8DABF600192D24 /* EventTableViewCell.h */,
+				235751191A8DABF600192D24 /* EventTableViewCell.m */,
+				2357511B1A8DB81E00192D24 /* EventDetailViewController.h */,
+				2357511C1A8DB81E00192D24 /* EventDetailViewController.m */,
+			);
+			name = EventTable;
+			sourceTree = "<group>";
+		};
+		2378BB171A90429300571BC9 /* ScheduleTable */ = {
+			isa = PBXGroup;
+			children = (
+				2378BB181A90431300571BC9 /* ScheduleTableViewController.h */,
+				2378BB191A90431300571BC9 /* ScheduleTableViewController.m */,
+				2378BB1B1A90443700571BC9 /* ScheduleTableViewCell.h */,
+				2378BB1C1A90443700571BC9 /* ScheduleTableViewCell.m */,
+			);
+			name = ScheduleTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +261,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				235751201A8DBD7600192D24 /* Event.m in Sources */,
-				2357511A1A8DABF600192D24 /* EventCell.m in Sources */,
+				2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */,
+				2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */,
+				2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */,
 				2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */,
 				235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */,
 				235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */,
@@ -430,6 +458,7 @@
 				2357510B1A8DA24C00192D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2357510C1A8DA24C00192D24 /* Build configuration list for PBXNativeTarget "NCCBFTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +467,7 @@
 				2357510E1A8DA24C00192D24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

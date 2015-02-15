@@ -1,14 +1,14 @@
 //
-//  EventCell.m
+//  ScheduleTableViewCell.m
 //  NCCBF
 //
-//  Created by Keita on 2/12/15.
+//  Created by Keita on 2/14/15.
 //  Copyright (c) 2015 Keita Ito. All rights reserved.
 //
 
-#import "EventCell.h"
+#import "ScheduleTableViewCell.h"
 
-@implementation EventCell
+@implementation ScheduleTableViewCell
 
 - (void)awakeFromNib {
     // Initialization code
