@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SocialMediaNames</key>
+	<array>
+		<string>Facebook</string>
+		<string>Twitter</string>
+		<string>Instagram</string>
+		<string>tumblr</string>
+		<string>Pinterest</string>
+		<string>LINE</string>
+		<string>Snapchat</string>
+	</array>
+</dict>
+</plist>

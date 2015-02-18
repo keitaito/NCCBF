@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @property (strong, nonatomic) NSArray *tmpArray;
+@property (strong, nonatomic) NSArray *socialMediaNames;
 
 @end
 
@@ -31,19 +32,27 @@
                       @"Chiba",
                       @"Saitama"];
     
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
+    
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    
+    self.socialMediaNames = dict[@"SocialMediaNames"];
+    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.tmpArray.count;
+//    return self.tmpArray.count;
+    return self.socialMediaNames.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
-    cell.titleLabel.text = self.tmpArray[indexPath.row];
-    
+//    cell.titleLabel.text = self.tmpArray[indexPath.row];
+    cell.titleLabel.text = self.socialMediaNames[indexPath.row];
+
     return cell;
 }
 
