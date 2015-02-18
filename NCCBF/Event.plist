@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Events</key>
+	<array>
+		<dict>
+			<key>name</key>
+			<string>Taru Mikoshi</string>
+			<key>time</key>
+			<date>2015-04-20T19:00:00Z</date>
+			<key>location</key>
+			<string>Post St</string>
+			<key>image</key>
+			<string>taru-mikoshi.jpg</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Taiko</string>
+			<key>time</key>
+			<date>2015-04-20T20:00:00Z</date>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image</key>
+			<string>taiko.jpg</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Queen Contest</string>
+			<key>time</key>
+			<date>2015-04-20T21:00:00Z</date>
+			<key>location</key>
+			<string>Place B</string>
+			<key>image</key>
+			<string>queen-contest.jpg</string>
+		</dict>
+	</array>
+</dict>
+</plist>

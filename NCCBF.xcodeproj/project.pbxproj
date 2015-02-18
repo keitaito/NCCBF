@@ -24,6 +24,7 @@
 		23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB01A946FDD00D01330 /* SocialViewController.m */; };
 		23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB31A94723A00D01330 /* SocialViewCell.m */; };
 		23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23E06DB51A947B6500D01330 /* SocialMedia.plist */; };
+		23E06DB81A94855400D01330 /* Event.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23E06DB71A94855400D01330 /* Event.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		23E06DB21A94723A00D01330 /* SocialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewCell.h; sourceTree = "<group>"; };
 		23E06DB31A94723A00D01330 /* SocialViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewCell.m; sourceTree = "<group>"; };
 		23E06DB51A947B6500D01330 /* SocialMedia.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SocialMedia.plist; sourceTree = "<group>"; };
+		23E06DB71A94855400D01330 /* Event.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Event.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				235750F31A8DA24C00192D24 /* Main.storyboard */,
 				2357511E1A8DBD7600192D24 /* Event.h */,
 				2357511F1A8DBD7600192D24 /* Event.m */,
+				23E06DB71A94855400D01330 /* Event.plist */,
 				2378BB161A90426000571BC9 /* EventTableView */,
 				2378BB171A90429300571BC9 /* ScheduleTableView */,
 				2378BB1E1A904B1B00571BC9 /* MapView */,
@@ -288,6 +291,7 @@
 				235750FA1A8DA24C00192D24 /* LaunchScreen.xib in Resources */,
 				23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */,
 				235750F71A8DA24C00192D24 /* Images.xcassets in Resources */,
+				23E06DB81A94855400D01330 /* Event.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
