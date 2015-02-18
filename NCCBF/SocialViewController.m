@@ -12,9 +12,11 @@
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UITextView *festivalDescription;
 
-@property (strong, nonatomic) NSArray *tmpArray;
+//@property (strong, nonatomic) NSArray *tmpArray;
 @property (strong, nonatomic) NSArray *socialMediaNames;
+@property (strong, nonatomic) NSString *festivalDescriptionString;
 
 @end
 
@@ -24,21 +26,28 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Set up delegate and dataSource for table view.
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-    self.tmpArray = @[@"Tokyo",
-                      @"Yokohama",
-                      @"Chiba",
-                      @"Saitama"];
+//    self.tmpArray = @[@"Tokyo",
+//                      @"Yokohama",
+//                      @"Chiba",
+//                      @"Saitama"];
     
+    // Create path for plist.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
-    
+    // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    
+    // Store social media names dict into socialMediaNames property.
     self.socialMediaNames = dict[@"SocialMediaNames"];
-    
+    // Store festival description into string.
+    self.festivalDescriptionString = dict[@"FestivalDescription"];
+    self.festivalDescription.text = self.festivalDescriptionString;
+    self.festivalDescription.editable = NO;
 }
+
+# pragma mark - table view delegate and dataSource methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -55,6 +64,20 @@
 
     return cell;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#pragma mark - memory warning
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
