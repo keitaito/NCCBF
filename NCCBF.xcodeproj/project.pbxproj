@@ -21,6 +21,8 @@
 		2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB1C1A90443700571BC9 /* ScheduleTableViewCell.m */; };
 		2378BB211A904C4100571BC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378BB201A904C4100571BC9 /* MapKit.framework */; };
 		2378BB241A904C5C00571BC9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB231A904C5C00571BC9 /* MapViewController.m */; };
+		23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB01A946FDD00D01330 /* SocialViewController.m */; };
+		23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB31A94723A00D01330 /* SocialViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		2378BB201A904C4100571BC9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2378BB221A904C5C00571BC9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2378BB231A904C5C00571BC9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		23E06DAF1A946FDD00D01330 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		23E06DB01A946FDD00D01330 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
+		23E06DB21A94723A00D01330 /* SocialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewCell.h; sourceTree = "<group>"; };
+		23E06DB31A94723A00D01330 /* SocialViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +187,10 @@
 		2378BB1F1A904B2300571BC9 /* SocialView */ = {
 			isa = PBXGroup;
 			children = (
+				23E06DAF1A946FDD00D01330 /* SocialViewController.h */,
+				23E06DB01A946FDD00D01330 /* SocialViewController.m */,
+				23E06DB21A94723A00D01330 /* SocialViewCell.h */,
+				23E06DB31A94723A00D01330 /* SocialViewCell.m */,
 			);
 			name = SocialView;
 			sourceTree = "<group>";
@@ -294,10 +304,12 @@
 				235751201A8DBD7600192D24 /* Event.m in Sources */,
 				2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */,
 				2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */,
+				23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */,
 				2378BB241A904C5C00571BC9 /* MapViewController.m in Sources */,
 				2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */,
 				2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */,
 				235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */,
+				23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */,
 				235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */,
 				235750EC1A8DA24C00192D24 /* main.m in Sources */,
 			);
