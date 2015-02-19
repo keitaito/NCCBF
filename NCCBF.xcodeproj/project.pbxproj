@@ -94,10 +94,10 @@
 		235750DD1A8DA24C00192D24 = {
 			isa = PBXGroup;
 			children = (
-				2378BB201A904C4100571BC9 /* MapKit.framework */,
 				235750E81A8DA24C00192D24 /* NCCBF */,
 				235751021A8DA24C00192D24 /* NCCBFTests */,
 				235750E71A8DA24C00192D24 /* Products */,
+				2378BB201A904C4100571BC9 /* MapKit.framework */,
 			);
 			sourceTree = "<group>";
 		};

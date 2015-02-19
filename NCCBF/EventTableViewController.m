@@ -22,15 +22,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.events = @[@"Apple",
-                    @"Banana",
-                    @"Orange",
-                    @"Strawberry",
-                    @"Grape",
-                    @"Watermelon",
-                    @"Peach",
-                    @"Blueberry",
-                    @"Raspberry"];
+//    self.events = @[@"Apple",
+//                    @"Banana",
+//                    @"Orange",
+//                    @"Strawberry",
+//                    @"Grape",
+//                    @"Watermelon",
+//                    @"Peach",
+//                    @"Blueberry",
+//                    @"Raspberry"];
+    
+    // Create path for plist.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+    // Create dictionary to store plist's root dictionary.
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    // Store Events Array into events property
+    self.events = dict[@"Events"];
+    
+    
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -39,10 +50,6 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
@@ -64,8 +71,13 @@
     
     // Configure the cell...
     
+    // Get event name string from events property
+    // 1. get an event
+    NSDictionary *anEvent = self.events[indexPath.row];
+    // 2. get name string
+    NSString *eventName = anEvent[@"name"];
     // Set title label.
-    cell.titleLabel.text = self.events[indexPath.row];
+    cell.titleLabel.text = eventName;
     
     // Set poster view.
 //    NSString *pathForImage = [[NSBundle mainBundle] pathForResource:@"sample-image" ofType:@"jpg"];
@@ -88,10 +100,31 @@
         
         EventDetailViewController *eventDetailViewController = [segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSString *eventTitle = self.events[indexPath.row];
+        
+        // Get event title string from events property
+        // 1. get an event
+        NSDictionary *anEvent = self.events[indexPath.row];
+        // 2. get name string
+        NSString *eventTitle = anEvent[@"name"];
+
         Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
         eventDetailViewController.eventDetail = eventDetail;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 

@@ -13,6 +13,10 @@
 			<string>Post St</string>
 			<key>image</key>
 			<string>taru-mikoshi.jpg</string>
+			<key>eventDescription</key>
+			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -23,6 +27,8 @@
 			<string>Place A</string>
 			<key>image</key>
 			<string>taiko.jpg</string>
+			<key>eventDescription</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -33,6 +39,9 @@
 			<string>Place B</string>
 			<key>image</key>
 			<string>queen-contest.jpg</string>
+			<key>eventDescription</key>
+			<string>Queen ContestQueen ContestQueen ContestQueen ContestQueen Contest
+Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</string>
 		</dict>
 	</array>
 </dict>
