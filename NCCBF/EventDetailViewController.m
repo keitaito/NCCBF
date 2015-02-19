@@ -22,6 +22,7 @@
     
     self.titleLabel.text = self.eventDetail.name;
     self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
+    self.locationLabel.text = self.eventDetail.location;
 }
 
 - (void)didReceiveMemoryWarning {
