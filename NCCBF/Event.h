@@ -16,7 +16,7 @@
 @property (nonatomic, strong) NSString *imageString;
 @property (nonatomic, strong) NSString *eventDescription;
 
-- (id)initWithEventTitle:(NSString *)title;
 - (instancetype)initWithEventDictionary:(NSDictionary *)dictionary;
+- (id)initWithEventTitle:(NSString *)title;
 
 @end

@@ -12,7 +12,7 @@
 			<key>location</key>
 			<string>Post St</string>
 			<key>imageString</key>
-			<string>taru-mikoshi.jpg</string>
+			<string>taru-mikoshi</string>
 			<key>eventDescription</key>
 			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
 Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
@@ -26,7 +26,7 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 			<key>location</key>
 			<string>Place A</string>
 			<key>imageString</key>
-			<string>taiko.jpg</string>
+			<string>taiko</string>
 			<key>eventDescription</key>
 			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
 		</dict>
@@ -38,7 +38,7 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 			<key>location</key>
 			<string>Place B</string>
 			<key>imageString</key>
-			<string>queen-contest.jpg</string>
+			<string>queen-contest</string>
 			<key>eventDescription</key>
 			<string>Queen ContestQueen ContestQueen ContestQueen ContestQueen Contest
 Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</string>

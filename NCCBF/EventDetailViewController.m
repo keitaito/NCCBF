@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.detailPosterView.image = [UIImage imageNamed:@"sample-image"];
+    NSString *imageName = self.eventDetail.imageString;
+    self.detailPosterView.image = [UIImage imageNamed:imageName];
     
     self.titleLabel.text = self.eventDetail.name;
     self.eventDescriptionLabel.text = self.eventDetail.eventDescription;

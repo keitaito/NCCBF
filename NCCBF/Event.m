@@ -16,6 +16,21 @@
 
 @implementation Event
 
+- (instancetype)initWithEventDictionary:(NSDictionary *)dictionary {
+    self = [super init];
+    
+    self.name = dictionary[@"name"];
+    self.date = dictionary[@"date"];
+    self.location = dictionary[@"location"];
+    self.imageString = dictionary[@"imageString"];
+    self.eventDescription = dictionary[@"eventDescription"];
+    
+    return self;
+}
+
+
+
+
 - (instancetype)initWithEventTitle:(NSString *)title {
     self = [super init];
     
@@ -29,22 +44,10 @@
         
         self.name = title;
         self.eventDescription = @"eventDescription";
-
+        
     }
     
     NSLog(@"an instance of Event class initialized");
-    
-    return self;
-}
-
-- (instancetype)initWithEventDictionary:(NSDictionary *)dictionary {
-    self = [super init];
-    
-    self.name = dictionary[@"name"];
-    self.date = dictionary[@"date"];
-    self.location = dictionary[@"location"];
-    self.imageString = dictionary[@"imageString"];
-    self.eventDescription = dictionary[@"eventDescription"];
     
     return self;
 }
