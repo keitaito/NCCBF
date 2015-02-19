@@ -103,11 +103,12 @@
         
         // Get event title string from events property
         // 1. get an event
-        NSDictionary *anEvent = self.events[indexPath.row];
+        NSDictionary *eventDictionary = self.events[indexPath.row];
         // 2. get name string
-        NSString *eventTitle = anEvent[@"name"];
+        __unused NSString *eventTitle = eventDictionary[@"name"];
 
-        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
+//        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
+        Event *eventDetail = [[Event alloc] initWithEventDictionary:eventDictionary];
         eventDetailViewController.eventDetail = eventDetail;
     }
 }

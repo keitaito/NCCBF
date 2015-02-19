@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     self.detailPosterView.image = [UIImage imageNamed:@"sample-image"];
     
-    self.titleLabel.text = self.eventDetail.title;
+    self.titleLabel.text = self.eventDetail.name;
     self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
 }
 

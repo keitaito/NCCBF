@@ -10,9 +10,13 @@
 
 @interface Event : NSObject
 
-@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSString *location;
+@property (nonatomic, strong) NSString *imageString;
 @property (nonatomic, strong) NSString *eventDescription;
 
 - (id)initWithEventTitle:(NSString *)title;
+- (instancetype)initWithEventDictionary:(NSDictionary *)dictionary;
 
 @end
