@@ -31,25 +31,25 @@
 
 
 
-- (instancetype)initWithEventTitle:(NSString *)title {
-    self = [super init];
-    
-    if (self) {
-        // Create path for plist.
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
-        // Create dictionary to store plist's root dictionary.
-        NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-        // Store Events Array into events property
-        self.events = dict[@"Events"];
-        
-        self.name = title;
-        self.eventDescription = @"eventDescription";
-        
-    }
-    
-    NSLog(@"an instance of Event class initialized");
-    
-    return self;
-}
+//- (instancetype)initWithEventTitle:(NSString *)title {
+//    self = [super init];
+//    
+//    if (self) {
+//        // Create path for plist.
+//        NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+//        // Create dictionary to store plist's root dictionary.
+//        NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+//        // Store Events Array into events property
+//        self.events = dict[@"Events"];
+//        
+//        self.name = title;
+//        self.eventDescription = @"eventDescription";
+//        
+//    }
+//    
+//    NSLog(@"an instance of Event class initialized");
+//    
+//    return self;
+//}
 
 @end

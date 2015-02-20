@@ -77,8 +77,19 @@
     // Set title label.
     cell.titleLabel.text = eventName;
     
-    // get 
+    // get date from anEvent dictionary.
+    NSDate *eventDate = anEvent[@"date"];
+    // Instantiate NSDateFormatter
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    // set dateFormat.
+    [dateFormatter setDateFormat:@"MM dd 'at' HH:mm"];
+    // create date string from eventDate with dateFormatter.
+    NSString *eventDateString = [dateFormatter stringFromDate:eventDate];
     
+    NSLog(@"%@", eventDateString);
+    
+    // Set event time label.
+    cell.timeLabel.text = eventDateString;
     
 //     Set title label.
 //    cell.titleLabel.text = self.events[indexPath.row];
