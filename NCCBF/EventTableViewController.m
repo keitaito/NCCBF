@@ -40,9 +40,7 @@
     self.events = dict[@"Events"];
     
     
-    
-    
-    
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -89,6 +87,8 @@
     return cell;
 }
 
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -113,6 +113,10 @@
         eventDetailViewController.eventDetail = eventDetail;
     }
 }
+
+
+
+
 
 
 

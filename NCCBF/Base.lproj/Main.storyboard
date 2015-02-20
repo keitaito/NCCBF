@@ -149,6 +149,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="timeLabel" destination="AUK-un-Wkx" id="JU8-HD-wKR"/>
                                     <outlet property="titleLabel" destination="Zq0-o4-xpa" id="Csb-KH-qQ7"/>
                                 </connections>
                             </tableViewCell>

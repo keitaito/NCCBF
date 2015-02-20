@@ -20,13 +20,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.events = @[@"ManUtd",
-                    @"Liverpool",
-                    @"Chelsea",
-                    @"Arsenal",
-                    @"ManCity",
-                    @"Tottenham",
-                    @"Everton"];
+//    self.events = @[@"ManUtd",
+//                    @"Liverpool",
+//                    @"Chelsea",
+//                    @"Arsenal",
+//                    @"ManCity",
+//                    @"Tottenham",
+//                    @"Everton"];
+    
+    
+    
+    // Create path for plist.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+    // Create dictionary to store plist's root dictionary.
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+    // Store Events Array into events property
+    self.events = dict[@"Events"];
+    
+    
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -36,10 +47,7 @@
     NSLog(@"ScheduleTableView");
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 
 #pragma mark - Table view data source
 
@@ -61,12 +69,43 @@
     
     // Configure the cell...
     
+    // Get event name string from events property
+    // 1. get an event
+    NSDictionary *anEvent = self.events[indexPath.row];
+    // 2. get name string
+    NSString *eventName = anEvent[@"name"];
     // Set title label.
-    cell.titleLabel.text = self.events[indexPath.row];
+    cell.titleLabel.text = eventName;
+    
+    // get 
+    
+    
+//     Set title label.
+//    cell.titleLabel.text = self.events[indexPath.row];
     
     return cell;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 /*
 // Override to support conditional editing of the table view.
