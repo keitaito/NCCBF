@@ -15,7 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *festivalDescription;
 
 //@property (strong, nonatomic) NSArray *tmpArray;
-@property (strong, nonatomic) NSArray *socialMediaNames;
+@property (strong, nonatomic) NSArray *socialMediaArray;
 @property (strong, nonatomic) NSString *festivalDescriptionString;
 
 @end
@@ -40,7 +40,7 @@
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     // Store social media names dict into socialMediaNames property.
-    self.socialMediaNames = dict[@"SocialMediaNames"];
+    self.socialMediaArray = dict[@"SocialMedia"];
     // Store festival description into string.
     self.festivalDescriptionString = dict[@"FestivalDescription"];
     self.festivalDescription.text = self.festivalDescriptionString;
@@ -52,15 +52,18 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 //    return self.tmpArray.count;
-    return self.socialMediaNames.count;
+    return self.socialMediaArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
-//    cell.titleLabel.text = self.tmpArray[indexPath.row];
-    cell.titleLabel.text = self.socialMediaNames[indexPath.row];
+
+    NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
+    
+    cell.titleLabel.text = socialDict[@"name"];
+    cell.urlString = socialDict[@"URL"];
 
     return cell;
 }

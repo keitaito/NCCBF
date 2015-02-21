@@ -10,15 +10,26 @@ This year’s Northern California Cherry Blossom Festival will be held on Saturd
 The festival will be held on Post Street between Laguna and Fillmore Streets. There will be food booths, cultural performances, martial arts, live bands, the annual Queen Program, and more. The Grand Parade will be held on Sunday, April 19, beginning at City Hall and concluding in Japantown.
 
 The Northern California Cherry Blossom Festival is said to be the second largest festival outside of Washington, D.C. to celebrate the blooming of cherry blossoms; and held at one of three remaining Japantowns in the United States.</string>
-	<key>SocialMediaNames</key>
+	<key>SocialMedia</key>
 	<array>
-		<string>Facebook</string>
-		<string>Twitter</string>
-		<string>Instagram</string>
-		<string>tumblr</string>
-		<string>Pinterest</string>
-		<string>LINE</string>
-		<string>Snapchat</string>
+		<dict>
+			<key>name</key>
+			<string>Facebook</string>
+			<key>URL</key>
+			<string>https://www.facebook.com/NCCBF</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Twitter</string>
+			<key>URL</key>
+			<string>https://twitter.com/NC_CBF</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Instagram</string>
+			<key>URL</key>
+			<string>https://instagram.com</string>
+		</dict>
 	</array>
 </dict>
 </plist>
