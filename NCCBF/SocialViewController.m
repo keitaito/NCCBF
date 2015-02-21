@@ -8,6 +8,7 @@
 
 #import "SocialViewController.h"
 #import "SocialViewCell.h"
+#import "SocialWebViewController.h"
 
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -70,7 +71,24 @@
 
 
 
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"showSocialWebView"]) {
+        NSLog(@"SocialWebView");
+        
+        SocialWebViewController *SWVC = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        NSDictionary *socialMediaDict = self.socialMediaArray[indexPath.row];
+        
+    }
+    
+}
 
 
 
@@ -87,14 +105,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
 
 @end

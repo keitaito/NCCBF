@@ -25,6 +25,7 @@
 		23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB31A94723A00D01330 /* SocialViewCell.m */; };
 		23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23E06DB51A947B6500D01330 /* SocialMedia.plist */; };
 		23E06DB81A94855400D01330 /* Event.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23E06DB71A94855400D01330 /* Event.plist */; };
+		23EA9E291A9854B000E39921 /* SocialWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23EA9E281A9854B000E39921 /* SocialWebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		23E06DB31A94723A00D01330 /* SocialViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewCell.m; sourceTree = "<group>"; };
 		23E06DB51A947B6500D01330 /* SocialMedia.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SocialMedia.plist; sourceTree = "<group>"; };
 		23E06DB71A94855400D01330 /* Event.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Event.plist; sourceTree = "<group>"; };
+		23EA9E271A9854B000E39921 /* SocialWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialWebViewController.h; sourceTree = "<group>"; };
+		23EA9E281A9854B000E39921 /* SocialWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialWebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +199,8 @@
 				23E06DB01A946FDD00D01330 /* SocialViewController.m */,
 				23E06DB21A94723A00D01330 /* SocialViewCell.h */,
 				23E06DB31A94723A00D01330 /* SocialViewCell.m */,
+				23EA9E271A9854B000E39921 /* SocialWebViewController.h */,
+				23EA9E281A9854B000E39921 /* SocialWebViewController.m */,
 				23E06DB51A947B6500D01330 /* SocialMedia.plist */,
 			);
 			name = SocialView;
@@ -317,6 +322,7 @@
 				2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */,
 				2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */,
 				235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */,
+				23EA9E291A9854B000E39921 /* SocialWebViewController.m in Sources */,
 				23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */,
 				235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */,
 				235750EC1A8DA24C00192D24 /* main.m in Sources */,
