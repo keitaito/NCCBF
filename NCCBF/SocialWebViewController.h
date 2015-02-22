@@ -10,4 +10,6 @@
 
 @interface SocialWebViewController : UIViewController
 
+@property (strong, nonatomic) NSString *urlString;
+
 @end

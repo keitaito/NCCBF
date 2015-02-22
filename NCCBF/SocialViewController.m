@@ -79,13 +79,14 @@
     // Pass the selected object to the new view controller.
     
     if ([[segue identifier] isEqualToString:@"showSocialWebView"]) {
-        NSLog(@"SocialWebView");
+        NSLog(@"show SocialWebView");
         
         SocialWebViewController *SWVC = [segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
         NSDictionary *socialMediaDict = self.socialMediaArray[indexPath.row];
-        
+        NSString *urlString = socialMediaDict[@"URL"];
+        SWVC.urlString = urlString;
     }
     
 }
