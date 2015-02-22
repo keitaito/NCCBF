@@ -8,6 +8,7 @@
 
 #import "SocialViewController.h"
 #import "SocialViewCell.h"
+#import "SocialWebViewController.h"
 
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
 
@@ -15,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextView *festivalDescription;
 
 //@property (strong, nonatomic) NSArray *tmpArray;
-@property (strong, nonatomic) NSArray *socialMediaNames;
+@property (strong, nonatomic) NSArray *socialMediaArray;
 @property (strong, nonatomic) NSString *festivalDescriptionString;
 
 @end
@@ -40,7 +41,7 @@
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     // Store social media names dict into socialMediaNames property.
-    self.socialMediaNames = dict[@"SocialMediaNames"];
+    self.socialMediaArray = dict[@"SocialMedia"];
     // Store festival description into string.
     self.festivalDescriptionString = dict[@"FestivalDescription"];
     self.festivalDescription.text = self.festivalDescriptionString;
@@ -52,22 +53,43 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 //    return self.tmpArray.count;
-    return self.socialMediaNames.count;
+    return self.socialMediaArray.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
-//    cell.titleLabel.text = self.tmpArray[indexPath.row];
-    cell.titleLabel.text = self.socialMediaNames[indexPath.row];
+
+    NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
+    
+    cell.titleLabel.text = socialDict[@"name"];
+    cell.urlString = socialDict[@"URL"];
 
     return cell;
 }
 
 
 
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"showSocialWebView"]) {
+        NSLog(@"show SocialWebView");
+        
+        SocialWebViewController *SWVC = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        NSDictionary *socialMediaDict = self.socialMediaArray[indexPath.row];
+        NSString *urlString = socialMediaDict[@"URL"];
+        SWVC.urlString = urlString;
+    }
+    
+}
 
 
 
@@ -84,14 +106,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+
+
 
 @end
