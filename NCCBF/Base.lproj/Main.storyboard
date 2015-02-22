@@ -126,6 +126,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableHeaderView" contentMode="scaleToFill" id="z6n-ey-JSa">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="LvT-8l-0iP">
+                                    <rect key="frame" x="8" y="8" width="304" height="29"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="Apr 11"/>
+                                        <segment title="Apr 12"/>
+                                        <segment title="Apr 18"/>
+                                        <segment title="Apr 19"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="switchDate:" destination="sBf-qf-R2h" eventType="valueChanged" id="bC8-57-NIg"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" rowHeight="80" id="9D7-aN-i5C" customClass="ScheduleTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -160,6 +180,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Schedule" id="4HS-LE-vOY"/>
+                    <connections>
+                        <outlet property="dateSegment" destination="LvT-8l-0iP" id="9Xl-wg-0W8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3R-kG-zSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

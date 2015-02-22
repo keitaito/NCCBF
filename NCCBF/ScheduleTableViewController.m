@@ -12,6 +12,7 @@
 @interface ScheduleTableViewController ()
 
 @property (nonatomic, strong) NSArray *events;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *dateSegment;
 
 @end
 
@@ -97,6 +98,20 @@
     return cell;
 }
 
+- (IBAction)switchDate:(id)sender
+{
+    NSInteger selectedSegment = self.dateSegment.selectedSegmentIndex;
+    
+    if (selectedSegment == 0) {
+        NSLog(@"Apr 11 schedule");
+    } else if (selectedSegment == 1) {
+        NSLog(@"Apr 12 schedule");
+    } else if (selectedSegment == 2) {
+        NSLog(@"Apr 18 schedule");
+    } else if (selectedSegment == 3) {
+        NSLog(@"Apr 19 schedule");
+    }
+}
 
 
 
