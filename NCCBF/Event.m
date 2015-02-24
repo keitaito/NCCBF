@@ -32,11 +32,11 @@ static NSDictionary *locations;
     self = [super init];
     
     self.name = dictionary[@"name"];
-    self.date = dictionary[@"date"];
+    self.date = dictionary[@"start_at"];
     self.locationId = [dictionary[@"location_id"] intValue];
     self.location = [self locationConvertedFromLocationId:self.locationId];
-    self.imageString = dictionary[@"imageString"];
-    self.eventDescription = dictionary[@"eventDescription"];
+    self.imageString = dictionary[@"image_name"];
+    self.eventDescription = dictionary[@"description"];
     
     return self;
 }

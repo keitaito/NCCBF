@@ -80,7 +80,7 @@
     // Set poster view.
 //    NSString *pathForImage = [[NSBundle mainBundle] pathForResource:@"sample-image" ofType:@"jpg"];
 //    UIImage *poster = [UIImage imageWithContentsOfFile:pathForImage];
-    NSString *imageName = anEvent[@"imageString"];
+    NSString *imageName = anEvent[@"image_name"];
     UIImage *poster = [UIImage imageNamed:imageName];
     cell.posterView.image = poster;
     

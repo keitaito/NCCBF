@@ -79,7 +79,7 @@
     cell.titleLabel.text = eventName;
     
     // get date from anEvent dictionary.
-    NSDate *eventDate = anEvent[@"date"];
+    NSDate *eventDate = anEvent[@"start_at"];
     // Instantiate NSDateFormatter
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     // set dateFormat.
