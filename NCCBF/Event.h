@@ -14,8 +14,8 @@
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSDate *date;
-@property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSString *locationId;
+@property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSString *imageString;
 @property (nonatomic, strong) NSString *eventDescription;
 

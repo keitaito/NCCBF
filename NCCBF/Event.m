@@ -14,20 +14,39 @@
 
 @end
 
+static NSDictionary *locations;
+
 @implementation Event
+
+
+// Set up static locations variable.
++ (void)initialize
+{
+    locations = @{@0: @"Post St",
+                  @1: @"Laguna St",
+                  @2: @"Webster St"};
+}
+
 
 - (instancetype)initWithEventDictionary:(NSDictionary *)dictionary {
     self = [super init];
     
     self.name = dictionary[@"name"];
     self.date = dictionary[@"date"];
-    self.location = dictionary[@"location"];
+    self.locationId = dictionary[@"location_id"];
+    self.location = locations[self.locationId];
     self.imageString = dictionary[@"imageString"];
     self.eventDescription = dictionary[@"eventDescription"];
     
     return self;
 }
 
+- (NSString *)location:(int)i
+{
+    NSNumber *num = [[NSNumber alloc] initWithInt:i];
+    
+    return locations[num];
+}
 
 
 
