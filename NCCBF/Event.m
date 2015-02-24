@@ -33,15 +33,15 @@ static NSDictionary *locations;
     
     self.name = dictionary[@"name"];
     self.date = dictionary[@"date"];
-    self.locationId = dictionary[@"location_id"];
-    self.location = locations[self.locationId];
+    self.locationId = [dictionary[@"location_id"] intValue];
+    self.location = [self locationConvertedFromLocationId:self.locationId];
     self.imageString = dictionary[@"imageString"];
     self.eventDescription = dictionary[@"eventDescription"];
     
     return self;
 }
 
-- (NSString *)location:(int)i
+- (NSString *)locationConvertedFromLocationId:(int)i
 {
     NSNumber *num = [[NSNumber alloc] initWithInt:i];
     
