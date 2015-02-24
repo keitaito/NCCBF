@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSArray *events;
 @property (nonatomic, strong) NSArray *eventsJSON;
+@property (nonatomic, strong) NSMutableArray *eventModelArray;
+
 
 @end
 
@@ -49,8 +51,18 @@
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
                                id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                self.eventsJSON = object[@"Events"];
+                               
+                               for (int i = 0; i < self.eventsJSON.count; i++) {
+                                   Event *eventModel = [[Event alloc] initWithEventDictionary:self.eventsJSON[i]];
+                                   if (!self.eventModelArray) {
+                                       self.eventModelArray = [[NSMutableArray alloc] init];
+                                   }
+                                   [self.eventModelArray addObject:eventModel];
+                               }
+                               
                                [self.tableView reloadData];
                                NSLog(@"%@", object);
+                               NSLog(@"%@", self.eventModelArray);
                            }];
     
 
