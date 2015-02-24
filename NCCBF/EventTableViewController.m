@@ -91,7 +91,8 @@
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
 //    return [self.events count];
-    return [self.eventsJSON count];
+//    return [self.eventsJSON count];
+    return [self.eventModelArray count];
 }
 
 
@@ -103,17 +104,19 @@
     // Get event name string from events property
     // 1. get an event
 //    NSDictionary *anEvent = self.events[indexPath.row];
-    NSDictionary *anEvent = self.eventsJSON[indexPath.row];
+//    NSDictionary *anEvent = self.eventsJSON[indexPath.row];
+    Event *anEvent = self.eventModelArray[indexPath.row];
 
-    // 2. get name string
-    NSString *eventName = anEvent[@"name"];
+//    // 2. get name string
+//    NSString *eventName = anEvent[@"name"];
     // Set title label.
-    cell.titleLabel.text = eventName;
+    cell.titleLabel.text = anEvent.name;
     
     // Set poster view.
 //    NSString *pathForImage = [[NSBundle mainBundle] pathForResource:@"sample-image" ofType:@"jpg"];
 //    UIImage *poster = [UIImage imageWithContentsOfFile:pathForImage];
-    NSString *imageName = anEvent[@"image_name"];
+//    NSString *imageName = anEvent[@"image_name"];
+    NSString *imageName = anEvent.imageString;
     UIImage *poster = [UIImage imageNamed:imageName];
     cell.posterView.image = poster;
     
@@ -150,18 +153,7 @@
 
 
 
-//- (instancetype)init
-//{
-//    self = [super init];
-//    if (self) {
-//        
-//        for (int 0; i < plist.count; i++) {
-//            Event *event = [[Event alloc] initwihPlist[i]];
-//            [self.events addObject:event];
-//        }
-//    }
-//    return self;
-//}
+
 
 
 

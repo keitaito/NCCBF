@@ -20,17 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-//    self.events = @[@"ManUtd",
-//                    @"Liverpool",
-//                    @"Chelsea",
-//                    @"Arsenal",
-//                    @"ManCity",
-//                    @"Tottenham",
-//                    @"Everton"];
-    
-    
-    
+        
     // Create path for plist.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
