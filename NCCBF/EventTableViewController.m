@@ -116,7 +116,18 @@
 
 
 
-
+//- (instancetype)init
+//{
+//    self = [super init];
+//    if (self) {
+//        
+//        for (int 0; i < plist.count; i++) {
+//            Event *event = [[Event alloc] initwihPlist[i]];
+//            [self.events addObject:event];
+//        }
+//    }
+//    return self;
+//}
 
 
 
