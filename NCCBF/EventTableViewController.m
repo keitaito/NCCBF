@@ -25,42 +25,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    self.events = @[@"Apple",
-//                    @"Banana",
-//                    @"Orange",
-//                    @"Strawberry",
-//                    @"Grape",
-//                    @"Watermelon",
-//                    @"Peach",
-//                    @"Blueberry",
-//                    @"Raspberry"];
+    // Create events with Event.plist
     
     // Create path for plist.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    // Store Events Array into events property
+    // Store Events Array in events property
     self.events = dict[@"Events"];
-//    NSLog(@"%@", self.events);
     
+    ///////////////////////////////////
+
+    // Fetch events data JSON file from online.
+    
+    // Create url and request.
     NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    // Create NSURLConnection and fetch JSON file.
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               // Parse JSON file to a dictionary object.
                                id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                               
+                               // Store JSON data into eventsJSON property.
                                self.eventsJSON = object[@"Events"];
                                
+                               // Iterate creating event model with JSON data.
                                for (int i = 0; i < self.eventsJSON.count; i++) {
                                    Event *eventModel = [[Event alloc] initWithEventDictionary:self.eventsJSON[i]];
+                                   
                                    if (!self.eventModelArray) {
                                        self.eventModelArray = [[NSMutableArray alloc] init];
                                    }
+                                   // Store event model in eventModelArray.
                                    [self.eventModelArray addObject:eventModel];
                                }
                                
+                               // Reload table view.
                                [self.tableView reloadData];
+                               
                                NSLog(@"%@", object);
                                NSLog(@"%@", self.eventModelArray);
                            }];
@@ -189,7 +194,7 @@
         // Delete the row from the data source
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+        // Create a new instance of the appropriate class, insert it in the array, and add a new row to the table view
     }   
 }
 */
