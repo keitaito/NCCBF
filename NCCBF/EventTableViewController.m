@@ -14,6 +14,7 @@
 @interface EventTableViewController ()
 
 @property (nonatomic, strong) NSArray *events;
+@property (nonatomic, strong) NSArray *eventsJSON;
 
 @end
 
@@ -38,7 +39,19 @@
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     // Store Events Array into events property
     self.events = dict[@"Events"];
+//    NSLog(@"%@", self.events);
     
+    NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    [NSURLConnection sendAsynchronousRequest:request
+                                       queue:[NSOperationQueue mainQueue]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                               self.eventsJSON = object[@"Events"];
+                               [self.tableView reloadData];
+                               NSLog(@"%@", object);
+                           }];
     
 
     // Uncomment the following line to preserve selection between presentations.
