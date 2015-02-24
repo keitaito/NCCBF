@@ -73,7 +73,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.events count];
+//    return [self.events count];
+    return [self.eventsJSON count];
 }
 
 
@@ -84,7 +85,9 @@
     
     // Get event name string from events property
     // 1. get an event
-    NSDictionary *anEvent = self.events[indexPath.row];
+//    NSDictionary *anEvent = self.events[indexPath.row];
+    NSDictionary *anEvent = self.eventsJSON[indexPath.row];
+
     // 2. get name string
     NSString *eventName = anEvent[@"name"];
     // Set title label.
@@ -117,7 +120,8 @@
         
         // Get event title string from events property
         // 1. get an event
-        NSDictionary *eventDictionary = self.events[indexPath.row];
+//        NSDictionary *eventDictionary = self.events[indexPath.row];
+        NSDictionary *eventDictionary = self.eventsJSON[indexPath.row];
         // 2. get name string
         __unused NSString *eventTitle = eventDictionary[@"name"];
 
