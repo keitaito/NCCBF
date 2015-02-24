@@ -9,6 +9,8 @@
 			<string>Taru Mikoshi</string>
 			<key>date</key>
 			<date>2015-04-20T19:00:00Z</date>
+			<key>location_id</key>
+			<string>0</string>
 			<key>location</key>
 			<string>Post St</string>
 			<key>imageString</key>
@@ -23,6 +25,8 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 			<string>Taiko</string>
 			<key>date</key>
 			<date>2015-04-20T20:00:00Z</date>
+			<key>location_id</key>
+			<string>1</string>
 			<key>location</key>
 			<string>Place A</string>
 			<key>imageString</key>
@@ -35,6 +39,8 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 			<string>Queen Contest</string>
 			<key>date</key>
 			<date>2015-04-20T21:00:00Z</date>
+			<key>location_id</key>
+			<string>2</string>
 			<key>location</key>
 			<string>Place B</string>
 			<key>imageString</key>
