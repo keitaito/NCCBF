@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>name</key>
-			<string>Taru Mikoshi</string>
+			<string>Event 1</string>
 			<key>start_at</key>
 			<date>2015-04-20T19:00:00Z</date>
 			<key>end_at</key>
@@ -24,7 +24,7 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Taiko</string>
+			<string>Event 2</string>
 			<key>start_at</key>
 			<date>2015-04-20T20:00:00Z</date>
 			<key>end_at</key>
@@ -40,7 +40,7 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Queen Contest</string>
+			<string>Event 3</string>
 			<key>start_at</key>
 			<date>2015-04-20T21:00:00Z</date>
 			<key>end_at</key>

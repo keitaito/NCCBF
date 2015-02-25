@@ -13,9 +13,9 @@
 
 @interface EventTableViewController ()
 
-@property (nonatomic, strong) NSArray *events;
-@property (nonatomic, strong) NSArray *eventsJSON;
-@property (nonatomic, strong) NSMutableArray *eventModelArray;
+@property (nonatomic, strong) NSMutableArray *eventsArray;
+//@property (nonatomic, strong) NSMutableArray *eventModelArray;
+@property (nonatomic, strong) NSArray *eventsTmpArray;
 
 
 @end
@@ -25,14 +25,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Create events with Event.plist
-    
-    // Create path for plist.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
-    // Create dictionary to store plist's root dictionary.
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    // Store Events Array in events property
-    self.events = dict[@"Events"];
+
     
     ///////////////////////////////////
 
@@ -53,29 +46,69 @@
                                // Create innerSelf to keep weakSelf, to prevent deallocating it.
                                EventTableViewController *innerSelf = weakSelf;
                                
-                               // Parse JSON file to a dictionary object.
-                               id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-                               
-                               // Store JSON data into eventsJSON property.
-                               innerSelf.eventsJSON = object[@"Events"];
+                               // Check if the data is downloaded and error.
+                               if ([data length] > 0 && connectionError == nil) {
+                                   // Store the data object in tmp array.
+                                   NSLog(@"the data is downloaded.");
+                                   
+                                   // Parse JSON file to a dictionary object.
+                                   id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+                                    NSLog(@"%@", object);
+                                   
+                                   // Store JSON data into temp array property.
+                                   innerSelf.eventsTmpArray = object[@"Events"];
+                                   
+
+                                   
+                                   
+                               } else if ([data length] == 0 && connectionError == nil) {
+                                   NSLog(@"nothing was downloaded.");
+                                   
+                                   // Create events with Event.plist
+                                   
+                                   // Create path for plist.
+                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+                                   // Create dictionary to store plist's root dictionary.
+                                   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+                                   // Store Events Array in events property
+                                   innerSelf.eventsTmpArray = dict[@"Events"];
+
+                                   
+                               } else if (connectionError != nil) {
+                                   NSLog(@"Error = %@", connectionError);
+                                   
+                                   // Create events with Event.plist
+                                   
+                                   // Create path for plist.
+                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+                                   // Create dictionary to store plist's root dictionary.
+                                   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+                                   // Store Events Array in events property
+                                   innerSelf.eventsTmpArray = dict[@"Events"];
+
+                               }
                                
                                // Iterate creating event model with JSON data.
-                               for (int i = 0; i < innerSelf.eventsJSON.count; i++) {
-                                   Event *eventModel = [[Event alloc] initWithEventDictionary:innerSelf.eventsJSON[i]];
+                               for (int i = 0; i < innerSelf.eventsTmpArray.count; i++) {
+
+                                   Event *eventModel = [[Event alloc] initWithEventDictionary:innerSelf.eventsTmpArray[i]];
                                    
-                                   if (!innerSelf.eventModelArray) {
-                                       innerSelf.eventModelArray = [[NSMutableArray alloc] init];
+                                   
+                                   if (!innerSelf.eventsArray) {
+                                       innerSelf.eventsArray = [[NSMutableArray alloc] init];
                                    }
-                                   // Store event model in eventModelArray.
-                                   [innerSelf.eventModelArray addObject:eventModel];
+                                   // Store event model in eventsArray.
+                                   [innerSelf.eventsArray addObject:eventModel];
                                }
                                
                                // Reload table view.
                                [innerSelf.tableView reloadData];
                                
-                               NSLog(@"%@", object);
-                               NSLog(@"%@", innerSelf.eventModelArray);
+                               NSLog(@"%@", innerSelf.eventsArray);
+                            
                            }];
+    
+
     
 
     // Uncomment the following line to preserve selection between presentations.
@@ -97,9 +130,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-//    return [self.events count];
-//    return [self.eventsJSON count];
-    return [self.eventModelArray count];
+    return [self.eventsArray count];
 }
 
 
@@ -110,13 +141,9 @@
     
     // Get event name string from events property
     // 1. get an event
-//    NSDictionary *anEvent = self.events[indexPath.row];
-//    NSDictionary *anEvent = self.eventsJSON[indexPath.row];
-    Event *anEvent = self.eventModelArray[indexPath.row];
+    Event *anEvent = self.eventsArray[indexPath.row];
 
-//    // 2. get name string
-//    NSString *eventName = anEvent[@"name"];
-    // Set title label.
+    // Set a title label.
     cell.titleLabel.text = anEvent.name;
     
     // Set poster view.
@@ -148,12 +175,12 @@
         // Get event title string from events property
         // 1. get an event
 //        NSDictionary *eventDictionary = self.events[indexPath.row];
-        NSDictionary *eventDictionary = self.eventsJSON[indexPath.row];
-        // 2. get name string
-        __unused NSString *eventTitle = eventDictionary[@"name"];
+        Event *eventDetail = self.eventsArray[indexPath.row];
+//        // 2. get name string
+//        __unused NSString *eventTitle = eventDictionary[@"name"];
 
 //        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
-        Event *eventDetail = [[Event alloc] initWithEventDictionary:eventDictionary];
+//        Event *eventDetail = [[Event alloc] initWithEventDictionary:eventDictionary];
         eventDetailViewController.eventDetail = eventDetail;
     }
 }

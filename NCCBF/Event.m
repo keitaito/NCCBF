@@ -52,7 +52,7 @@ static NSDictionary *locations;
 - (NSString *)description
 {
     //    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
-    return [NSString stringWithFormat:@"<Event - name:%@, date:$%@, location:%@, image_name:%@, description:%@>", self.name, self.date, self.location, self.imageString, self.eventDescription];
+    return [NSString stringWithFormat:@"<Event - name:%@, date:$%@, location:%@>", self.name, self.date, self.location];
 }
 
 
