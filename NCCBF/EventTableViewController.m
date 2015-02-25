@@ -38,6 +38,9 @@
 
     // Fetch events data JSON file from online.
     
+    // Before using block in NSURLConnection, create weakSelf to prevent strong reference cycle.
+    __weak EventTableViewController *weakSelf = self;
+    
     // Create url and request.
     NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
     NSURL *url = [NSURL URLWithString:urlString];
@@ -46,28 +49,32 @@
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
                            completionHandler:^(NSURLResponse *response, NSData *data, NSError *connectionError) {
+                               
+                               // Create innerSelf to keep weakSelf, to prevent deallocating it.
+                               EventTableViewController *innerSelf = weakSelf;
+                               
                                // Parse JSON file to a dictionary object.
                                id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
                                
                                // Store JSON data into eventsJSON property.
-                               self.eventsJSON = object[@"Events"];
+                               innerSelf.eventsJSON = object[@"Events"];
                                
                                // Iterate creating event model with JSON data.
-                               for (int i = 0; i < self.eventsJSON.count; i++) {
-                                   Event *eventModel = [[Event alloc] initWithEventDictionary:self.eventsJSON[i]];
+                               for (int i = 0; i < innerSelf.eventsJSON.count; i++) {
+                                   Event *eventModel = [[Event alloc] initWithEventDictionary:innerSelf.eventsJSON[i]];
                                    
-                                   if (!self.eventModelArray) {
-                                       self.eventModelArray = [[NSMutableArray alloc] init];
+                                   if (!innerSelf.eventModelArray) {
+                                       innerSelf.eventModelArray = [[NSMutableArray alloc] init];
                                    }
                                    // Store event model in eventModelArray.
-                                   [self.eventModelArray addObject:eventModel];
+                                   [innerSelf.eventModelArray addObject:eventModel];
                                }
                                
                                // Reload table view.
-                               [self.tableView reloadData];
+                               [innerSelf.tableView reloadData];
                                
                                NSLog(@"%@", object);
-                               NSLog(@"%@", self.eventModelArray);
+                               NSLog(@"%@", innerSelf.eventModelArray);
                            }];
     
 

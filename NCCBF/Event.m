@@ -10,7 +10,7 @@
 
 @interface Event ()
 
-@property (strong, nonatomic) NSArray *events;
+//@property (strong, nonatomic) NSArray *events;
 
 @end
 
