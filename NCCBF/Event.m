@@ -33,6 +33,8 @@ static NSDictionary *locations;
     
     self.name = dictionary[@"name"];
     self.date = dictionary[@"start_at"];
+    self.date = dictionary[@"end_at"];
+    
     self.locationId = [dictionary[@"location_id"] intValue];
     self.location = [self locationConvertedFromLocationId:self.locationId];
     self.imageString = dictionary[@"image_name"];

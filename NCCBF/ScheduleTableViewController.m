@@ -78,6 +78,9 @@
     
     // Configure the cell...
     
+    
+    // Event name
+    
     // Get event name string from events property
     // Get an event.
     Event *anEvent = self.eventsArray[indexPath.row];
@@ -85,22 +88,29 @@
     // Set title label.
     cell.titleLabel.text = anEvent.name;
     
+    
+    // Start time
+    
     // get date from anEvent dictionary.
     NSDate *eventDate = anEvent.date;
     // Instantiate NSDateFormatter
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    NSDateFormatter *startTimeFormatter = [[NSDateFormatter alloc] init];
     // set dateFormat.
-    [dateFormatter setDateFormat:@"MM dd 'at' HH:mm"];
+    [startTimeFormatter setDateFormat:@"h:mm a"];
     // create date string from eventDate with dateFormatter.
-    NSString *eventDateString = [dateFormatter stringFromDate:eventDate];
+    NSString *eventStartTimeString = [startTimeFormatter stringFromDate:eventDate];
     
-    NSLog(@"%@", eventDateString);
+    NSLog(@"%@", eventStartTimeString);
     
     // Set event time label.
-    cell.timeLabel.text = eventDateString;
+    cell.timeLabel.text = eventStartTimeString;
     
-//     Set title label.
-//    cell.titleLabel.text = self.events[indexPath.row];
+    
+    // End time
+    
+    
+    
+    
     
     return cell;
 }
