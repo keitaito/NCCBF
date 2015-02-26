@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Event.h"
+@class Event;
 
 @interface EventDetailViewController : UIViewController
 
