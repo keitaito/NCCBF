@@ -36,8 +36,13 @@
     
     // Create url and request.
     NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
+    
+    // For test
+    urlString = nil;
+    
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
+    
     // Create NSURLConnection and fetch JSON file.
     [NSURLConnection sendAsynchronousRequest:request
                                        queue:[NSOperationQueue mainQueue]
