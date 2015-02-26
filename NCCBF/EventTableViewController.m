@@ -72,7 +72,7 @@
                                    // Create events with Event.plist
                                    
                                    // Create path for plist.
-                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
                                    // Create dictionary to store plist's root dictionary.
                                    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
                                    // Store Events Array in events property
@@ -85,7 +85,7 @@
                                    // Create events with Event.plist
                                    
                                    // Create path for plist.
-                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
                                    // Create dictionary to store plist's root dictionary.
                                    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
                                    // Store Events Array in events property
