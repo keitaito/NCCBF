@@ -8,10 +8,12 @@
 
 #import "ScheduleTableViewController.h"
 #import "ScheduleTableViewCell.h"
+#import "Event.h"
 
 @interface ScheduleTableViewController ()
 
-@property (nonatomic, strong) NSArray *events;
+@property (nonatomic, strong) NSMutableArray *eventsArray;
+@property (nonatomic, strong) NSArray *eventsTmpArray;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *dateSegment;
 
 @end
@@ -22,20 +24,36 @@
     [super viewDidLoad];
         
     // Create path for plist.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     // Store Events Array into events property
-    self.events = dict[@"Events"];
+    self.eventsTmpArray = dict[@"Events"];
     
+    // Iterate creating event model with JSON data.
+    for (int i = 0; i < self.eventsTmpArray.count; i++) {
+        
+        Event *eventModel = [[Event alloc] initWithEventDictionary:self.eventsTmpArray[i]];
+        
+        if (!self.eventsArray) {
+            self.eventsArray = [[NSMutableArray alloc] init];
+        }
+        // Store event model in eventsArray.
+        [self.eventsArray addObject:eventModel];
+    }
     
+    // Reload table view.
+    [self.tableView reloadData];
+    
+    NSLog(@"%@", self.eventsArray);
+
+
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
-    
+
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    NSLog(@"ScheduleTableView");
 }
 
 
@@ -51,7 +69,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return [self.events count];
+    return [self.eventsArray count];
 }
 
 
@@ -61,15 +79,14 @@
     // Configure the cell...
     
     // Get event name string from events property
-    // 1. get an event
-    NSDictionary *anEvent = self.events[indexPath.row];
-    // 2. get name string
-    NSString *eventName = anEvent[@"name"];
+    // Get an event.
+    Event *anEvent = self.eventsArray[indexPath.row];
+
     // Set title label.
-    cell.titleLabel.text = eventName;
+    cell.titleLabel.text = anEvent.name;
     
     // get date from anEvent dictionary.
-    NSDate *eventDate = anEvent[@"start_at"];
+    NSDate *eventDate = anEvent.date;
     // Instantiate NSDateFormatter
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     // set dateFormat.
