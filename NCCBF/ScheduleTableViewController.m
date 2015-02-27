@@ -16,7 +16,10 @@
 @property (nonatomic, strong) NSArray *eventsTmpArray;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *dateSegment;
 
-
+@property (nonatomic, strong) NSDate *apr11;
+@property (nonatomic, strong) NSDate *apr12;
+@property (nonatomic, strong) NSDate *apr18;
+@property (nonatomic, strong) NSDate *apr19;
 
 @end
 
@@ -47,19 +50,23 @@
     
     NSString *apr11String = @"2015-04-11 00:00:00";
     NSString *apr12String = @"2015-04-12 00:00:00";
+    NSString *apr18String = @"2015-04-18 00:00:00";
+    NSString *apr19String = @"2015-04-19 00:00:00";
+    
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
 //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
 //    [dateFormatter setTimeZone:tz];
     
-    NSDate *apr11 = [dateFormatter dateFromString:apr11String];
-    NSDate *apr12 = [dateFormatter dateFromString:apr12String];
-    NSLog(@"%@", [dateFormatter stringFromDate:apr11]);
+    self.apr11 = [dateFormatter dateFromString:apr11String];
+    self.apr12 = [dateFormatter dateFromString:apr12String];
+    self.apr18 = [dateFormatter dateFromString:apr18String];
+    self.apr19 = [dateFormatter dateFromString:apr19String];
     
     NSMutableArray *apr11Events = [[NSMutableArray alloc] init];
     
     for (Event *event in self.eventsArray) {
-        if ([event.date laterDate:apr11] == event.date && [event.date earlierDate:apr12] == event.date) {
+        if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
             [apr11Events addObject:event];
         }
     }
