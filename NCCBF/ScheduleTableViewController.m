@@ -16,6 +16,8 @@
 @property (nonatomic, strong) NSArray *eventsTmpArray;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *dateSegment;
 
+
+
 @end
 
 @implementation ScheduleTableViewController
@@ -41,14 +43,50 @@
         // Store event model in eventsArray.
         [self.eventsArray addObject:eventModel];
     }
+
+    
+    NSString *apr11String = @"2015-04-11 00:00:00";
+    NSString *apr12String = @"2015-04-12 00:00:00";
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+//    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+//    [dateFormatter setTimeZone:tz];
+    
+    NSDate *apr11 = [dateFormatter dateFromString:apr11String];
+    NSDate *apr12 = [dateFormatter dateFromString:apr12String];
+    NSLog(@"%@", [dateFormatter stringFromDate:apr11]);
+    
+    NSMutableArray *apr11Events = [[NSMutableArray alloc] init];
+    
+    for (Event *event in self.eventsArray) {
+        if ([event.date laterDate:apr11] == event.date && [event.date earlierDate:apr12] == event.date) {
+            [apr11Events addObject:event];
+        }
+    }
+    NSLog(@"apr 11 events: \n%@", apr11Events);
+    
+    self.eventsArray = apr11Events;
+    
+//    NSLog(@"%@", [date descriptionWithCalendarFormat:nil timeZone:tz locale:nil]);
+    
+//    NSLog(@"date:\n\n\n%@\n\n\n\n\n", date);
+//    NSLog(@"%@", [NSTimeZone knownTimeZoneNames]);
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     // Reload table view.
     [self.tableView reloadData];
     
     NSLog(@"%@", self.eventsArray);
 
-
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
 
