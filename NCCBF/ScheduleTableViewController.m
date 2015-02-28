@@ -155,26 +155,24 @@
     
     // Start time
     
-    // get date from anEvent dictionary.
+    // Get date from anEvent dictionary.
     NSDate *eventDate = anEvent.date;
-    // Instantiate NSDateFormatter
-    NSDateFormatter *startTimeFormatter = [[NSDateFormatter alloc] init];
-    // set dateFormat.
-    [startTimeFormatter setDateFormat:@"h:mm a"];
-    // create date string from eventDate with dateFormatter.
-    NSString *eventStartTimeString = [startTimeFormatter stringFromDate:eventDate];
+    // End time.
+    NSDate *endTime = anEvent.endTime;
     
-    NSLog(@"%@", eventStartTimeString);
+    // Instantiate NSDateFormatter
+    NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    // set dateFormat.
+    [timeFormatter setDateFormat:@"h:mm a"];
+    // create date string from eventDate with dateFormatter.
+    NSString *eventStartTimeString = [timeFormatter stringFromDate:eventDate];
+    NSString *eventEndTimeString = [timeFormatter stringFromDate:endTime];
+    
+//    NSLog(@"%@", eventStartTimeString);
     
     // Set event time label.
-    cell.timeLabel.text = eventStartTimeString;
-    
-    
-    // End time
-    
-    
-    
-    
+    cell.startTimeLabel.text = [NSString stringWithFormat:@"Start: %@", eventStartTimeString];
+    cell.EndTimeLabel.text = [NSString stringWithFormat:@"End: %@", eventEndTimeString];
     
     return cell;
 }
