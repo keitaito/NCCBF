@@ -47,6 +47,22 @@
         }
         // Store event model in eventsArray.
         [self.eventsArray addObject:eventModel];
+        
+        // Log date with PDT
+        NSLocale* currentLoc = [NSLocale currentLocale];
+        NSLog(@"%@",[eventModel.date descriptionWithLocale:currentLoc]);
+        
+        //Create the dateformatter object
+        NSDateFormatter* formatter = [[NSDateFormatter alloc] init] ;
+        
+        //Set the required date format
+        [formatter setDateFormat:@"yyyy-MM-dd HH:mm:SS"];
+        
+        //Get the string date
+        NSString* str = [formatter stringFromDate:eventModel.date];
+        
+        //Display on the console
+        NSLog(@"%@", str);
     }
     
     self.allEventsArray = [NSMutableArray arrayWithArray:self.eventsArray];
@@ -74,7 +90,7 @@
             [apr11Events addObject:event];
         }
     }
-    NSLog(@"apr 11 events: \n%@", apr11Events);
+//    NSLog(@"apr 11 events: \n%@", apr11Events);
     
     self.eventsArray = apr11Events;
     
@@ -96,7 +112,7 @@
     // Reload table view.
     [self.tableView reloadData];
     
-    NSLog(@"%@", self.eventsArray);
+//    NSLog(@"%@", self.eventsArray);
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
