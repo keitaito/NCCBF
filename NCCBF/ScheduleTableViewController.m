@@ -166,13 +166,67 @@
     
     if (selectedSegment == 0) {
         NSLog(@"Apr 11 schedule");
+        
+        NSMutableArray *apr11EventsArray = [[NSMutableArray alloc] init];
+        
+        for (Event *event in self.eventsArray) {
+            if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
+                [apr11EventsArray addObject:event];
+            }
+        }
+        NSLog(@"apr 11 events: \n%@", apr11EventsArray);
+        
+        self.eventsArray = apr11EventsArray;
+        
+        self.tableView.dataSource = self;
+
     } else if (selectedSegment == 1) {
         NSLog(@"Apr 12 schedule");
+        
+        NSMutableArray *apr12EventsArray = [[NSMutableArray alloc] init];
+        
+        for (Event *event in self.eventsArray) {
+            if ([event.date laterDate:self.apr12] == event.date && [event.date earlierDate:self.apr18] == event.date) {
+                [apr12EventsArray addObject:event];
+            }
+        }
+        NSLog(@"apr 12 events: \n%@", apr12EventsArray);
+        
+        self.eventsArray = apr12EventsArray;
+        
+        
     } else if (selectedSegment == 2) {
         NSLog(@"Apr 18 schedule");
+        
+        NSMutableArray *apr18EventsArray = [[NSMutableArray alloc] init];
+        
+        for (Event *event in self.eventsArray) {
+            if ([event.date laterDate:self.apr18] == event.date && [event.date earlierDate:self.apr19] == event.date) {
+                [apr18EventsArray addObject:event];
+            }
+        }
+        NSLog(@"apr 18 events: \n%@", apr18EventsArray);
+        
+        self.eventsArray = apr18EventsArray;
+        
+        
     } else if (selectedSegment == 3) {
         NSLog(@"Apr 19 schedule");
+        
+        NSMutableArray *apr19EventsArray = [[NSMutableArray alloc] init];
+        
+        for (Event *event in self.eventsArray) {
+            if ([event.date laterDate:self.apr19] == event.date) {
+                [apr19EventsArray addObject:event];
+            }
+        }
+        NSLog(@"apr 19 events: \n%@", apr19EventsArray);
+        
+        self.eventsArray = apr19EventsArray;
+        
     }
+    
+    [self.tableView reloadData];
 }
 
 
