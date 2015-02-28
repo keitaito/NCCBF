@@ -83,22 +83,21 @@
     self.apr18 = [dateFormatter dateFromString:apr18String];
     self.apr19 = [dateFormatter dateFromString:apr19String];
     
-    NSMutableArray *apr11Events = [[NSMutableArray alloc] init];
+    NSMutableArray *apr11EventsArray = [[NSMutableArray alloc] init];
     
     for (Event *event in self.allEventsArray) {
         if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
-            [apr11Events addObject:event];
+            [apr11EventsArray addObject:event];
         }
     }
 //    NSLog(@"apr 11 events: \n%@", apr11Events);
     
-    self.eventsArray = apr11Events;
     
-//    NSLog(@"%@", [date descriptionWithCalendarFormat:nil timeZone:tz locale:nil]);
-    
-//    NSLog(@"date:\n\n\n%@\n\n\n\n\n", date);
-//    NSLog(@"%@", [NSTimeZone knownTimeZoneNames]);
-    
+    // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+    NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    // Convert NSArray to NSMutableArray.
+    self.eventsArray = [orderedApr11Array mutableCopy];
     
     
     
@@ -196,7 +195,13 @@
         }
         NSLog(@"apr 11 events: \n%@", apr11EventsArray);
         
-        self.eventsArray = apr11EventsArray;
+        // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        // Convert NSArray to NSMutableArray.
+        self.eventsArray = [orderedApr11Array mutableCopy];
+        
+//        self.eventsArray = apr11EventsArray;
         
 
     } else if (selectedSegment == 1) {
@@ -211,7 +216,13 @@
         }
         NSLog(@"apr 12 events: \n%@", apr12EventsArray);
         
-        self.eventsArray = apr12EventsArray;
+        // Sort Apr 12 events array by date and time with sortDescriptor. date property has time.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSArray *orderedApr12Array = [apr12EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        // Convert NSArray to NSMutableArray.
+        self.eventsArray = [orderedApr12Array mutableCopy];
+        
+//        self.eventsArray = apr12EventsArray;
         
         
     } else if (selectedSegment == 2) {
@@ -226,7 +237,13 @@
         }
         NSLog(@"apr 18 events: \n%@", apr18EventsArray);
         
-        self.eventsArray = apr18EventsArray;
+        // Sort Apr 18 events array by date and time with sortDescriptor. date property has time.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSArray *orderedApr18Array = [apr18EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        // Convert NSArray to NSMutableArray.
+        self.eventsArray = [orderedApr18Array mutableCopy];
+        
+//        self.eventsArray = apr18EventsArray;
         
         
     } else if (selectedSegment == 3) {
@@ -241,7 +258,13 @@
         }
         NSLog(@"apr 19 events: \n%@", apr19EventsArray);
         
-        self.eventsArray = apr19EventsArray;
+        // Sort Apr 19 events array by date and time with sortDescriptor. date property has time.
+        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSArray *orderedApr19Array = [apr19EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        // Convert NSArray to NSMutableArray.
+        self.eventsArray = [orderedApr19Array mutableCopy];
+        
+//        self.eventsArray = apr19EventsArray;
         
     }
     

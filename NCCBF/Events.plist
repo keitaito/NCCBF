@@ -42,7 +42,7 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 			<key>name</key>
 			<string>Event 3</string>
 			<key>start_at</key>
-			<date>2015-04-12T21:00:00Z</date>
+			<date>2015-04-12T16:00:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-12T22:00:00Z</date>
 			<key>location_id</key>
@@ -59,7 +59,7 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-18T19:00:00Z</date>
+			<date>2015-04-18T18:00:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-18T20:00:00Z</date>
 			<key>location_id</key>
@@ -75,7 +75,7 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-19T19:00:00Z</date>
+			<date>2015-04-19T16:00:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-19T20:00:00Z</date>
 			<key>location_id</key>
@@ -107,7 +107,7 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-12T19:00:00Z</date>
+			<date>2015-04-12T21:00:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-12T20:00:00Z</date>
 			<key>location_id</key>
@@ -123,7 +123,7 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-18T19:00:00Z</date>
+			<date>2015-04-18T18:30:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-18T20:00:00Z</date>
 			<key>location_id</key>
@@ -139,7 +139,7 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-19T19:00:00Z</date>
+			<date>2015-04-19T17:45:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-19T20:00:00Z</date>
 			<key>location_id</key>
@@ -171,7 +171,7 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-12T19:00:00Z</date>
+			<date>2015-04-12T18:30:00Z</date>
 			<key>end_at</key>
 			<date>2015-04-12T20:00:00Z</date>
 			<key>location_id</key>
