@@ -13,7 +13,9 @@
 @interface ScheduleTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *eventsArray;
-@property (nonatomic, strong) NSArray *eventsTmpArray;
+@property (nonatomic, strong) NSArray *eventsPlistArray;
+@property (nonatomic, strong) NSMutableArray *allEventsArray;
+
 @property (weak, nonatomic) IBOutlet UISegmentedControl *dateSegment;
 
 @property (nonatomic, strong) NSDate *apr11;
@@ -33,12 +35,12 @@
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     // Store Events Array into events property
-    self.eventsTmpArray = dict[@"Events"];
+    self.eventsPlistArray = dict[@"Events"];
     
     // Iterate creating event model with JSON data.
-    for (int i = 0; i < self.eventsTmpArray.count; i++) {
+    for (int i = 0; i < self.eventsPlistArray.count; i++) {
         
-        Event *eventModel = [[Event alloc] initWithEventDictionary:self.eventsTmpArray[i]];
+        Event *eventModel = [[Event alloc] initWithEventDictionary:self.eventsPlistArray[i]];
         
         if (!self.eventsArray) {
             self.eventsArray = [[NSMutableArray alloc] init];
@@ -46,6 +48,8 @@
         // Store event model in eventsArray.
         [self.eventsArray addObject:eventModel];
     }
+    
+    self.allEventsArray = [NSMutableArray arrayWithArray:self.eventsArray];
 
     
     NSString *apr11String = @"2015-04-11 00:00:00";
@@ -65,7 +69,7 @@
     
     NSMutableArray *apr11Events = [[NSMutableArray alloc] init];
     
-    for (Event *event in self.eventsArray) {
+    for (Event *event in self.allEventsArray) {
         if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
             [apr11Events addObject:event];
         }
@@ -169,7 +173,7 @@
         
         NSMutableArray *apr11EventsArray = [[NSMutableArray alloc] init];
         
-        for (Event *event in self.eventsArray) {
+        for (Event *event in self.allEventsArray) {
             if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
                 [apr11EventsArray addObject:event];
             }
@@ -178,14 +182,13 @@
         
         self.eventsArray = apr11EventsArray;
         
-        self.tableView.dataSource = self;
 
     } else if (selectedSegment == 1) {
         NSLog(@"Apr 12 schedule");
         
         NSMutableArray *apr12EventsArray = [[NSMutableArray alloc] init];
         
-        for (Event *event in self.eventsArray) {
+        for (Event *event in self.allEventsArray) {
             if ([event.date laterDate:self.apr12] == event.date && [event.date earlierDate:self.apr18] == event.date) {
                 [apr12EventsArray addObject:event];
             }
@@ -200,7 +203,7 @@
         
         NSMutableArray *apr18EventsArray = [[NSMutableArray alloc] init];
         
-        for (Event *event in self.eventsArray) {
+        for (Event *event in self.allEventsArray) {
             if ([event.date laterDate:self.apr18] == event.date && [event.date earlierDate:self.apr19] == event.date) {
                 [apr18EventsArray addObject:event];
             }
@@ -215,7 +218,7 @@
         
         NSMutableArray *apr19EventsArray = [[NSMutableArray alloc] init];
         
-        for (Event *event in self.eventsArray) {
+        for (Event *event in self.allEventsArray) {
             if ([event.date laterDate:self.apr19] == event.date) {
                 [apr19EventsArray addObject:event];
             }
