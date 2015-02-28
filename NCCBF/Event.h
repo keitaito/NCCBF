@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+
 @interface Event : NSObject
 
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) NSDate *endTime;
+@property (nonatomic, assign) NSInteger locationId;
 @property (nonatomic, strong) NSString *location;
 @property (nonatomic, strong) NSString *imageString;
 @property (nonatomic, strong) NSString *eventDescription;

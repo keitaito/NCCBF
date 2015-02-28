@@ -7,6 +7,7 @@
 //
 
 #import "EventDetailViewController.h"
+#import "Event.h"
 
 @interface EventDetailViewController ()
 

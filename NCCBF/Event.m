@@ -10,46 +10,53 @@
 
 @interface Event ()
 
-@property (strong, nonatomic) NSArray *events;
+//@property (strong, nonatomic) NSArray *events;
 
 @end
 
+static NSDictionary *locations;
+
 @implementation Event
+
+
+// Set up static locations variable.
++ (void)initialize
+{
+    locations = @{@0: @"Post St",
+                  @1: @"Laguna St",
+                  @2: @"Webster St"};
+}
+
 
 - (instancetype)initWithEventDictionary:(NSDictionary *)dictionary {
     self = [super init];
     
     self.name = dictionary[@"name"];
-    self.date = dictionary[@"date"];
-    self.location = dictionary[@"location"];
-    self.imageString = dictionary[@"imageString"];
-    self.eventDescription = dictionary[@"eventDescription"];
+    self.date = dictionary[@"start_at"];
+    self.endTime = dictionary[@"end_at"];
+    
+    self.locationId = [dictionary[@"location_id"] intValue];
+    self.location = [self locationConvertedFromLocationId:self.locationId];
+    self.imageString = dictionary[@"image_name"];
+    self.eventDescription = dictionary[@"description"];
     
     return self;
 }
 
+- (NSString *)locationConvertedFromLocationId:(int)i
+{
+    NSNumber *num = [[NSNumber alloc] initWithInt:i];
+    
+    return locations[num];
+}
 
 
+- (NSString *)description
+{
+    //    return [NSString stringWithFormat:@"<Employee %d>", self.employeeID];
+    return [NSString stringWithFormat:@"<Event - name:%@, date:$%@, location:%@>", self.name, self.date, self.location];
+}
 
-//- (instancetype)initWithEventTitle:(NSString *)title {
-//    self = [super init];
-//    
-//    if (self) {
-//        // Create path for plist.
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"Event" ofType:@"plist"];
-//        // Create dictionary to store plist's root dictionary.
-//        NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-//        // Store Events Array into events property
-//        self.events = dict[@"Events"];
-//        
-//        self.name = title;
-//        self.eventDescription = @"eventDescription";
-//        
-//    }
-//    
-//    NSLog(@"an instance of Event class initialized");
-//    
-//    return self;
-//}
+
 
 @end
