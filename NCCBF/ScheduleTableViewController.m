@@ -94,8 +94,9 @@
     
     
     // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
-    NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+    NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+    NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
     // Convert NSArray to NSMutableArray.
     self.eventsArray = [orderedApr11Array mutableCopy];
     
@@ -194,8 +195,9 @@
         NSLog(@"apr 11 events: \n%@", apr11EventsArray);
         
         // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
-        NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+        NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
         // Convert NSArray to NSMutableArray.
         self.eventsArray = [orderedApr11Array mutableCopy];
         
@@ -215,8 +217,9 @@
         NSLog(@"apr 12 events: \n%@", apr12EventsArray);
         
         // Sort Apr 12 events array by date and time with sortDescriptor. date property has time.
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
-        NSArray *orderedApr12Array = [apr12EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+        NSArray *orderedApr12Array = [apr12EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
         // Convert NSArray to NSMutableArray.
         self.eventsArray = [orderedApr12Array mutableCopy];
         
@@ -236,8 +239,9 @@
         NSLog(@"apr 18 events: \n%@", apr18EventsArray);
         
         // Sort Apr 18 events array by date and time with sortDescriptor. date property has time.
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
-        NSArray *orderedApr18Array = [apr18EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+        NSArray *orderedApr18Array = [apr18EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
         // Convert NSArray to NSMutableArray.
         self.eventsArray = [orderedApr18Array mutableCopy];
         
@@ -257,8 +261,9 @@
         NSLog(@"apr 19 events: \n%@", apr19EventsArray);
         
         // Sort Apr 19 events array by date and time with sortDescriptor. date property has time.
-        NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
-        NSArray *orderedApr19Array = [apr19EventsArray sortedArrayUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+        NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+        NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+        NSArray *orderedApr19Array = [apr19EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
         // Convert NSArray to NSMutableArray.
         self.eventsArray = [orderedApr19Array mutableCopy];
         

@@ -91,9 +91,9 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-11T19:30:00Z</date>
-			<key>end_at</key>
 			<date>2015-04-11T20:00:00Z</date>
+			<key>end_at</key>
+			<date>2015-04-12T00:00:00Z</date>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
