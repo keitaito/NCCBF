@@ -8,6 +8,7 @@
 
 #import "Event.h"
 
+
 @interface Event ()
 
 //@property (strong, nonatomic) NSArray *events;
@@ -15,6 +16,7 @@
 @end
 
 static NSDictionary *locations;
+//static NSDictionary *locationCoordinates;
 
 @implementation Event
 
@@ -25,6 +27,15 @@ static NSDictionary *locations;
     locations = @{@0: @"Post St",
                   @1: @"Laguna St",
                   @2: @"Webster St"};
+    
+//    CLLocationCoordinate2D theCoordinate;
+//    theCoordinate.latitude = 37.785257;
+//    theCoordinate.longitude = -122.429648;
+    
+    
+//    locationCoordinates = @{@0:
+//                            
+//                            };
 }
 
 
@@ -43,9 +54,9 @@ static NSDictionary *locations;
     return self;
 }
 
-- (NSString *)locationConvertedFromLocationId:(int)i
+- (NSString *)locationConvertedFromLocationId:(NSInteger)i
 {
-    NSNumber *num = [[NSNumber alloc] initWithInt:i];
+    NSNumber *num = [[NSNumber alloc] initWithInteger:i];
     
     return locations[num];
 }
