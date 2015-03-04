@@ -17,6 +17,8 @@
 //@property (nonatomic, strong) NSMutableArray *eventModelArray;
 @property (nonatomic, strong) NSArray *eventsTmpArray;
 
+@property (nonatomic, strong) NSDictionary *DataDict;
+
 
 @end
 
@@ -25,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    [self loadDataFromDocDir];
     
     ///////////////////////////////////
 
@@ -62,6 +64,8 @@
                                    
                                    // Store JSON data into temp array property.
                                    innerSelf.eventsTmpArray = object[@"Events"];
+                                   
+                                   [innerSelf saveData:object];
                                    
 
                                    
@@ -123,6 +127,55 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+#pragma mark - Load and Save methods
+
+- (void)loadDataFromDocDir {
+    
+    // create path to Events.plist in documents directory.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    // check if file exists.
+    if (![fileManager fileExistsAtPath:path]) {
+        // If it doesn't, copy it from the default file in main bundle.
+        NSLog(@"path doesn't exist. plist file will be copied to the path from main bundle.");
+        // create path to Events.plist in main bundle.
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+        if (bundlePath) {
+            NSLog(@"file exists in the main bundle.");
+            NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:bundlePath];
+            NSLog(@"Bundle Events.plist file is --> %@", [resultDictionary description]);
+            
+            // copy dictionary from main bundle to document directory path.
+            [fileManager copyItemAtPath:bundlePath toPath:path error:nil];
+            NSLog(@"plist file is copied from main bundle to document directory");
+        } else {
+            NSLog(@"Events.plist not found in main bundle. Please, make sure it is part of the bundle.");
+        }
+        // use this to delete file from documents directory
+        // [fileManager removeItemAtPath:path error:nil];
+    }
+    
+    // store plist file which is in documents directory to dictionary.
+    NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"Loaded Events.plist file at Documents Directory is --> %@", [resultDictionary description]);
+    
+    if (resultDictionary) {
+        // Store resultDictionary in DataDict.
+        self.DataDict = resultDictionary;
+
+    } else {
+        NSLog(@"WARNING: Couldn't create dictionary from Events.plist at Documents Dicretory! Default values will be used!");
+    }
+
+}
+
+- (void)saveData:(id)object {
+    
+    
+}
 
 #pragma mark - Table view data source
 
