@@ -135,12 +135,13 @@
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths firstObject];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
+    NSLog(@"path to plist file in documents directory --> \n%@", path);
     
     NSFileManager *fileManager = [NSFileManager defaultManager];
     // check if file exists.
     if (![fileManager fileExistsAtPath:path]) {
         // If it doesn't, copy it from the default file in main bundle.
-        NSLog(@"path doesn't exist. plist file will be copied to the path from main bundle.");
+        NSLog(@"path does not exist. plist file will be copied to the path from main bundle.");
         // create path to Events.plist in main bundle.
         NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
         if (bundlePath) {
@@ -174,6 +175,22 @@
 
 - (void)saveData:(id)object {
     
+    // Get path to Events.plist.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
+    
+    // Create dictionary from plist file in documetns directory.
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+    
+    // Save object data.
+    [dict setObject:object forKey:@"Root"];
+    
+    // writing to Events.plist
+    [dict writeToFile:path atomically:YES];
+    
+    NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"Saved Events.plist file in Documents Direcotry --> \n%@", [resultDictionary description]);
     
 }
 
