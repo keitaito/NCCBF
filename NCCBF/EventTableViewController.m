@@ -26,6 +26,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    // Load data file from documents directory. If there is no file, a file in main bundle gets copied there.
     [self loadDataFromDocDir];
     
     ///////////////////////////////////
