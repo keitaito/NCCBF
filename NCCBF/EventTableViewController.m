@@ -13,9 +13,10 @@
 
 @interface EventTableViewController ()
 
-@property (nonatomic, strong) NSMutableArray *eventsArray;
-//@property (nonatomic, strong) NSMutableArray *eventModelArray;
+@property (nonatomic, strong) NSArray *eventsArray;
 @property (nonatomic, strong) NSArray *eventsTmpArray;
+
+@property (nonatomic, strong) NSDictionary *DataDict;
 
 
 @end
@@ -25,7 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-
+    // Load data file from documents directory. If there is no file, a file in main bundle gets copied there.
+    [self loadDataFromDocDir];
     
     ///////////////////////////////////
 
@@ -38,7 +40,7 @@
     NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
     
     // For test
-    urlString = nil;
+//    urlString = nil;
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -63,53 +65,64 @@
                                    // Store JSON data into temp array property.
                                    innerSelf.eventsTmpArray = object[@"Events"];
                                    
-
-                                   
+                                   // Save the latest Events data from online in local Documents Directory.
+                                   NSLog(@"Will save the latest events data in documents directory.");
+                                   [innerSelf saveData:object];
                                    
                                } else if ([data length] == 0 && connectionError == nil) {
                                    NSLog(@"nothing was downloaded.");
                                    
-                                   // Create events with Event.plist
-                                   
-                                   // Create path for plist.
-                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
-                                   // Create dictionary to store plist's root dictionary.
-                                   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-                                   // Store Events Array in events property
-                                   innerSelf.eventsTmpArray = dict[@"Events"];
-
+//                                   // Create events with Events.plist
+//                                   // Create path for plist.
+//                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+//                                   // Create dictionary to store plist's root dictionary.
+//                                   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+//                                   // Store Events Array in events property
+//                                   innerSelf.eventsTmpArray = dict[@"Events"];
+                                   innerSelf.eventsTmpArray = innerSelf.DataDict[@"Events"];
+                                   NSLog(@"Will load events data from documents directory.");
                                    
                                } else if (connectionError != nil) {
+                                   NSLog(@"Couldn't connect.");
                                    NSLog(@"Error = %@", connectionError);
                                    
-                                   // Create events with Event.plist
-                                   
-                                   // Create path for plist.
-                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
-                                   // Create dictionary to store plist's root dictionary.
-                                   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-                                   // Store Events Array in events property
-                                   innerSelf.eventsTmpArray = dict[@"Events"];
+//                                   // Create events with Events.plist
+//                                   // Create path for plist.
+//                                   NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+//                                   // Create dictionary to store plist's root dictionary.
+//                                   NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+//                                   // Store Events Array in events property
+//                                   innerSelf.eventsTmpArray = dict[@"Events"];
+                                   innerSelf.eventsTmpArray = innerSelf.DataDict[@"Events"];
+                                   NSLog(@"Will load events data from documents directory.");
 
                                }
                                
-                               // Iterate creating event model with JSON data.
+                               // temporary array for iterate.
+                               NSMutableArray *arrayForIterate = [[NSMutableArray alloc] init];
+                               
+                               // Iterate creating event model with Events data.
                                for (int i = 0; i < innerSelf.eventsTmpArray.count; i++) {
-
+                                   
+                                   // Create Event model objects with Events data.
                                    Event *eventModel = [[Event alloc] initWithEventDictionary:innerSelf.eventsTmpArray[i]];
+                                   // Add an eventModel in array.
+                                   [arrayForIterate addObject:eventModel];
                                    
-                                   
-                                   if (!innerSelf.eventsArray) {
-                                       innerSelf.eventsArray = [[NSMutableArray alloc] init];
-                                   }
-                                   // Store event model in eventsArray.
-                                   [innerSelf.eventsArray addObject:eventModel];
+//                                   // Create
+//                                   if (!innerSelf.eventsArray) {
+//                                       innerSelf.eventsArray = [[NSMutableArray alloc] init];
+//                                   }
+//                                   // Store event model in eventsArray.
+//                                   [innerSelf.eventsArray addObject:eventModel];
                                }
+                               
+                               self.eventsArray = [NSArray arrayWithArray:arrayForIterate];
                                
                                // Reload table view.
                                [innerSelf.tableView reloadData];
                                
-                               NSLog(@"%@", innerSelf.eventsArray);
+                               NSLog(@"event model objects in eventsArray --> \n%@", innerSelf.eventsArray);
                             
                            }];
     
@@ -123,6 +136,72 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+#pragma mark - Load and Save methods
+
+- (void)loadDataFromDocDir {
+    
+    // create path to Events.plist in documents directory.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
+    NSLog(@"path to plist file in documents directory --> \n%@", path);
+    
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    // check if file exists.
+    if (![fileManager fileExistsAtPath:path]) {
+        // If it doesn't, copy it from the default file in main bundle.
+        NSLog(@"path does not exist. plist file will be copied to the path from main bundle.");
+        // create path to Events.plist in main bundle.
+        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+        if (bundlePath) {
+            NSLog(@"file exists in the main bundle.");
+            NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:bundlePath];
+            NSLog(@"Bundle Events.plist file is --> \n%@", [resultDictionary description]);
+            
+            // copy dictionary from main bundle to document directory path.
+            [fileManager copyItemAtPath:bundlePath toPath:path error:nil];
+            NSLog(@"plist file is copied from main bundle to document directory");
+        } else {
+            NSLog(@"Events.plist not found in main bundle. Please, make sure it is part of the bundle.");
+        }
+        // use this to delete file from documents directory
+        // [fileManager removeItemAtPath:path error:nil];
+    }
+    
+    // store plist file which is in documents directory to dictionary.
+    NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"Loaded Events.plist file at Documents Directory is --> \n%@", [resultDictionary description]);
+    
+    if (resultDictionary) {
+        // Store resultDictionary in DataDict.
+        self.DataDict = resultDictionary;
+
+    } else {
+        NSLog(@"WARNING: Couldn't create dictionary from Events.plist at Documents Dicretory! Default values will be used!");
+    }
+
+}
+
+- (void)saveData:(id)object {
+    
+    // Get path to Events.plist.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
+    
+    // Create dictionary from plist file in documetns directory.
+    NSMutableDictionary *dict = [NSMutableDictionary dictionaryWithContentsOfFile:path];
+    
+    // Save object data.
+    [dict setObject:object[@"Events"] forKey:@"Events"];
+    
+    // writing to Events.plist
+    [dict writeToFile:path atomically:YES];
+    
+    NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"Saved Events.plist file in Documents Direcotry --> \n%@", [resultDictionary description]);
+    
+}
 
 #pragma mark - Table view data source
 
