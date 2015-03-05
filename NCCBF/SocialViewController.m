@@ -39,8 +39,10 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-    // Store social media names dict into socialMediaNames property.
+
+    // Store social media names in socialMediaNames array.
     self.socialMediaArray = dict[@"SocialMedia"];
+    
     // Store festival description into string.
     self.festivalDescriptionString = dict[@"FestivalDescription"];
     self.festivalDescription.text = self.festivalDescriptionString;

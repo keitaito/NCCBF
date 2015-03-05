@@ -30,6 +30,12 @@ The Northern California Cherry Blossom Festival is said to be the second largest
 			<key>URL</key>
 			<string>https://instagram.com/NC_CBF</string>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>NCCBF Live Stream</string>
+			<key>URL</key>
+			<string>http://nccbf.org</string>
+		</dict>
 	</array>
 </dict>
 </plist>
