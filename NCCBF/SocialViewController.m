@@ -27,14 +27,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self setUpUIItems];
+    
+    
     // Set up delegate and dataSource for table view.
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
-//    self.tmpArray = @[@"Tokyo",
-//                      @"Yokohama",
-//                      @"Chiba",
-//                      @"Saitama"];
     
     // Create path for plist.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
@@ -48,7 +47,16 @@
     self.festivalDescription.editable = NO;
 }
 
-# pragma mark - table view delegate and dataSource methods
+#pragma mark - Set up UI methods
+
+- (void)setUpUIItems {
+    
+    // Set tint color of nav bar back button arrow white.
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+}
+
+# pragma mark - Table view delegate and dataSource methods
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {

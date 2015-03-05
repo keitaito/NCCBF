@@ -26,6 +26,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setUpUIItems];
+    
     // Load data file from documents directory. If there is no file, a file in main bundle gets copied there.
     [self loadDataFromDocDir];
     
@@ -134,6 +136,15 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+#pragma mark - UI set up methods
+
+- (void)setUpUIItems {
+    
+    // Set tint color of nav bar back button arrow white.
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
 }
 
 #pragma mark - Load and Save methods
