@@ -8,16 +8,17 @@
 
 #import "SocialViewController.h"
 #import "SocialViewCell.h"
+#import "AboutUsCell.h"
 #import "SocialWebViewController.h"
 
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UITextView *festivalDescription;
+//@property (weak, nonatomic) IBOutlet UITextView *festivalDescription;
 
 //@property (strong, nonatomic) NSArray *tmpArray;
 @property (strong, nonatomic) NSArray *socialMediaArray;
-@property (strong, nonatomic) NSString *festivalDescriptionString;
+//@property (strong, nonatomic) NSString *festivalDescriptionString;
 
 @end
 
@@ -43,10 +44,10 @@
     // Store social media names in socialMediaNames array.
     self.socialMediaArray = dict[@"SocialMedia"];
     
-    // Store festival description into string.
-    self.festivalDescriptionString = dict[@"FestivalDescription"];
-    self.festivalDescription.text = self.festivalDescriptionString;
-    self.festivalDescription.editable = NO;
+//    // Store festival description into string.
+//    self.festivalDescriptionString = dict[@"FestivalDescription"];
+//    self.festivalDescription.text = self.festivalDescriptionString;
+//    self.festivalDescription.editable = NO;
 }
 
 #pragma mark - Set up UI methods
@@ -69,14 +70,18 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
-
-    NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
-    
-    cell.titleLabel.text = socialDict[@"name"];
-    cell.urlString = socialDict[@"URL"];
-
-    return cell;
+    if (indexPath.row == 4) {
+        AboutUsCell *aboutUsCell = [tableView dequeueReusableCellWithIdentifier:@"AboutUsCell" forIndexPath:indexPath];
+        return aboutUsCell;
+    } else {
+        SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
+        
+        NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
+        
+        cell.titleLabel.text = socialDict[@"name"];
+        cell.urlString = socialDict[@"URL"];
+        return cell;
+    }
 }
 
 
