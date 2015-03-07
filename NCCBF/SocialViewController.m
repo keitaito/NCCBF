@@ -14,11 +14,8 @@
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-//@property (weak, nonatomic) IBOutlet UITextView *festivalDescription;
 
-//@property (strong, nonatomic) NSArray *tmpArray;
 @property (strong, nonatomic) NSArray *socialMediaArray;
-//@property (strong, nonatomic) NSString *festivalDescriptionString;
 
 @end
 
@@ -44,10 +41,6 @@
     // Store social media names in socialMediaNames array.
     self.socialMediaArray = dict[@"SocialMedia"];
     
-//    // Store festival description into string.
-//    self.festivalDescriptionString = dict[@"FestivalDescription"];
-//    self.festivalDescription.text = self.festivalDescriptionString;
-//    self.festivalDescription.editable = NO;
 }
 
 #pragma mark - Set up UI methods

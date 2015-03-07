@@ -11,6 +11,7 @@
 @interface AboutUsDetailViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation AboutUsDetailViewController
@@ -18,6 +19,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Create path for plist.
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
+    // Create dictionary to store plist's root dictionary.
+    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+
+    // Store festival description in string.
+    NSString *festDescString = dict[@"FestivalDescription"];
+    // Update text of text view.
+    self.textView.text = festDescString;
+    self.textView.editable = NO;
 }
 
 - (void)didReceiveMemoryWarning {
