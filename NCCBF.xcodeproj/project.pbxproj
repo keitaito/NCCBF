@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23264A921AAA89F20039B845 /* AboutUsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A911AAA89F20039B845 /* AboutUsCell.m */; };
+		23264A951AAA8DF30039B845 /* AboutUsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */; };
 		235750EC1A8DA24C00192D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EB1A8DA24C00192D24 /* main.m */; };
 		235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EE1A8DA24C00192D24 /* AppDelegate.m */; };
 		235750F51A8DA24C00192D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235750F31A8DA24C00192D24 /* Main.storyboard */; };
@@ -42,6 +43,8 @@
 /* Begin PBXFileReference section */
 		23264A901AAA89F20039B845 /* AboutUsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsCell.h; sourceTree = "<group>"; };
 		23264A911AAA89F20039B845 /* AboutUsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsCell.m; sourceTree = "<group>"; };
+		23264A931AAA8DF30039B845 /* AboutUsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsDetailViewController.h; sourceTree = "<group>"; };
+		23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsDetailViewController.m; sourceTree = "<group>"; };
 		235750E61A8DA24C00192D24 /* NCCBF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCCBF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235750EA1A8DA24C00192D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235750EB1A8DA24C00192D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				23264A911AAA89F20039B845 /* AboutUsCell.m */,
 				23EA9E271A9854B000E39921 /* SocialWebViewController.h */,
 				23EA9E281A9854B000E39921 /* SocialWebViewController.m */,
+				23264A931AAA8DF30039B845 /* AboutUsDetailViewController.h */,
+				23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */,
 				23E06DB51A947B6500D01330 /* SocialMedia.plist */,
 			);
 			name = SocialView;
@@ -322,6 +327,7 @@
 				235751201A8DBD7600192D24 /* Event.m in Sources */,
 				2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */,
 				2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */,
+				23264A951AAA8DF30039B845 /* AboutUsDetailViewController.m in Sources */,
 				23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */,
 				2378BB241A904C5C00571BC9 /* MapViewController.m in Sources */,
 				2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */,
