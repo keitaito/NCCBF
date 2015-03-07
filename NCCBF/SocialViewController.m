@@ -65,6 +65,10 @@
 {
     if (indexPath.row == 4) {
         AboutUsCell *aboutUsCell = [tableView dequeueReusableCellWithIdentifier:@"AboutUsCell" forIndexPath:indexPath];
+        
+        NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
+        aboutUsCell.titleLabel.text = socialDict[@"name"];
+        
         return aboutUsCell;
     } else {
         SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
@@ -73,6 +77,7 @@
         
         cell.titleLabel.text = socialDict[@"name"];
         cell.urlString = socialDict[@"URL"];
+        
         return cell;
     }
 }

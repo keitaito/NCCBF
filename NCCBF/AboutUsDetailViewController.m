@@ -30,6 +30,10 @@
     // Update text of text view.
     self.textView.text = festDescString;
     self.textView.editable = NO;
+    
+    // Update title in nav bar.
+//    self.navigationController.navigationItem.title = @"About NCCBF";
+    // search how to display title.
 }
 
 - (void)didReceiveMemoryWarning {
