@@ -145,6 +145,8 @@
     // Set tint color of nav bar back button arrow white.
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
+//    self.tabBarController.tabBar.tintColor
+    
 }
 
 #pragma mark - Load and Save methods
