@@ -146,7 +146,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" rowHeight="80" id="9D7-aN-i5C" customClass="ScheduleTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" rowHeight="80" id="9D7-aN-i5C" customClass="ScheduleTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9D7-aN-i5C" id="MPp-bX-cLf">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -178,6 +178,7 @@
                                     <outlet property="EndTimeLabel" destination="GTF-EK-j5p" id="oM6-9I-0r1"/>
                                     <outlet property="startTimeLabel" destination="AUK-un-Wkx" id="ipZ-Go-yhY"/>
                                     <outlet property="titleLabel" destination="Zq0-o4-xpa" id="Csb-KH-qQ7"/>
+                                    <segue destination="jfq-MS-MrD" kind="push" identifier="showEventDetailView" id="NNj-72-NtQ"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -422,4 +423,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="NNj-72-NtQ"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -9,6 +9,7 @@
 #import "ScheduleTableViewController.h"
 #import "ScheduleTableViewCell.h"
 #import "Event.h"
+#import "EventDetailViewController.h"
 
 @interface ScheduleTableViewController ()
 
@@ -276,7 +277,31 @@
 
 
 
+#pragma mark - Navigation
 
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
+        NSLog(@"showEventDetailView");
+        
+        EventDetailViewController *eventDetailViewController = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        // Get event title string from events property
+        // 1. get an event
+        //        NSDictionary *eventDictionary = self.events[indexPath.row];
+        Event *eventDetail = self.eventsArray[indexPath.row];
+        //        // 2. get name string
+        //        __unused NSString *eventTitle = eventDictionary[@"name"];
+        
+        //        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
+        //        Event *eventDetail = [[Event alloc] initWithEventDictionary:eventDictionary];
+        eventDetailViewController.eventDetail = eventDetail;
+    }
+}
 
 
 
