@@ -20,6 +20,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Set up nav bar title.
+    self.title = @"About NCCBF";
+    
     // Create path for plist.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
