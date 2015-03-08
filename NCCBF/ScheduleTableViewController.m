@@ -30,6 +30,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self setUpUIItems];
         
     // Create path for plist.
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
@@ -69,39 +71,40 @@
     self.allEventsArray = [NSMutableArray arrayWithArray:self.eventsArray];
 
     
-    NSString *apr11String = @"2015-04-11 00:00:00";
-    NSString *apr12String = @"2015-04-12 00:00:00";
-    NSString *apr18String = @"2015-04-18 00:00:00";
-    NSString *apr19String = @"2015-04-19 00:00:00";
+//    NSString *apr11String = @"2015-04-11 00:00:00";
+//    NSString *apr12String = @"2015-04-12 00:00:00";
+//    NSString *apr18String = @"2015-04-18 00:00:00";
+//    NSString *apr19String = @"2015-04-19 00:00:00";
+//    
+//    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+////    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+//    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+////    [dateFormatter setTimeZone:tz];
+//    
+//    self.apr11 = [dateFormatter dateFromString:apr11String];
+//    self.apr12 = [dateFormatter dateFromString:apr12String];
+//    self.apr18 = [dateFormatter dateFromString:apr18String];
+//    self.apr19 = [dateFormatter dateFromString:apr19String];
+//    
+//    // default date
+//    NSMutableArray *apr11EventsArray = [[NSMutableArray alloc] init];
+//    
+//    for (Event *event in self.allEventsArray) {
+//        if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
+//            [apr11EventsArray addObject:event];
+//        }
+//    }
+////    NSLog(@"apr 11 events: \n%@", apr11Events);
+//    
+//    
+//    // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
+//    NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+//    NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+//    NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
+//    // Convert NSArray to NSMutableArray.
+//    self.eventsArray = [orderedApr11Array mutableCopy];
     
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-//    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
-    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
-//    [dateFormatter setTimeZone:tz];
-    
-    self.apr11 = [dateFormatter dateFromString:apr11String];
-    self.apr12 = [dateFormatter dateFromString:apr12String];
-    self.apr18 = [dateFormatter dateFromString:apr18String];
-    self.apr19 = [dateFormatter dateFromString:apr19String];
-    
-    NSMutableArray *apr11EventsArray = [[NSMutableArray alloc] init];
-    
-    for (Event *event in self.allEventsArray) {
-        if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
-            [apr11EventsArray addObject:event];
-        }
-    }
-//    NSLog(@"apr 11 events: \n%@", apr11Events);
-    
-    
-    // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
-    NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
-    NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
-    NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
-    // Convert NSArray to NSMutableArray.
-    self.eventsArray = [orderedApr11Array mutableCopy];
-    
-    
+    [self setupSchedule];
     
     
     
@@ -122,6 +125,56 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+#pragma mark - UI set up methods
+
+- (void)setUpUIItems {
+    
+    // Set tint color of nav bar back button arrow white.
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    //    self.tabBarController.tabBar.tintColor
+    
+}
+
+- (void)setupSchedule {
+
+    // Prepare dateFormatter.
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    //    [dateFormatter setTimeZone:tz];
+    
+    // Create date strings to make date objects.
+    NSString *apr11String = @"2015-04-11 00:00:00";
+    NSString *apr12String = @"2015-04-12 00:00:00";
+    NSString *apr18String = @"2015-04-18 00:00:00";
+    NSString *apr19String = @"2015-04-19 00:00:00";
+    
+    // Create date objects and store these in properties.
+    self.apr11 = [dateFormatter dateFromString:apr11String];
+    self.apr12 = [dateFormatter dateFromString:apr12String];
+    self.apr18 = [dateFormatter dateFromString:apr18String];
+    self.apr19 = [dateFormatter dateFromString:apr19String];
+    
+    // default date
+    NSMutableArray *apr11EventsArray = [[NSMutableArray alloc] init];
+    
+    // Check events in allEventsArray pick only Apr 11 events.
+    for (Event *event in self.allEventsArray) {
+        if ([event.date laterDate:self.apr11] == event.date && [event.date earlierDate:self.apr12] == event.date) {
+            [apr11EventsArray addObject:event];
+        }
+    }
+    //    NSLog(@"apr 11 events: \n%@", apr11Events);
+    
+    // Sort Apr 11 events array by date and time with sortDescriptor. date property has time.
+    NSSortDescriptor *sortDescriptorByDate = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:YES];
+    NSSortDescriptor *sortDescriptorByEndTime = [[NSSortDescriptor alloc] initWithKey:@"endTime" ascending:YES];
+    NSArray *orderedApr11Array = [apr11EventsArray sortedArrayUsingDescriptors:@[sortDescriptorByDate, sortDescriptorByEndTime]];
+    
+    // Convert NSArray to NSMutableArray.
+    self.eventsArray = [orderedApr11Array mutableCopy];
+}
 
 
 #pragma mark - Table view data source
@@ -146,7 +199,6 @@
     
     
     // Event name
-    
     // Get event name string from events property
     // Get an event.
     Event *anEvent = self.eventsArray[indexPath.row];
@@ -156,7 +208,7 @@
     
     
     // Start time
-    
+
     // Get date from anEvent dictionary.
     NSDate *eventDate = anEvent.date;
     // End time.
@@ -178,6 +230,10 @@
     
     return cell;
 }
+
+
+
+#pragma mark - Switch dates method
 
 - (IBAction)switchDate:(id)sender
 {
@@ -279,7 +335,6 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
@@ -290,15 +345,9 @@
         EventDetailViewController *eventDetailViewController = [segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        // Get event title string from events property
-        // 1. get an event
-        //        NSDictionary *eventDictionary = self.events[indexPath.row];
+        // Get an event.
         Event *eventDetail = self.eventsArray[indexPath.row];
-        //        // 2. get name string
-        //        __unused NSString *eventTitle = eventDictionary[@"name"];
-        
-        //        Event *eventDetail = [[Event alloc] initWithEventTitle:eventTitle];
-        //        Event *eventDetail = [[Event alloc] initWithEventDictionary:eventDictionary];
+        // Pass event to event detail view conroller.
         eventDetailViewController.eventDetail = eventDetail;
     }
 }
@@ -318,6 +367,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -350,16 +404,6 @@
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 */
 
