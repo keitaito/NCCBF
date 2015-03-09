@@ -24,9 +24,7 @@ static NSDictionary *locations;
 // Set up static locations variable.
 + (void)initialize
 {
-    locations = @{@0: @"Post St",
-                  @1: @"Laguna St",
-                  @2: @"Webster St"};
+
     
 //    CLLocationCoordinate2D theCoordinate;
 //    theCoordinate.latitude = 37.785257;
@@ -47,7 +45,7 @@ static NSDictionary *locations;
     // Prepare dateFormatter.
     NSDateFormatter *parseFormatter = [[NSDateFormatter alloc] init];
     //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
-    [parseFormatter setDateFormat:@"MMM dd, yyyy, HH:mm:ss a"];
+    [parseFormatter setDateFormat:@"yyyy-MM-dd HH:mm a"];
     
     NSString *dateString = dictionary[@"start_at"];
     self.date = [parseFormatter dateFromString:dateString];

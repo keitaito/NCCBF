@@ -8,9 +8,9 @@
 			<key>name</key>
 			<string>Event 1</string>
 			<key>start_at</key>
-			<date>2015-04-19T19:00:00Z</date>
+			<string>2015-04-19 01:00 PM</string>
 			<key>end_at</key>
-			<date>2015-04-19T20:00:00Z</date>
+			<string>2015-04-19 02:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -26,9 +26,9 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 			<key>name</key>
 			<string>Event 2</string>
 			<key>start_at</key>
-			<date>2015-04-11T20:00:00Z</date>
+			<string>2015-04-11 11:00 AM</string>
 			<key>end_at</key>
-			<date>2015-04-11T21:00:00Z</date>
+			<string>2015-04-11 12:00 PM</string>
 			<key>location_id</key>
 			<string>1</string>
 			<key>location</key>
@@ -40,11 +40,141 @@ Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 2</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 12:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>Place A</string>
+			<key>image_name</key>
+			<string>taiko</string>
+			<key>description</key>
+			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Event 1</string>
+			<key>start_at</key>
+			<string>2015-04-19 01:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 02:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Post St</string>
+			<key>image_name</key>
+			<string>taru-mikoshi</string>
+			<key>description</key>
+			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Event 3</string>
 			<key>start_at</key>
-			<date>2015-04-12T16:00:00Z</date>
+			<string>2015-04-12 01:00 PM</string>
 			<key>end_at</key>
-			<date>2015-04-12T22:00:00Z</date>
+			<string>2015-04-12 03:00 PM</string>
 			<key>location_id</key>
 			<string>2</string>
 			<key>location</key>
@@ -59,25 +189,26 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>name</key>
 			<string>Sample Event</string>
 			<key>start_at</key>
-			<date>2015-04-18T18:00:00Z</date>
+			<string>2015-04-18 10:00 AM</string>
 			<key>end_at</key>
-			<date>2015-04-18T20:00:00Z</date>
+			<string>2015-04-18 01:00 PM</string>
 			<key>location_id</key>
-			<string>0</string>
+			<string>2</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Place B</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>queen-contest</string>
 			<key>description</key>
-			<string>Sample Event Description.</string>
+			<string>Queen ContestQueen ContestQueen ContestQueen ContestQueen Contest
+Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sample Event</string>
+			<string>Event 1</string>
 			<key>start_at</key>
-			<date>2015-04-19T16:00:00Z</date>
+			<string>2015-04-19 01:00 PM</string>
 			<key>end_at</key>
-			<date>2015-04-19T20:00:00Z</date>
+			<string>2015-04-19 02:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -85,15 +216,17 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>image_name</key>
 			<string>taru-mikoshi</string>
 			<key>description</key>
-			<string>Sample Event Description.</string>
+			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sample Event</string>
+			<string>Event 1</string>
 			<key>start_at</key>
-			<date>2015-04-11T20:00:00Z</date>
+			<string>2015-04-19 01:00 PM</string>
 			<key>end_at</key>
-			<date>2015-04-12T00:00:00Z</date>
+			<string>2015-04-19 02:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -101,15 +234,17 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>image_name</key>
 			<string>taru-mikoshi</string>
 			<key>description</key>
-			<string>Sample Event Description.</string>
+			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sample Event</string>
+			<string>Event 1</string>
 			<key>start_at</key>
-			<date>2015-04-12T21:00:00Z</date>
+			<string>2015-04-19 01:00 PM</string>
 			<key>end_at</key>
-			<date>2015-04-12T20:00:00Z</date>
+			<string>2015-04-19 02:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -117,15 +252,17 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>image_name</key>
 			<string>taru-mikoshi</string>
 			<key>description</key>
-			<string>Sample Event Description.</string>
+			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sample Event</string>
+			<string>Event 1</string>
 			<key>start_at</key>
-			<date>2015-04-18T18:30:00Z</date>
+			<string>2015-04-19 01:00 PM</string>
 			<key>end_at</key>
-			<date>2015-04-18T20:00:00Z</date>
+			<string>2015-04-19 02:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -133,55 +270,9 @@ Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</
 			<key>image_name</key>
 			<string>taru-mikoshi</string>
 			<key>description</key>
-			<string>Sample Event Description.</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Sample Event</string>
-			<key>start_at</key>
-			<date>2015-04-19T17:45:00Z</date>
-			<key>end_at</key>
-			<date>2015-04-19T20:00:00Z</date>
-			<key>location_id</key>
-			<string>0</string>
-			<key>location</key>
-			<string>Post St</string>
-			<key>image_name</key>
-			<string>taru-mikoshi</string>
-			<key>description</key>
-			<string>Sample Event Description.</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Sample Event</string>
-			<key>start_at</key>
-			<date>2015-04-11T22:00:00Z</date>
-			<key>end_at</key>
-			<date>2015-04-11T20:00:00Z</date>
-			<key>location_id</key>
-			<string>0</string>
-			<key>location</key>
-			<string>Post St</string>
-			<key>image_name</key>
-			<string>taru-mikoshi</string>
-			<key>description</key>
-			<string>Sample Event Description.</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Sample Event</string>
-			<key>start_at</key>
-			<date>2015-04-12T18:30:00Z</date>
-			<key>end_at</key>
-			<date>2015-04-12T20:00:00Z</date>
-			<key>location_id</key>
-			<string>0</string>
-			<key>location</key>
-			<string>Post St</string>
-			<key>image_name</key>
-			<string>taru-mikoshi</string>
-			<key>description</key>
-			<string>Sample Event Description.</string>
+			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
+Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
 		</dict>
 	</array>
 </dict>
