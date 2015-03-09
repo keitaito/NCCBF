@@ -24,7 +24,19 @@ static NSDictionary *locations;
 // Set up static locations variable.
 + (void)initialize
 {
-
+    locations = @{@0: @"Peace Plaza Stage",
+                  @1: @"JCCNC Stage",
+                  @2: @"Webster Street Stage",
+                  @3: @"Sakura 360 Stage",
+                  
+                  @4: @"Japan Center East Mall - Suite 525",
+                  @5: @"JCCNC Exhibit Spaces",
+                  @6: @"Tateuchi Audtorium",
+                  @7: @"National JACL",
+                  @8: @"Union Bank Community Room",
+                  @9: @"Sequola's Auditorium",
+                  @10: @"National Japanese American Historical Society",
+                  @11: @"Hokka Nichibei-kai"};
     
 //    CLLocationCoordinate2D theCoordinate;
 //    theCoordinate.latitude = 37.785257;
