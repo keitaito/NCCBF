@@ -43,8 +43,19 @@ static NSDictionary *locations;
     self = [super init];
     
     self.name = dictionary[@"name"];
-    self.date = dictionary[@"start_at"];
-    self.endTime = dictionary[@"end_at"];
+    
+    // Prepare dateFormatter.
+    NSDateFormatter *parseFormatter = [[NSDateFormatter alloc] init];
+    //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+    [parseFormatter setDateFormat:@"MMM dd, yyyy, HH:mm:ss a"];
+    
+    NSString *dateString = dictionary[@"start_at"];
+    self.date = [parseFormatter dateFromString:dateString];
+//    self.date = dictionary[@"start_at"];
+    
+    NSString *endTimeString = dictionary[@"end_at"];
+    self.endTime = [parseFormatter dateFromString:endTimeString];
+//    self.endTime = dictionary[@"end_at"];
     
     self.locationId = [dictionary[@"location_id"] intValue];
     self.location = [self locationConvertedFromLocationId:self.locationId];
