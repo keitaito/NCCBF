@@ -102,6 +102,8 @@
 //    NSLog(@"%@", [locations lastObject]);
 //}
 
+#pragma mark - Location Methods
+
 - (void)setupDefaultLocation {
     
     // Create Japantown location coordinates.
@@ -146,11 +148,41 @@
     [self.mapView setRegion:region animated:YES];
 }
 
+- (void)setupLocationManager {
+    
+    // Get the current authorization status.
+    if (![CLLocationManager locationServicesEnabled]) {
+        NSLog(@"location services are disabled");
+        return;
+    }
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied) {
+        NSLog(@"location services are denied by the user");
+        return;
+    }
+    if ([CLLocationManager authorizationStatus] == (kCLAuthorizationStatusAuthorizedAlways | kCLAuthorizationStatusAuthorizedWhenInUse)) {
+        NSLog(@"location services are enabled");
+    }
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
+        NSLog(@"about to show a dialog requesting permission");
+    }
+    
+    
+}
+
+#pragma mark - CLLocationManager Delegate Methods
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error {
+    
+    if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied){
+        NSLog(@"User has denied location services");
+    } else {
+        NSLog(@"Location manager did fail with error: %@", error.localizedFailureReason);
+    }
+}
 
 
 
-
-
+#pragma mark - didReceiveMemoryWarning
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
