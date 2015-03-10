@@ -42,7 +42,7 @@
     NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
     
     // For test
-//    urlString = nil;
+    urlString = nil;
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];

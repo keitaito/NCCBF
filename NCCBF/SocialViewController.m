@@ -100,6 +100,7 @@
         NSDictionary *socialMediaDict = self.socialMediaArray[indexPath.row];
         NSString *urlString = socialMediaDict[@"URL"];
         SWVC.urlString = urlString;
+        SWVC.title = socialMediaDict[@"name"];
     }
     
 }

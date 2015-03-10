@@ -24,9 +24,19 @@ static NSDictionary *locations;
 // Set up static locations variable.
 + (void)initialize
 {
-    locations = @{@0: @"Post St",
-                  @1: @"Laguna St",
-                  @2: @"Webster St"};
+    locations = @{@0: @"Peace Plaza Stage",
+                  @1: @"JCCNC Stage",
+                  @2: @"Webster Street Stage",
+                  @3: @"Sakura 360 Stage",
+                  
+                  @4: @"Japan Center East Mall - Suite 525",
+                  @5: @"JCCNC Exhibit Spaces",
+                  @6: @"Tateuchi Audtorium",
+                  @7: @"National JACL",
+                  @8: @"Union Bank Community Room",
+                  @9: @"Sequola's Auditorium",
+                  @10: @"National Japanese American Historical Society",
+                  @11: @"Hokka Nichibei-kai"};
     
 //    CLLocationCoordinate2D theCoordinate;
 //    theCoordinate.latitude = 37.785257;
@@ -43,8 +53,19 @@ static NSDictionary *locations;
     self = [super init];
     
     self.name = dictionary[@"name"];
-    self.date = dictionary[@"start_at"];
-    self.endTime = dictionary[@"end_at"];
+    
+    // Prepare dateFormatter.
+    NSDateFormatter *parseFormatter = [[NSDateFormatter alloc] init];
+    //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+    [parseFormatter setDateFormat:@"yyyy-MM-dd HH:mm a"];
+    
+    NSString *dateString = dictionary[@"start_at"];
+    self.date = [parseFormatter dateFromString:dateString];
+//    self.date = dictionary[@"start_at"];
+    
+    NSString *endTimeString = dictionary[@"end_at"];
+    self.endTime = [parseFormatter dateFromString:endTimeString];
+//    self.endTime = dictionary[@"end_at"];
     
     self.locationId = [dictionary[@"location_id"] intValue];
     self.location = [self locationConvertedFromLocationId:self.locationId];

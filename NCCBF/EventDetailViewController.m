@@ -17,13 +17,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    // Set nav bar title.
+    self.title = self.eventDetail.name;
+    
+    // Set event image.
     NSString *imageName = self.eventDetail.imageString;
     self.detailPosterView.image = [UIImage imageNamed:imageName];
     
+    // Set event title, time, location, description.
     self.titleLabel.text = self.eventDetail.name;
     self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
     self.locationLabel.text = self.eventDetail.location;
+
 }
 
 - (void)didReceiveMemoryWarning {
