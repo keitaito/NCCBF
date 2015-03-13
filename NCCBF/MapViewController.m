@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
 #import "EventAnnotation.h"
+#import "Event.h"
 
 @interface MapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -233,12 +234,20 @@
 
 - (void)createAnnotations {
     
-    // create out annotations array (in this example only 3)
-    self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
+//    // create out annotations array (in this example only 3)
+//    self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
     
-    // Annotation for Event.
-    EventAnnotation *eventAnnotation = [[EventAnnotation alloc] init];
-    [self.mapAnnotations addObject:eventAnnotation];
+    self.mapAnnotations = [[NSMutableArray alloc] init];
+    
+//    // Annotation for Event.
+//    EventAnnotation *eventAnnotation = [[EventAnnotation alloc] init];
+//    [self.mapAnnotations addObject:eventAnnotation];
+    
+    for (int i = 0; i < self.eventsArray.count; i++) {
+        Event *event = self.eventsArray[i];
+        EventAnnotation *eventAnnotation = [[EventAnnotation alloc] initWithEvent:event];
+        [self.mapAnnotations addObject:eventAnnotation];
+    }
     
     // Add annotations in map view.
     [self.mapView addAnnotations:self.mapAnnotations];
