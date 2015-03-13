@@ -43,8 +43,8 @@
     self = [super init];
     if (self) {
         self.event = [[Event alloc] init];
-        self.title = @"Japantown Peace Plaza";
-        self.subtitle = @"Konnichiwa!";
+        self.event.name = @"Japantown Peace Plaza";
+        self.event.location = @"Peace Pagoda";
         self.event.locationId = 0;
         NSLog(@"EventAnnotation object initialized");
     }
@@ -64,13 +64,13 @@
 // required if you set the MKPinAnnotationView's "canShowCallout" property to YES
 - (NSString *)title
 {
-    return self.title;
+    return self.event.name;
 }
 
 // optional
 - (NSString *)subtitle
 {
-    return self.subtitle;
+    return self.event.location;
 }
 
 

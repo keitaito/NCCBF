@@ -8,11 +8,16 @@
 
 #import "MapViewController.h"
 #import <MapKit/MapKit.h>
+#import "EventAnnotation.h"
 
 @interface MapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (retain, nonatomic) IBOutlet MKMapView *mapView;
 @property (retain, nonatomic) CLLocationManager *locationManager;
+
+@property (nonatomic, strong) NSMutableArray *mapAnnotations;
+@property (nonatomic, strong) UIPopoverController *bridgePopoverController;
+
 
 @end
 
@@ -58,7 +63,10 @@
 //        [self.locationManager requestWhenInUseAuthorization];
 //    }
 //    [self.locationManager startUpdatingLocation];
-
+    
+    
+    // Create annotations in map view.
+    [self createAnnotations];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -159,6 +167,51 @@
         [self.locationManager startUpdatingLocation];
     }
 
+}
+
+#pragma mark - Annotation Methods
+
+- (void)createAnnotations {
+    
+    // create out annotations array (in this example only 3)
+    self.mapAnnotations = [[NSMutableArray alloc] initWithCapacity:2];
+    
+    // Annotation for Event.
+    EventAnnotation *eventAnnotation = [[EventAnnotation alloc] init];
+    [self.mapAnnotations addObject:eventAnnotation];
+    
+    // Add annotations in map view.
+    [self.mapView addAnnotations:self.mapAnnotations];
+}
+
+#pragma mark - Annotation Delegate Methods
+
+- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation
+{
+    MKAnnotationView *returnedAnnotationView = nil;
+    
+    // in case it's the user location, we already have an annotation, so just return nil
+    if (![annotation isKindOfClass:[MKUserLocation class]])
+    {
+        
+        if ([annotation isKindOfClass:[EventAnnotation class]]) // for Event.
+        {
+            returnedAnnotationView = [EventAnnotation createViewAnnotationForMapView:self.mapView annotation:annotation];
+            
+            // add a detail disclosure button to the callout which will open a new view controller page or a popover
+            //
+            // note: when the detail disclosure button is tapped, we respond to it via:
+            //       calloutAccessoryControlTapped delegate method
+            //
+            // by using "calloutAccessoryControlTapped", it's a convenient way to find out which annotation was tapped
+            //
+            UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+            ((MKPinAnnotationView *)returnedAnnotationView).rightCalloutAccessoryView = rightButton;
+        }
+    }
+    
+    return returnedAnnotationView;
 }
 
 #pragma mark - MKMapView Delegate Methods
