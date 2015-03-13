@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
+@class Event;
+
 @interface EventAnnotation : NSObject <MKAnnotation>
 
 + (MKAnnotationView *)createViewAnnotationForMapView:(MKMapView *)mapView annotation:(id <MKAnnotation>)annotation;
+- (instancetype)initWithEvent:(Event *)event;
 
 @end

@@ -51,6 +51,16 @@
     return self;
 }
 
+- (instancetype)initWithEvent:(Event *)event {
+    self = [super init];
+    if (self) {
+        self.event = event;
+        NSLog(@"Annotation initialized: %@", self.event);
+    }
+    
+    return self;
+}
+
 - (CLLocationCoordinate2D)coordinate
 {
         CLLocationCoordinate2D theCoordinate;
