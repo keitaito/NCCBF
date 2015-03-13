@@ -15,8 +15,9 @@
 @property (retain, nonatomic) IBOutlet MKMapView *mapView;
 @property (retain, nonatomic) CLLocationManager *locationManager;
 
+@property (nonatomic, strong) NSArray *eventsArray;
 @property (nonatomic, strong) NSMutableArray *mapAnnotations;
-@property (nonatomic, strong) UIPopoverController *bridgePopoverController;
+@property (nonatomic, strong) UIPopoverController *eventPopoverController;
 
 
 @end
@@ -26,6 +27,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // Create Events.
+    [self createEventsArray];
+    
+    
     
     // Set mapView delegate.
     self.mapView.delegate = self;
@@ -46,6 +52,10 @@
     [self.mapView setScrollEnabled:YES];
     
     
+    
+    // Create annotations in map view.
+    [self createAnnotations];
+    
 //    #ifdef __IPHONE_8_0
 //        if(IS_OS_8_OR_LATER) {
 //            // Use one or the other, not both. Depending on what you put in info.plist
@@ -63,10 +73,6 @@
 //        [self.locationManager requestWhenInUseAuthorization];
 //    }
 //    [self.locationManager startUpdatingLocation];
-    
-    
-    // Create annotations in map view.
-    [self createAnnotations];
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -93,6 +99,60 @@
 
 
 #pragma mark - Setup Methods
+
+- (void)createEventsArray {
+    // Load events data.
+    NSDictionary *dataDict = [self loadDataFromDocDir];
+    NSArray *arrayFromDataDict = dataDict[@"Events"];
+    // Create event models array.
+    NSMutableArray *tmpArray = [[NSMutableArray alloc] init];
+    for (int i = 0; i < arrayFromDataDict.count; i++) {
+        Event *eventModel = [[Event alloc] initWithEventDictionary:arrayFromDataDict[i]];
+        [tmpArray addObject:eventModel];
+    }
+    self.eventsArray = [NSArray arrayWithArray:tmpArray];
+}
+
+- (NSDictionary *)loadDataFromDocDir {
+    
+    // create path to Events.plist in documents directory.
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths firstObject];
+    NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
+    NSLog(@"path to plist file in documents directory --> \n%@", path);
+    
+//    NSFileManager *fileManager = [NSFileManager defaultManager];
+//    // check if file exists.
+//    if (![fileManager fileExistsAtPath:path]) {
+//        // If it doesn't, copy it from the default file in main bundle.
+//        NSLog(@"path does not exist. plist file will be copied to the path from main bundle.");
+//        // create path to Events.plist in main bundle.
+//        NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Events" ofType:@"plist"];
+//        if (bundlePath) {
+//            NSLog(@"file exists in the main bundle.");
+//            NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:bundlePath];
+//            NSLog(@"Bundle Events.plist file is --> \n%@", [resultDictionary description]);
+//            
+//            // copy dictionary from main bundle to document directory path.
+//            [fileManager copyItemAtPath:bundlePath toPath:path error:nil];
+//            NSLog(@"plist file is copied from main bundle to document directory");
+//        } else {
+//            NSLog(@"Events.plist not found in main bundle. Please, make sure it is part of the bundle.");
+//        }
+//        // use this to delete file from documents directory
+//        // [fileManager removeItemAtPath:path error:nil];
+//    }
+    
+    // store plist file which is in documents directory to dictionary.
+    NSDictionary *resultDictionary = [NSDictionary dictionaryWithContentsOfFile:path];
+    NSLog(@"Loaded Events.plist file at Documents Directory is --> \n%@", [resultDictionary description]);
+    
+    if (!resultDictionary) {
+        NSLog(@"WARNING: Couldn't create dictionary from Events.plist at Documents Dicretory! Default values will be used!");
+    }
+    
+    return resultDictionary;
+}
 
 - (void)goToDefaultLocation {
     
