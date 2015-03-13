@@ -26,49 +26,51 @@
     self.mapView.delegate = self;
     // Instantiate CLLocationManager and set delegate.
     self.locationManager = [[CLLocationManager alloc] init];
+//    self.locationManager.purpose = @"Tracking your movements on the map.";
     self.locationManager.delegate = self;
+    
+    [self prepareLocationManager];
+    [self goToDefaultLocation];
+
+    // Show user location.
+    self.mapView.showsUserLocation = YES;
+    
+    // Set up map view.
+    [self.mapView setMapType:MKMapTypeStandard];
+    [self.mapView setZoomEnabled:YES];
+    [self.mapView setScrollEnabled:YES];
     
     
 //    #ifdef __IPHONE_8_0
 //        if(IS_OS_8_OR_LATER) {
 //            // Use one or the other, not both. Depending on what you put in info.plist
-            [self.locationManager requestWhenInUseAuthorization];
+//            [self.locationManager requestWhenInUseAuthorization];
 //            [self.locationManager requestAlwaysAuthorization];
 //        }
 //    #endif
     
-    [self.locationManager startUpdatingLocation];
+//    [self.locationManager startUpdatingLocation];
     
-    self.mapView.showsUserLocation = YES;
-    [self.mapView setMapType:MKMapTypeStandard];
-    [self.mapView setZoomEnabled:YES];
-    [self.mapView setScrollEnabled:YES];
+
     
 //    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
 //    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
 //        [self.locationManager requestWhenInUseAuthorization];
 //    }
 //    [self.locationManager startUpdatingLocation];
-    
-    
-    
-    
-    //////////
-    
-//    [self gotoDefaultLocation];
-    [self setupDefaultLocation];
+
 }
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
     
-    self.locationManager.distanceFilter = kCLDistanceFilterNone;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [self.locationManager startUpdatingLocation];
+//    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+//    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+//    [self.locationManager startUpdatingLocation];
     
 //    NSLog(@"%@", [self deviceLocation]);
     
-//    //View Area
+//    //View Area (display current location)
 //    MKCoordinateRegion region = { { 0.0, 0.0 }, { 0.0, 0.0 } };
 //    region.center.latitude = self.locationManager.location.coordinate.latitude;
 //    region.center.longitude = self.locationManager.location.coordinate.longitude;
@@ -78,33 +80,13 @@
 }
 
 
-//- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
-//{
-//    __unused MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
-////    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
-//}
-//- (NSString *)deviceLocation {
-//    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
-//}
-//- (NSString *)deviceLat {
-//    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
-//}
-//- (NSString *)deviceLon {
-//    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
-//}
-//- (NSString *)deviceAlt {
-//    return [NSString stringWithFormat:@"%f", self.locationManager.location.altitude];
-//}
 
-//// Location Manager Delegate Methods
-//- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
-//{
-//    NSLog(@"%@", [locations lastObject]);
-//}
 
-#pragma mark - Location Methods
 
-- (void)setupDefaultLocation {
+
+#pragma mark - Setup Methods
+
+- (void)goToDefaultLocation {
     
     // Create Japantown location coordinates.
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Japantown" ofType:@"plist"];
@@ -148,7 +130,8 @@
     [self.mapView setRegion:region animated:YES];
 }
 
-- (void)setupLocationManager {
+
+- (void)prepareLocationManager {
     
     // Get the current authorization status.
     if (![CLLocationManager locationServicesEnabled]) {
@@ -164,10 +147,41 @@
     }
     if ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined) {
         NSLog(@"about to show a dialog requesting permission");
+        [self.locationManager requestWhenInUseAuthorization];
     }
     
+    // Set up location manager properties.
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
     
+    // If location services is enabled, start updateing location.
+    if ([CLLocationManager locationServicesEnabled]) {
+        [self.locationManager startUpdatingLocation];
+    }
+
 }
+
+#pragma mark - MKMapView Delegate Methods
+
+//- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+//{
+//    __unused MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+//    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
+//}
+
+//- (NSString *)deviceLocation {
+//    return [NSString stringWithFormat:@"latitude: %f longitude: %f", self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude];
+//}
+//- (NSString *)deviceLat {
+//    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.latitude];
+//}
+//- (NSString *)deviceLon {
+//    return [NSString stringWithFormat:@"%f", self.locationManager.location.coordinate.longitude];
+//}
+//- (NSString *)deviceAlt {
+//    return [NSString stringWithFormat:@"%f", self.locationManager.location.altitude];
+//}
+
 
 #pragma mark - CLLocationManager Delegate Methods
 
@@ -178,6 +192,12 @@
     } else {
         NSLog(@"Location manager did fail with error: %@", error.localizedFailureReason);
     }
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    NSLog(@"%@", [locations lastObject]);
 }
 
 
