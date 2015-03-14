@@ -31,11 +31,39 @@ static NSDictionary *locationCoordinates;
     //    NSValue *japanTownCooordinate = [NSValue value: &theCoordinate
     //                         withObjCType:@encode(CLLocationCoordinate2D)];
     
-    NSValue *jTownCoorValue = [NSValue valueWithMKCoordinate:theCoordinate];
+    __unused NSValue *jTownCoordValue = [NSValue valueWithMKCoordinate:theCoordinate];
     
-    locationCoordinates = @{@0: jTownCoorValue,
-                            @1: @"Laguna St",
-                            @2: @"Webster St"};
+    ///////////////////////////
+    
+    // Create Japantown location coordinates.
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"LocationCoordinates" ofType:@"plist"];
+    NSDictionary *coordinates = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    
+    // Coordinates vars.
+    CLLocationCoordinate2D peacePlazaStageCoord;
+    CLLocationCoordinate2D JCCNCStageCoord;
+    CLLocationCoordinate2D sakura360StageCoord;
+    
+    // Create coordinates from CGPoint from string in plist.
+    CGPoint peacePlazaStageCGPoint = CGPointFromString(coordinates[@"Peace Plaza Stage"]);
+    peacePlazaStageCoord = CLLocationCoordinate2DMake(peacePlazaStageCGPoint.x, peacePlazaStageCGPoint.y);
+    
+    CGPoint JCCNCStageCGPoint = CGPointFromString(coordinates[@"JCCNC Stage"]);
+    JCCNCStageCoord = CLLocationCoordinate2DMake(JCCNCStageCGPoint.x, JCCNCStageCGPoint.y);
+    
+    CGPoint sakura360StageCGPoint = CGPointFromString(coordinates[@"Sakura 360 Stage"]);
+    sakura360StageCoord = CLLocationCoordinate2DMake(sakura360StageCGPoint.x, sakura360StageCGPoint.y);
+    
+    // Convert coordinates to NSValue to store in dictionary.
+    NSValue *peacePlazaStageCoordValue = [NSValue valueWithMKCoordinate:peacePlazaStageCoord];
+    NSValue *JCCNCStageCoordValue = [NSValue valueWithMKCoordinate:JCCNCStageCoord];
+    NSValue *sakura360StageCoordValue = [NSValue valueWithMKCoordinate:sakura360StageCoord];
+    
+    ///////////////////////////
+    
+    locationCoordinates = @{@0: peacePlazaStageCoordValue,
+                            @1: JCCNCStageCoordValue,
+                            @2: sakura360StageCoordValue};
 }
 
 - (instancetype)init
@@ -67,7 +95,9 @@ static NSDictionary *locationCoordinates;
 //        theCoordinate.latitude = 37.785257;
 //        theCoordinate.longitude = -122.429648;
 //        return theCoordinate;
-    CLLocationCoordinate2D c = [locationCoordinates[@0] MKCoordinateValue];
+    NSInteger locationId = self.event.locationId;
+    NSNumber *n = [NSNumber numberWithInteger:locationId];
+    CLLocationCoordinate2D c = [locationCoordinates[n] MKCoordinateValue];
     return c;
 }
 
