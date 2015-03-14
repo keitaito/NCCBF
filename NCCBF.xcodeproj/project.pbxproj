@@ -25,6 +25,7 @@
 		2378BB211A904C4100571BC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378BB201A904C4100571BC9 /* MapKit.framework */; };
 		2378BB241A904C5C00571BC9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB231A904C5C00571BC9 /* MapViewController.m */; };
 		23AD6C7A1AAE803A007119F9 /* Japantown.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AD6C791AAE803A007119F9 /* Japantown.plist */; };
+		23AF9C7E1AB4E83200C53A60 /* LocationCoordinates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AF9C7D1AB4E83200C53A60 /* LocationCoordinates.plist */; };
 		23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB01A946FDD00D01330 /* SocialViewController.m */; };
 		23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB31A94723A00D01330 /* SocialViewCell.m */; };
 		23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23E06DB51A947B6500D01330 /* SocialMedia.plist */; };
@@ -76,6 +77,7 @@
 		2378BB221A904C5C00571BC9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2378BB231A904C5C00571BC9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		23AD6C791AAE803A007119F9 /* Japantown.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Japantown.plist; sourceTree = "<group>"; };
+		23AF9C7D1AB4E83200C53A60 /* LocationCoordinates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocationCoordinates.plist; sourceTree = "<group>"; };
 		23E06DAF1A946FDD00D01330 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		23E06DB01A946FDD00D01330 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		23E06DB21A94723A00D01330 /* SocialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewCell.h; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				23AD6C791AAE803A007119F9 /* Japantown.plist */,
+				23AF9C7D1AB4E83200C53A60 /* LocationCoordinates.plist */,
 				2378BB221A904C5C00571BC9 /* MapViewController.h */,
 				2378BB231A904C5C00571BC9 /* MapViewController.m */,
 				235F2B601AB2775900FBCCB2 /* EventAnnotation.h */,
@@ -313,6 +316,7 @@
 				235750F51A8DA24C00192D24 /* Main.storyboard in Resources */,
 				235750FA1A8DA24C00192D24 /* LaunchScreen.xib in Resources */,
 				23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */,
+				23AF9C7E1AB4E83200C53A60 /* LocationCoordinates.plist in Resources */,
 				235750F71A8DA24C00192D24 /* Images.xcassets in Resources */,
 				23E06DB81A94855400D01330 /* Events.plist in Resources */,
 				23AD6C7A1AAE803A007119F9 /* Japantown.plist in Resources */,
