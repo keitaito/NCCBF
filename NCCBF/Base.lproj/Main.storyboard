@@ -214,7 +214,7 @@
                     <navigationItem key="navigationItem" id="hir-kO-gmI"/>
                     <connections>
                         <outlet property="mapView" destination="Nl5-KR-Smc" id="oNu-dU-rSR"/>
-                        <segue destination="d9R-X6-C9t" kind="push" identifier="showStageTable" id="13t-n5-L3Q"/>
+                        <segue destination="d9R-X6-C9t" kind="push" identifier="showStageTableViewController" id="13t-n5-L3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Mx-ZBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -230,7 +230,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eRi-e4-AyX">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StageTableViewCell" id="eRi-e4-AyX">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eRi-e4-AyX" id="8Kp-uF-Mfq">
                                     <autoresizingMask key="autoresizingMask"/>
