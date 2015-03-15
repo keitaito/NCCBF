@@ -13,6 +13,8 @@
 
 @interface EventAnnotation : NSObject <MKAnnotation>
 
+@property (nonatomic, strong) Event *event;
+
 + (MKAnnotationView *)createViewAnnotationForMapView:(MKMapView *)mapView annotation:(id <MKAnnotation>)annotation;
 - (instancetype)initWithEvent:(Event *)event;
 

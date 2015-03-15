@@ -11,7 +11,7 @@
 
 @interface EventAnnotation ()
 
-@property (nonatomic, strong) Event *event;
+//@property (nonatomic, strong) Event *event;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) NSString *subtitle;
 
