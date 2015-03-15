@@ -24,14 +24,14 @@ static NSDictionary *locationCoordinates;
 
 + (void)initialize
 {
-    CLLocationCoordinate2D theCoordinate;
-    theCoordinate.latitude = 37.785257;
-    theCoordinate.longitude = -122.429648;
+//    CLLocationCoordinate2D theCoordinate;
+//    theCoordinate.latitude = 37.785257;
+//    theCoordinate.longitude = -122.429648;
     
     //    NSValue *japanTownCooordinate = [NSValue value: &theCoordinate
     //                         withObjCType:@encode(CLLocationCoordinate2D)];
     
-    __unused NSValue *jTownCoordValue = [NSValue valueWithMKCoordinate:theCoordinate];
+//    __unused NSValue *jTownCoordValue = [NSValue valueWithMKCoordinate:theCoordinate];
     
     ///////////////////////////
     
