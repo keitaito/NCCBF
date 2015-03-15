@@ -79,11 +79,11 @@ static NSDictionary *locationCoordinates;
     return self;
 }
 
-- (instancetype)initWithEvent:(Event *)event {
+- (instancetype)initWithEvents:(NSArray *)events {
     self = [super init];
     if (self) {
-        self.event = event;
-        NSLog(@"Annotation initialized: %@", self.event);
+        self.events = events;
+        NSLog(@"Annotation initialized: %@", self.events);
     }
     
     return self;
