@@ -72,7 +72,7 @@
         <!--Event Detail View Controller-->
         <scene sceneID="awM-vK-lwN">
             <objects>
-                <viewController id="jfq-MS-MrD" customClass="EventDetailViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventDetailViewController" id="jfq-MS-MrD" customClass="EventDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wXo-Dp-dWH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
