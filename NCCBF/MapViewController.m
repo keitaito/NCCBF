@@ -23,6 +23,8 @@
 
 @property (nonatomic, strong) NSArray *eventsSortedByLocation;
 
+@property (nonatomic, strong) EventAnnotation *selectedAnnotation;
+
 
 @end
 
