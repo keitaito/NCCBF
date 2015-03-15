@@ -17,7 +17,7 @@
                     <connections>
                         <segue destination="V4C-XI-Vwo" kind="relationship" relationship="viewControllers" id="FfT-BV-AJK"/>
                         <segue destination="tt0-pA-fB6" kind="relationship" relationship="viewControllers" id="eNV-wW-D5H"/>
-                        <segue destination="jVN-0u-I2d" kind="relationship" relationship="viewControllers" id="waF-kQ-1IQ"/>
+                        <segue destination="cIN-8y-WdN" kind="relationship" relationship="viewControllers" id="waF-kQ-1IQ"/>
                         <segue destination="dLq-gI-4R8" kind="relationship" relationship="viewControllers" id="Z33-39-UZB"/>
                     </connections>
                 </tabBarController>
@@ -211,14 +211,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Map" id="Wzo-cl-bBd"/>
+                    <navigationItem key="navigationItem" id="hir-kO-gmI"/>
                     <connections>
                         <outlet property="mapView" destination="Nl5-KR-Smc" id="oNu-dU-rSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Mx-ZBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="503" y="-1552"/>
+            <point key="canvasLocation" x="1035" y="-1552"/>
         </scene>
         <!--SocialViewController-->
         <scene sceneID="XMS-Hz-mxM">
@@ -416,6 +416,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="szZ-MJ-eFu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="503" y="-852"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="E3c-yV-TXu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIN-8y-WdN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Map" id="Wzo-cl-bBd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1lc-vP-a0g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="jVN-0u-I2d" kind="relationship" relationship="rootViewController" id="1V6-iy-IUa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JI0-0d-VLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="-1552"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
