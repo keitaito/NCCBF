@@ -10,6 +10,7 @@
 #import <MapKit/MapKit.h>
 #import "EventAnnotation.h"
 #import "Event.h"
+#import "EventDetailViewController.h"
 
 @interface MapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -284,6 +285,51 @@
 }
 
 #pragma mark - MKMapView Delegate Methods
+
+//- (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
+//{
+//    view.annotation;
+//}
+
+// user tapped the disclosure button in the event callout
+//
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
+{
+    // here we illustrate how to detect which annotation type was clicked on for its callout
+    id <MKAnnotation> annotation = [view annotation];
+    if ([annotation isKindOfClass:[EventAnnotation class]])
+    {
+        NSLog(@"clicked an event annotation");
+        
+        EventDetailViewController *eventDetailVC = [[self storyboard] instantiateViewControllerWithIdentifier:@"EventDetailViewController"];
+        EventAnnotation *eventAnnotation = (EventAnnotation *)view.annotation;
+        Event *event = eventAnnotation.event;
+        eventDetailVC.eventDetail = event;
+        
+//        eventDetailVC.eventDetail =
+        
+//        if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+//        {
+//            // for iPad, we use a popover
+//            if (self.bridgePopoverController == nil)
+//            {
+//                _bridgePopoverController = [[UIPopoverController alloc] initWithContentViewController:detailViewController];
+//            }
+//            [self.bridgePopoverController presentPopoverFromRect:control.bounds
+//                                                          inView:control
+//                                        permittedArrowDirections:UIPopoverArrowDirectionLeft
+//                                                        animated:YES];
+//        }
+//        else
+//        {
+            // for iPhone we navigate to a detail view controller using UINavigationController
+        
+        
+            [self.navigationController pushViewController:eventDetailVC animated:YES];
+        NSLog(@"pushed pushed pushed");
+//        }
+    }
+}
 
 //- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
 //{
