@@ -107,11 +107,11 @@ static NSDictionary *locationCoordinates;
     return self.event.name;
 }
 
-// optional
-- (NSString *)subtitle
-{
-    return self.event.location;
-}
+//// optional
+//- (NSString *)subtitle
+//{
+//    return self.event.location;
+//}
 
 
 + (MKAnnotationView *)createViewAnnotationForMapView:(MKMapView *)mapView annotation:(id <MKAnnotation>)annotation
