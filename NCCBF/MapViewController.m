@@ -21,6 +21,8 @@
 @property (nonatomic, strong) NSMutableArray *mapAnnotations;
 @property (nonatomic, strong) UIPopoverController *eventPopoverController;
 
+@property (nonatomic, strong) NSArray *eventsSortedByLocation;
+
 
 @end
 
@@ -113,6 +115,38 @@
         [tmpArray addObject:eventModel];
     }
     self.eventsArray = [NSArray arrayWithArray:tmpArray];
+    
+    
+    //////////// create arrays of events grouped by stage
+    
+    NSMutableArray *eventsAtLocation0 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation1 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation2 = [[NSMutableArray alloc] init];
+    
+    for (int i = 0; i < tmpArray.count; i++) {
+        Event *event = tmpArray[i];
+        NSInteger locationId = event.locationId;
+        
+        switch (locationId) {
+            case 0:
+                [eventsAtLocation0 addObject:event];
+                break;
+            case 1:
+                [eventsAtLocation1 addObject:event];
+                break;
+            case 2:
+                [eventsAtLocation2 addObject:event];
+                break;
+                
+            default:
+                break;
+        }
+    }
+
+    self.eventsSortedByLocation = @[eventsAtLocation0, eventsAtLocation1, eventsAtLocation2];
+    
+    
+    ///////////
 }
 
 - (NSDictionary *)loadDataFromDocDir {
@@ -244,11 +278,21 @@
 //    EventAnnotation *eventAnnotation = [[EventAnnotation alloc] init];
 //    [self.mapAnnotations addObject:eventAnnotation];
     
-    for (int i = 0; i < self.eventsArray.count; i++) {
-        Event *event = self.eventsArray[i];
-        EventAnnotation *eventAnnotation = [[EventAnnotation alloc] initWithEvent:event];
-        [self.mapAnnotations addObject:eventAnnotation];
+//    for (int i = 0; i < self.eventsArray.count; i++) {
+//        Event *event = self.eventsArray[i];
+//        EventAnnotation *eventAnnotation = [[EventAnnotation alloc] initWithEvent:event];
+//        [self.mapAnnotations addObject:eventAnnotation];
+//    }
+    
+    // Create annotations with eventsSoretedByLocation.
+    for (int i = 0; i < self.eventsSortedByLocation.count; i++) {
+        NSArray *eventsAtLocation = self.eventsSortedByLocation[i];
+        EventAnnotation *locationAnnotation = [[EventAnnotation alloc] initWithEvents:eventsAtLocation];
+        [self.mapAnnotations addObject:locationAnnotation];
     }
+
+    
+    
     
     // Add annotations in map view.
     [self.mapView addAnnotations:self.mapAnnotations];
