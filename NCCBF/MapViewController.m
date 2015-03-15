@@ -11,6 +11,7 @@
 #import "EventAnnotation.h"
 #import "Event.h"
 #import "EventDetailViewController.h"
+#import "StageTableViewController.h"
 
 @interface MapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 
@@ -347,10 +348,13 @@
     {
         NSLog(@"clicked an event annotation");
         
-        EventDetailViewController *eventDetailVC = [[self storyboard] instantiateViewControllerWithIdentifier:@"EventDetailViewController"];
+//        EventDetailViewController *eventDetailVC = [[self storyboard] instantiateViewControllerWithIdentifier:@"EventDetailViewController"];
         EventAnnotation *eventAnnotation = (EventAnnotation *)view.annotation;
-        Event *event = eventAnnotation.event;
-        eventDetailVC.eventDetail = event;
+        self.selectedAnnotation = eventAnnotation;
+        [self performSegueWithIdentifier:@"showStageTableViewController" sender:self];
+        
+//        Event *event = eventAnnotation.event;
+//        eventDetailVC.eventDetail = event;
         
 //        eventDetailVC.eventDetail =
         
@@ -371,8 +375,8 @@
             // for iPhone we navigate to a detail view controller using UINavigationController
         
         
-            [self.navigationController pushViewController:eventDetailVC animated:YES];
-        NSLog(@"pushed pushed pushed");
+//            [self.navigationController pushViewController:eventDetailVC animated:YES];
+//        NSLog(@"pushed pushed pushed");
 //        }
     }
 }
