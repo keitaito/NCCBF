@@ -230,11 +230,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StageTableViewCell" id="eRi-e4-AyX">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="StageTableViewCell" id="eRi-e4-AyX">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eRi-e4-AyX" id="8Kp-uF-Mfq">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="jfq-MS-MrD" kind="push" identifier="showEventDetailViewController" id="XtE-yS-bxV"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -471,6 +474,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Bhe-xc-W16"/>
+        <segue reference="XtE-yS-bxV"/>
     </inferredMetricsTieBreakers>
 </document>

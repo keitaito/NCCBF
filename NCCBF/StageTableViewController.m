@@ -8,6 +8,7 @@
 
 #import "StageTableViewController.h"
 #import "Event.h"
+#import "EventDetailViewController.h"
 
 @interface StageTableViewController ()
 
@@ -90,14 +91,21 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"showEventDetailViewController"]) {
+        EventDetailViewController *eventDetailVC = [segue destinationViewController];
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        
+        Event *event = self.eventsArray[indexPath.row];
+        eventDetailVC.eventDetail = event;
+    }
 }
-*/
+
 
 @end
