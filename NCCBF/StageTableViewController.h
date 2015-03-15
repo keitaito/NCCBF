@@ -10,4 +10,6 @@
 
 @interface StageTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSArray *eventsArray;
+
 @end
