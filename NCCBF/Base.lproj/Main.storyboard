@@ -214,11 +214,39 @@
                     <navigationItem key="navigationItem" id="hir-kO-gmI"/>
                     <connections>
                         <outlet property="mapView" destination="Nl5-KR-Smc" id="oNu-dU-rSR"/>
+                        <segue destination="d9R-X6-C9t" kind="push" identifier="showStageTable" id="13t-n5-L3Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Mx-ZBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1035" y="-1552"/>
+        </scene>
+        <!--Stage Table View Controller-->
+        <scene sceneID="cjn-b9-xUu">
+            <objects>
+                <tableViewController storyboardIdentifier="StageTableViewController" id="d9R-X6-C9t" customClass="StageTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dKB-FI-9F5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="eRi-e4-AyX">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="eRi-e4-AyX" id="8Kp-uF-Mfq">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="d9R-X6-C9t" id="ehi-jd-Lvu"/>
+                            <outlet property="delegate" destination="d9R-X6-C9t" id="erv-A2-RZ1"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="XId-IU-Vl2"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HTM-8Q-dr0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1505" y="-1552"/>
         </scene>
         <!--SocialViewController-->
         <scene sceneID="XMS-Hz-mxM">

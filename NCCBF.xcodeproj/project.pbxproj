@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230C66FF1AB531E200D77F20 /* StageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C66FE1AB531E200D77F20 /* StageTableViewController.m */; };
 		23264A921AAA89F20039B845 /* AboutUsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A911AAA89F20039B845 /* AboutUsCell.m */; };
 		23264A951AAA8DF30039B845 /* AboutUsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */; };
 		235750EC1A8DA24C00192D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EB1A8DA24C00192D24 /* main.m */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230C66FD1AB531E200D77F20 /* StageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageTableViewController.h; sourceTree = "<group>"; };
+		230C66FE1AB531E200D77F20 /* StageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageTableViewController.m; sourceTree = "<group>"; };
 		23264A901AAA89F20039B845 /* AboutUsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsCell.h; sourceTree = "<group>"; };
 		23264A911AAA89F20039B845 /* AboutUsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsCell.m; sourceTree = "<group>"; };
 		23264A931AAA8DF30039B845 /* AboutUsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsDetailViewController.h; sourceTree = "<group>"; };
@@ -205,6 +208,8 @@
 				2378BB231A904C5C00571BC9 /* MapViewController.m */,
 				235F2B601AB2775900FBCCB2 /* EventAnnotation.h */,
 				235F2B611AB2775900FBCCB2 /* EventAnnotation.m */,
+				230C66FD1AB531E200D77F20 /* StageTableViewController.h */,
+				230C66FE1AB531E200D77F20 /* StageTableViewController.m */,
 			);
 			name = MapView;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230C66FF1AB531E200D77F20 /* StageTableViewController.m in Sources */,
 				235751201A8DBD7600192D24 /* Event.m in Sources */,
 				2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */,
 				2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */,
