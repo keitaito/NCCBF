@@ -95,7 +95,10 @@ static NSDictionary *locationCoordinates;
 //        theCoordinate.latitude = 37.785257;
 //        theCoordinate.longitude = -122.429648;
 //        return theCoordinate;
-    NSInteger locationId = self.event.locationId;
+    
+//    NSInteger locationId = self.event.locationId;
+    Event *event = [self.events firstObject];
+    NSInteger locationId = event.locationId;
     NSNumber *n = [NSNumber numberWithInteger:locationId];
     CLLocationCoordinate2D c = [locationCoordinates[n] MKCoordinateValue];
     return c;
@@ -104,7 +107,9 @@ static NSDictionary *locationCoordinates;
 // required if you set the MKPinAnnotationView's "canShowCallout" property to YES
 - (NSString *)title
 {
-    return self.event.name;
+    Event *event = [self.events firstObject];
+    NSString *locationName = event.location;
+    return locationName;
 }
 
 //// optional
