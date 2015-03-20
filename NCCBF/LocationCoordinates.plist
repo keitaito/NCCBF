@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Peace Plaza Stage</key>
+	<string>{37.78518, -122.429713}</string>
+	<key>JCCNC Stage</key>
+	<string>{37.785237, -122.431239}</string>
+	<key>Sakura 360 Stage</key>
+	<string>{37.785504, -122.430526}</string>
+</dict>
+</plist>

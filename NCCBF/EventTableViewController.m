@@ -39,10 +39,11 @@
     __weak EventTableViewController *weakSelf = self;
     
     // Create url and request.
-    NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
+//    NSString *urlString = @"http://keitaito.com/sampleNCCBF/document.json";
+    NSString *urlString = @"http://sfjapantown.org/smartphone_app/document.json";
     
     // For test
-    urlString = nil;
+//    urlString = nil;
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -58,7 +59,7 @@
                                // Check if the data is downloaded and error.
                                if ([data length] > 0 && connectionError == nil) {
                                    // Store the data object in tmp array.
-                                   NSLog(@"the data is downloaded.");
+                                   NSLog(@"SUCCESS!!!!! Events data is downloaded.");
                                    
                                    // Parse JSON file to a dictionary object.
                                    id object = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];

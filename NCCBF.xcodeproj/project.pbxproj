@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230C66FF1AB531E200D77F20 /* StageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C66FE1AB531E200D77F20 /* StageTableViewController.m */; };
 		23264A921AAA89F20039B845 /* AboutUsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A911AAA89F20039B845 /* AboutUsCell.m */; };
 		23264A951AAA8DF30039B845 /* AboutUsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */; };
 		235750EC1A8DA24C00192D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EB1A8DA24C00192D24 /* main.m */; };
@@ -19,10 +20,13 @@
 		2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751191A8DABF600192D24 /* EventTableViewCell.m */; };
 		2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511C1A8DB81E00192D24 /* EventDetailViewController.m */; };
 		235751201A8DBD7600192D24 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511F1A8DBD7600192D24 /* Event.m */; };
+		235F2B621AB2775900FBCCB2 /* EventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 235F2B611AB2775900FBCCB2 /* EventAnnotation.m */; };
 		2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB191A90431300571BC9 /* ScheduleTableViewController.m */; };
 		2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB1C1A90443700571BC9 /* ScheduleTableViewCell.m */; };
 		2378BB211A904C4100571BC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378BB201A904C4100571BC9 /* MapKit.framework */; };
 		2378BB241A904C5C00571BC9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB231A904C5C00571BC9 /* MapViewController.m */; };
+		23AD6C7A1AAE803A007119F9 /* Japantown.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AD6C791AAE803A007119F9 /* Japantown.plist */; };
+		23AF9C7E1AB4E83200C53A60 /* LocationCoordinates.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23AF9C7D1AB4E83200C53A60 /* LocationCoordinates.plist */; };
 		23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB01A946FDD00D01330 /* SocialViewController.m */; };
 		23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E06DB31A94723A00D01330 /* SocialViewCell.m */; };
 		23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23E06DB51A947B6500D01330 /* SocialMedia.plist */; };
@@ -41,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		230C66FD1AB531E200D77F20 /* StageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StageTableViewController.h; sourceTree = "<group>"; };
+		230C66FE1AB531E200D77F20 /* StageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StageTableViewController.m; sourceTree = "<group>"; };
 		23264A901AAA89F20039B845 /* AboutUsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsCell.h; sourceTree = "<group>"; };
 		23264A911AAA89F20039B845 /* AboutUsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsCell.m; sourceTree = "<group>"; };
 		23264A931AAA8DF30039B845 /* AboutUsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsDetailViewController.h; sourceTree = "<group>"; };
@@ -64,6 +70,8 @@
 		2357511C1A8DB81E00192D24 /* EventDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewController.m; sourceTree = "<group>"; };
 		2357511E1A8DBD7600192D24 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
 		2357511F1A8DBD7600192D24 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		235F2B601AB2775900FBCCB2 /* EventAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventAnnotation.h; sourceTree = "<group>"; };
+		235F2B611AB2775900FBCCB2 /* EventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventAnnotation.m; sourceTree = "<group>"; };
 		2378BB181A90431300571BC9 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
 		2378BB191A90431300571BC9 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
 		2378BB1B1A90443700571BC9 /* ScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewCell.h; sourceTree = "<group>"; };
@@ -71,6 +79,8 @@
 		2378BB201A904C4100571BC9 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		2378BB221A904C5C00571BC9 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		2378BB231A904C5C00571BC9 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		23AD6C791AAE803A007119F9 /* Japantown.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Japantown.plist; sourceTree = "<group>"; };
+		23AF9C7D1AB4E83200C53A60 /* LocationCoordinates.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LocationCoordinates.plist; sourceTree = "<group>"; };
 		23E06DAF1A946FDD00D01330 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
 		23E06DB01A946FDD00D01330 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		23E06DB21A94723A00D01330 /* SocialViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewCell.h; sourceTree = "<group>"; };
@@ -192,8 +202,14 @@
 		2378BB1E1A904B1B00571BC9 /* MapView */ = {
 			isa = PBXGroup;
 			children = (
+				23AD6C791AAE803A007119F9 /* Japantown.plist */,
+				23AF9C7D1AB4E83200C53A60 /* LocationCoordinates.plist */,
 				2378BB221A904C5C00571BC9 /* MapViewController.h */,
 				2378BB231A904C5C00571BC9 /* MapViewController.m */,
+				235F2B601AB2775900FBCCB2 /* EventAnnotation.h */,
+				235F2B611AB2775900FBCCB2 /* EventAnnotation.m */,
+				230C66FD1AB531E200D77F20 /* StageTableViewController.h */,
+				230C66FE1AB531E200D77F20 /* StageTableViewController.m */,
 			);
 			name = MapView;
 			sourceTree = "<group>";
@@ -305,8 +321,10 @@
 				235750F51A8DA24C00192D24 /* Main.storyboard in Resources */,
 				235750FA1A8DA24C00192D24 /* LaunchScreen.xib in Resources */,
 				23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */,
+				23AF9C7E1AB4E83200C53A60 /* LocationCoordinates.plist in Resources */,
 				235750F71A8DA24C00192D24 /* Images.xcassets in Resources */,
 				23E06DB81A94855400D01330 /* Events.plist in Resources */,
+				23AD6C7A1AAE803A007119F9 /* Japantown.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,12 +342,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				230C66FF1AB531E200D77F20 /* StageTableViewController.m in Sources */,
 				235751201A8DBD7600192D24 /* Event.m in Sources */,
 				2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */,
 				2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */,
 				23264A951AAA8DF30039B845 /* AboutUsDetailViewController.m in Sources */,
 				23E06DB41A94723A00D01330 /* SocialViewCell.m in Sources */,
 				2378BB241A904C5C00571BC9 /* MapViewController.m in Sources */,
+				235F2B621AB2775900FBCCB2 /* EventAnnotation.m in Sources */,
 				2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */,
 				2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */,
 				23264A921AAA89F20039B845 /* AboutUsCell.m in Sources */,
