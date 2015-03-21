@@ -226,11 +226,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-KR-Smc">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nl5-KR-Smc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nl5-KR-Smc" firstAttribute="leading" secondItem="13K-Ps-zhd" secondAttribute="leading" id="IbV-D0-xCR"/>
+                            <constraint firstAttribute="trailing" secondItem="Nl5-KR-Smc" secondAttribute="trailing" id="M34-oF-5mV"/>
+                            <constraint firstItem="Nl5-KR-Smc" firstAttribute="top" secondItem="13K-Ps-zhd" secondAttribute="top" id="UKn-ci-dL2"/>
+                            <constraint firstAttribute="bottom" secondItem="Nl5-KR-Smc" secondAttribute="bottom" id="Z0i-aI-lfB"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hir-kO-gmI"/>
                     <connections>
@@ -240,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWN-Mx-ZBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940.625" y="-1639.4366197183097"/>
+            <point key="canvasLocation" x="1940" y="-1640"/>
         </scene>
         <!--Stage Table View Controller-->
         <scene sceneID="cjn-b9-xUu">
