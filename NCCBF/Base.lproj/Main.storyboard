@@ -365,12 +365,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PSt-Rz-6MC">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSt-Rz-6MC">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="PSt-Rz-6MC" secondAttribute="bottom" id="DXn-5C-cey"/>
+                            <constraint firstItem="PSt-Rz-6MC" firstAttribute="leading" secondItem="aY2-3w-anq" secondAttribute="leading" id="Urx-zz-mOL"/>
+                            <constraint firstItem="PSt-Rz-6MC" firstAttribute="top" secondItem="aY2-3w-anq" secondAttribute="top" id="ZDA-5v-ze2"/>
+                            <constraint firstAttribute="trailing" secondItem="PSt-Rz-6MC" secondAttribute="trailing" id="oHy-Bb-dKW"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tUE-zD-ru6"/>
                     <connections>
