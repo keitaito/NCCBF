@@ -139,8 +139,8 @@
                             <rect key="frame" x="0.0" y="64" width="600" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-8l-0iP">
-                                    <rect key="frame" x="8" y="8" width="304" height="29"/>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LvT-8l-0iP">
+                                    <rect key="frame" x="191" y="8" width="219" height="29"/>
                                     <segments>
                                         <segment title="Apr 11"/>
                                         <segment title="Apr 12"/>
@@ -153,6 +153,10 @@
                                 </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="centerX" secondItem="LvT-8l-0iP" secondAttribute="centerX" id="oFy-5t-MR0"/>
+                                <constraint firstAttribute="centerY" secondItem="LvT-8l-0iP" secondAttribute="centerY" id="pP4-me-PVe"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ScheduleTableViewCell" rowHeight="80" id="9D7-aN-i5C" customClass="ScheduleTableViewCell">
@@ -160,25 +164,33 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9D7-aN-i5C" id="MPp-bX-cLf">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="start time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUK-un-Wkx">
-                                            <rect key="frame" x="8" y="11" width="211" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="AUK-un-Wkx">
+                                            <rect key="frame" x="8" y="8" width="74" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="event title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-o4-xpa">
-                                            <rect key="frame" x="164" y="40" width="156" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-EK-j5p">
+                                            <rect key="frame" x="8" y="50" width="74" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="end time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GTF-EK-j5p">
-                                            <rect key="frame" x="8" y="40" width="211" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-o4-xpa">
+                                            <rect key="frame" x="98" y="29" width="75" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="AUK-un-Wkx" firstAttribute="top" secondItem="MPp-bX-cLf" secondAttribute="top" constant="8" id="HLs-ud-tUd"/>
+                                        <constraint firstItem="Zq0-o4-xpa" firstAttribute="leading" secondItem="AUK-un-Wkx" secondAttribute="trailing" constant="16" id="Xb0-GG-mp7"/>
+                                        <constraint firstItem="GTF-EK-j5p" firstAttribute="leading" secondItem="MPp-bX-cLf" secondAttribute="leading" constant="8" id="by4-BT-pcH"/>
+                                        <constraint firstItem="AUK-un-Wkx" firstAttribute="leading" secondItem="MPp-bX-cLf" secondAttribute="leading" constant="8" id="ezK-Kn-uqZ"/>
+                                        <constraint firstItem="GTF-EK-j5p" firstAttribute="top" secondItem="AUK-un-Wkx" secondAttribute="bottom" constant="21" id="mAX-R6-Z7l"/>
+                                        <constraint firstAttribute="centerY" secondItem="Zq0-o4-xpa" secondAttribute="centerY" id="rie-97-09l"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="EndTimeLabel" destination="GTF-EK-j5p" id="oM6-9I-0r1"/>
@@ -200,7 +212,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3R-kG-zSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1940.625" y="-2371.4788732394363"/>
+            <point key="canvasLocation" x="1940" y="-2373"/>
         </scene>
         <!--MapViewController-->
         <scene sceneID="RbA-ZL-7PQ">
@@ -484,6 +496,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Bhe-xc-W16"/>
+        <segue reference="NNj-72-NtQ"/>
     </inferredMetricsTieBreakers>
 </document>

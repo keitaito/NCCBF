@@ -236,8 +236,8 @@
 //    NSLog(@"%@", eventStartTimeString);
     
     // Set event time label.
-    cell.startTimeLabel.text = [NSString stringWithFormat:@"Start: %@", eventStartTimeString];
-    cell.EndTimeLabel.text = [NSString stringWithFormat:@"End: %@", eventEndTimeString];
+    cell.startTimeLabel.text = [NSString stringWithFormat:@"%@", eventStartTimeString];
+    cell.EndTimeLabel.text = [NSString stringWithFormat:@"%@", eventEndTimeString];
     
     return cell;
 }
