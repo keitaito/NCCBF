@@ -44,6 +44,50 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 1;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *identifier = nil;
+    
+    if (indexPath.row == 0) {
+        identifier = @"EventImageCell";
+    } else if (indexPath.row == 1) {
+        identifier = @"EventNameCell";
+    } else if (indexPath.row == 2) {
+        identifier = @"EventDescriptionCell";
+    }
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    
+    
+    // Configure the cell...
+    
+    return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"UITableViewAutomationDimension");
+    
+    return UITableViewAutomaticDimension;
+}
+
 /*
 #pragma mark - Navigation
 
