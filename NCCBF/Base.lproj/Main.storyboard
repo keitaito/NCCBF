@@ -331,7 +331,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="titleLabel" destination="jVy-p1-xW3" id="jw1-Tc-BUE"/>
-                                            <segue destination="4XT-TH-NNy" kind="show" id="VyY-Q0-AUN"/>
+                                            <segue destination="3y3-b9-AlL" kind="show" id="fNf-bE-vmH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -388,10 +388,10 @@
             </objects>
             <point key="canvasLocation" x="2810.625" y="-899.99999999999989"/>
         </scene>
-        <!--About Us Detail View Controller-->
+        <!--View Controller-->
         <scene sceneID="TJz-jt-UsE">
             <objects>
-                <viewController id="4XT-TH-NNy" customClass="AboutUsDetailViewController" sceneMemberID="viewController">
+                <viewController id="4XT-TH-NNy" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RFM-SF-iAg"/>
                         <viewControllerLayoutGuide type="bottom" id="FGD-rF-47A"/>
@@ -425,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="2810.625" y="-197.53521126760563"/>
         </scene>
-        <!--Table View Controller-->
+        <!--About Us Detail View Controller-->
         <scene sceneID="0fX-1R-ZZA">
             <objects>
-                <tableViewController id="3y3-b9-AlL" sceneMemberID="viewController">
+                <tableViewController id="3y3-b9-AlL" customClass="AboutUsDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="dGZ-pS-Dpy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
