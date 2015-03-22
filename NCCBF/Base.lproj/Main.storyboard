@@ -164,7 +164,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9D7-aN-i5C" id="MPp-bX-cLf">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="AUK-un-Wkx">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="12:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="AUK-un-Wkx">
                                             <rect key="frame" x="8" y="8" width="74" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -177,13 +177,14 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zq0-o4-xpa">
-                                            <rect key="frame" x="98" y="29" width="75" height="21"/>
+                                            <rect key="frame" x="98" y="29" width="461" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Zq0-o4-xpa" secondAttribute="trailing" constant="8" id="9MA-yY-51J"/>
                                         <constraint firstItem="AUK-un-Wkx" firstAttribute="top" secondItem="MPp-bX-cLf" secondAttribute="top" constant="8" id="HLs-ud-tUd"/>
                                         <constraint firstItem="Zq0-o4-xpa" firstAttribute="leading" secondItem="AUK-un-Wkx" secondAttribute="trailing" constant="16" id="Xb0-GG-mp7"/>
                                         <constraint firstItem="GTF-EK-j5p" firstAttribute="leading" secondItem="MPp-bX-cLf" secondAttribute="leading" constant="8" id="by4-BT-pcH"/>
