@@ -7,10 +7,12 @@
 //
 
 #import "AboutUsDetailViewController.h"
+#import "AboutUsDetailViewCell.h"
 
 @interface AboutUsDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+//@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, copy) NSString *festDescString;
 
 @end
 
@@ -27,12 +29,12 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-
     // Store festival description in string.
-    NSString *festDescString = dict[@"FestivalDescription"];
-    // Update text of text view.
-    self.textView.text = festDescString;
-    self.textView.editable = NO;
+    self.festDescString = dict[@"FestivalDescription"];
+    
+//     Update text of text view.
+//    self.textView.text = festDescString;
+//    self.textView.editable = NO;
     
     // Update title in nav bar.
 //    self.navigationController.navigationItem.title = @"About NCCBF";
@@ -61,21 +63,13 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *identifier = nil;
+    NSString *identifier = @"AboutUsDetailViewCell";
+
     
-    if (indexPath.row == 0) {
-        identifier = @"EventImageCell";
-    } else if (indexPath.row == 1) {
-        identifier = @"EventNameCell";
-    } else if (indexPath.row == 2) {
-        identifier = @"EventDescriptionCell";
-    }
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    
-    
+    AboutUsDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     // Configure the cell...
+    cell.AboutUsDescriptionLabel.text = self.festDescString;
     
     return cell;
 }
