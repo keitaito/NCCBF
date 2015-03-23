@@ -70,3 +70,37 @@
 
 @end
 
+@implementation EventScheduleCell
+
+- (void)setupWithModel:(Event *)event
+{
+    // Store event schedule data from event model.
+    NSDate *eventDateAndStartTime = event.date;
+    NSDate *eventEndTime = event.endTime;
+    
+    // Create string of event's date.
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"MMM dd"];
+    NSString *eventDateString = [dateFormatter stringFromDate:eventDateAndStartTime];
+    
+    // Create string of event's start time.
+    NSDateFormatter *startTimeFormatter = [[NSDateFormatter alloc] init];
+    [startTimeFormatter setDateFormat:@"h:mm a"];
+    NSString *eventStartTimeString = [startTimeFormatter stringFromDate:eventDateAndStartTime];
+
+    // Create string of event's end time.
+    NSDateFormatter *endTimeFormatter = [[NSDateFormatter alloc] init];
+    [endTimeFormatter setDateFormat:@"h:mm a"];
+    NSString *eventEndTimeString = [endTimeFormatter stringFromDate:eventEndTime];
+    
+    // Create event schedule string.
+    NSString *eventScheduleString = [NSString stringWithFormat:@"%@ %@ - %@", eventDateString, eventStartTimeString, eventEndTimeString];
+    
+    // Pass schedule string in eventScheduleLabel.
+    self.eventScheduleLabel.text = eventScheduleString;
+    
+    NSLog(@"%@", eventScheduleString);
+}
+
+@end
+
