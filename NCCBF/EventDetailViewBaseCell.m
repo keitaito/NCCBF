@@ -35,6 +35,7 @@
 {
     NSString *string = event.imageString;
     self.detailPosterView.image = [UIImage imageNamed:string];
+    NSLog(@"%@", event.imageString);
 }
 
 @end
@@ -44,6 +45,7 @@
 - (void)setupWithModel:(Event *)event
 {
     self.titleLabel.text = event.name;
+    NSLog(@"%@", event.name);
 }
 
 @end
@@ -53,6 +55,7 @@
 - (void)setupWithModel:(Event *)event
 {
     self.eventDescriptionLabel.text = event.eventDescription;
+    NSLog(@"%@", event.eventDescription);
 }
 
 @end
@@ -62,6 +65,7 @@
 - (void)setupWithModel:(Event *)event
 {
     self.eventLocationLabel.text = event.location;
+    NSLog(@"%@", event.location);
 }
 
 @end
