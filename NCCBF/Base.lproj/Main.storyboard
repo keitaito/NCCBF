@@ -64,7 +64,7 @@
                                 <connections>
                                     <outlet property="posterView" destination="djP-zN-mxL" id="5d1-qk-hrf"/>
                                     <outlet property="titleLabel" destination="aYr-WR-CWj" id="f8S-7J-yEJ"/>
-                                    <segue destination="jfq-MS-MrD" kind="show" identifier="showEventDetailView" id="Bhe-xc-W16"/>
+                                    <segue destination="80q-aL-kfE" kind="show" identifier="showEventDetailViewFromEventTableView" id="MSZ-a4-kMI"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -116,16 +116,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="MoR-9N-cTO"/>
-                    <connections>
-                        <outlet property="detailPosterView" destination="iaM-7N-qni" id="yhl-R2-a1S"/>
-                        <outlet property="eventDescriptionLabel" destination="T9H-0G-2LI" id="02H-Rw-ScS"/>
-                        <outlet property="locationLabel" destination="yNt-fm-gXh" id="uIQ-12-pE2"/>
-                        <outlet property="titleLabel" destination="yNg-UY-6an" id="dgU-Zj-bsp"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxd-dY-LJP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3033.75" y="-3120.4225352112676"/>
+            <point key="canvasLocation" x="3817" y="-3203"/>
         </scene>
         <!--Event Detail View Controller-->
         <scene sceneID="GOa-2V-Q71">
@@ -229,7 +223,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TtY-eJ-lXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3750" y="-3127"/>
+            <point key="canvasLocation" x="2962" y="-3121"/>
         </scene>
         <!--ScheduleViewController-->
         <scene sceneID="sXl-ag-X8a">
@@ -301,7 +295,7 @@
                                     <outlet property="EndTimeLabel" destination="GTF-EK-j5p" id="oM6-9I-0r1"/>
                                     <outlet property="startTimeLabel" destination="AUK-un-Wkx" id="ipZ-Go-yhY"/>
                                     <outlet property="titleLabel" destination="Zq0-o4-xpa" id="Csb-KH-qQ7"/>
-                                    <segue destination="jfq-MS-MrD" kind="show" identifier="showEventDetailView" id="NNj-72-NtQ"/>
+                                    <segue destination="80q-aL-kfE" kind="show" identifier="showEventDetailViewFromScheduleTableView" id="OJ2-SP-4K5"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -368,7 +362,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="jfq-MS-MrD" kind="show" identifier="showEventDetailViewController" id="XtE-yS-bxV"/>
+                                    <segue destination="80q-aL-kfE" kind="show" identifier="showEventDetailViewFromStageTableView" id="08X-X0-3tU"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -662,6 +656,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XtE-yS-bxV"/>
+        <segue reference="MSZ-a4-kMI"/>
     </inferredMetricsTieBreakers>
 </document>
