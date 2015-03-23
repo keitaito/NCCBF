@@ -172,6 +172,30 @@
                                     <outlet property="titleLabel" destination="b5h-Gz-txP" id="rdR-ea-sdg"/>
                                 </connections>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventScheduleCell" id="3v4-dP-bhp" customClass="EventScheduleCell">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3v4-dP-bhp" id="phQ-Am-4Q9">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event schedule" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-ZS-seZ">
+                                            <rect key="frame" x="8" y="8" width="584" height="27"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Zwg-ZS-seZ" secondAttribute="bottom" constant="8" id="8Pc-aH-vWy"/>
+                                        <constraint firstItem="Zwg-ZS-seZ" firstAttribute="leading" secondItem="phQ-Am-4Q9" secondAttribute="leading" constant="8" id="nw9-JT-QfM"/>
+                                        <constraint firstAttribute="trailing" secondItem="Zwg-ZS-seZ" secondAttribute="trailing" constant="8" id="se6-JW-K3G"/>
+                                        <constraint firstItem="Zwg-ZS-seZ" firstAttribute="top" secondItem="phQ-Am-4Q9" secondAttribute="top" constant="8" id="wEb-d5-VB2"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventScheduleLabel" destination="Zwg-ZS-seZ" id="BHN-Jc-MSV"/>
+                                </connections>
+                            </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventLocationCell" id="grQ-k5-S5Y" customClass="EventLocationCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
