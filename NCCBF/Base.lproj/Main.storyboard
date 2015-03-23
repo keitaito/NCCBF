@@ -79,10 +79,10 @@
             </objects>
             <point key="canvasLocation" x="1940" y="-3122"/>
         </scene>
-        <!--Event Detail View Controller-->
+        <!--View Controller-->
         <scene sceneID="awM-vK-lwN">
             <objects>
-                <viewController storyboardIdentifier="EventDetailViewController" id="jfq-MS-MrD" customClass="EventDetailViewController" sceneMemberID="viewController">
+                <viewController id="jfq-MS-MrD" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bbb-Wt-ada"/>
                         <viewControllerLayoutGuide type="bottom" id="kJ1-A1-4Pd"/>
@@ -102,12 +102,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yNt-fm-gXh">
                                 <rect key="frame" x="16" y="421" width="288" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eventDescription" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9H-0G-2LI">
-                                <rect key="frame" x="16" y="450" width="288" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -150,6 +144,9 @@
                                         <constraint firstAttribute="centerX" secondItem="sZL-Za-C8a" secondAttribute="centerX" id="vxe-9e-z4W"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="detailPosterView" destination="sZL-Za-C8a" id="TVF-vH-iUg"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventNameCell" id="CBD-QO-eMV" customClass="EventNameCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -171,6 +168,9 @@
                                         <constraint firstItem="b5h-Gz-txP" firstAttribute="leading" secondItem="PXv-HQ-qPy" secondAttribute="leading" constant="8" id="nhz-vK-bh5"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="b5h-Gz-txP" id="rdR-ea-sdg"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventLocationCell" id="grQ-k5-S5Y" customClass="EventLocationCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -192,6 +192,9 @@
                                         <constraint firstAttribute="trailing" secondItem="ZnN-ZM-Dbd" secondAttribute="trailing" constant="8" id="h4w-dW-h60"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventLocationLabel" destination="ZnN-ZM-Dbd" id="h1V-oJ-nGO"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventDescriptionCell" id="MIr-XC-egR" customClass="EventDescriptionCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -213,6 +216,9 @@
                                         <constraint firstAttribute="bottom" secondItem="c2h-fC-UQm" secondAttribute="bottom" constant="8" id="XWI-s1-cf2"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="eventDescriptionLabel" destination="c2h-fC-UQm" id="GyQ-rn-UHZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
