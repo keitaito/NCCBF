@@ -29,15 +29,6 @@ typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
     
     // Set nav bar title.
     self.title = self.eventDetail.name;
-    
-//    // Set event image.
-//    NSString *imageName = self.eventDetail.imageString;
-//    self.detailPosterView.image = [UIImage imageNamed:imageName];
-//    
-//    // Set event title, time, location, description.
-//    self.titleLabel.text = self.eventDetail.name;
-//    self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
-//    self.locationLabel.text = self.eventDetail.location;
 
 }
 
@@ -82,8 +73,6 @@ typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
     }
     
     EventDetailViewBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    
-    
     
     // Configure the cell...
     [cell setupWithModel:self.eventDetail];
