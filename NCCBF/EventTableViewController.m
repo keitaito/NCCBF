@@ -264,7 +264,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
+    if ([[segue identifier] isEqualToString:@"showEventDetailViewFromEventTableView"]) {
         NSLog(@"showEventDetailView");
         
         EventDetailViewController *eventDetailViewController = [segue destinationViewController];

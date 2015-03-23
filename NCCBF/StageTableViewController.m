@@ -98,7 +98,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
-    if ([[segue identifier] isEqualToString:@"showEventDetailViewController"]) {
+    if ([[segue identifier] isEqualToString:@"showEventDetailViewFromStageTableView"]) {
         EventDetailViewController *eventDetailVC = [segue destinationViewController];
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
