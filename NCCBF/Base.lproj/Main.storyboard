@@ -126,7 +126,7 @@
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventImageCell" rowHeight="317" id="pb2-rE-tVf" customClass="EventImageCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventImageCell" rowHeight="317" id="pb2-rE-tVf" customClass="EventImageCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pb2-rE-tVf" id="krw-8I-sx3">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -150,7 +150,7 @@
                                     <outlet property="detailPosterView" destination="sZL-Za-C8a" id="TVF-vH-iUg"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventNameCell" rowHeight="44" id="CBD-QO-eMV" customClass="EventNameCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventNameCell" rowHeight="44" id="CBD-QO-eMV" customClass="EventNameCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CBD-QO-eMV" id="PXv-HQ-qPy">
@@ -174,7 +174,7 @@
                                     <outlet property="titleLabel" destination="b5h-Gz-txP" id="rdR-ea-sdg"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventScheduleCell" rowHeight="44" id="3v4-dP-bhp" customClass="EventScheduleCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventScheduleCell" rowHeight="44" id="3v4-dP-bhp" customClass="EventScheduleCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3v4-dP-bhp" id="phQ-Am-4Q9">
@@ -198,7 +198,7 @@
                                     <outlet property="eventScheduleLabel" destination="Zwg-ZS-seZ" id="BHN-Jc-MSV"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventLocationCell" rowHeight="44" id="grQ-k5-S5Y" customClass="EventLocationCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventLocationCell" rowHeight="44" id="grQ-k5-S5Y" customClass="EventLocationCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="grQ-k5-S5Y" id="a3u-pY-gzi">
@@ -222,7 +222,7 @@
                                     <outlet property="eventLocationLabel" destination="ZnN-ZM-Dbd" id="h1V-oJ-nGO"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EventDescriptionCell" rowHeight="44" id="MIr-XC-egR" customClass="EventDescriptionCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="EventDescriptionCell" rowHeight="44" id="MIr-XC-egR" customClass="EventDescriptionCell">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MIr-XC-egR" id="eS1-DG-YpV">
@@ -564,7 +564,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AboutUsDetailViewCell" id="U6E-p0-IuW" customClass="AboutUsDetailViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AboutUsDetailViewCell" id="U6E-p0-IuW" customClass="AboutUsDetailViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="U6E-p0-IuW" id="hbR-Kt-RFh">
                                     <autoresizingMask key="autoresizingMask"/>
