@@ -367,7 +367,7 @@
                             <constraint firstAttribute="bottom" secondItem="Nl5-KR-Smc" secondAttribute="bottom" id="Z0i-aI-lfB"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hir-kO-gmI"/>
+                    <navigationItem key="navigationItem" title="Map" id="hir-kO-gmI"/>
                     <connections>
                         <outlet property="mapView" destination="Nl5-KR-Smc" id="oNu-dU-rSR"/>
                         <segue destination="d9R-X6-C9t" kind="show" identifier="showStageTableViewController" id="13t-n5-L3Q"/>
@@ -673,6 +673,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1lc-vP-a0g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.21960784310000001" green="0.32549019610000002" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
