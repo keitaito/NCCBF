@@ -21,6 +21,7 @@
 		2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511C1A8DB81E00192D24 /* EventDetailViewController.m */; };
 		235751201A8DBD7600192D24 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 2357511F1A8DBD7600192D24 /* Event.m */; };
 		235F2B621AB2775900FBCCB2 /* EventAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 235F2B611AB2775900FBCCB2 /* EventAnnotation.m */; };
+		23655E0C1ABF8F17005A3163 /* EventDetailViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23655E0B1ABF8F17005A3163 /* EventDetailViewBaseCell.m */; };
 		2378BB1A1A90431300571BC9 /* ScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB191A90431300571BC9 /* ScheduleTableViewController.m */; };
 		2378BB1D1A90443700571BC9 /* ScheduleTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378BB1C1A90443700571BC9 /* ScheduleTableViewCell.m */; };
 		2378BB211A904C4100571BC9 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378BB201A904C4100571BC9 /* MapKit.framework */; };
@@ -73,6 +74,8 @@
 		2357511F1A8DBD7600192D24 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
 		235F2B601AB2775900FBCCB2 /* EventAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventAnnotation.h; sourceTree = "<group>"; };
 		235F2B611AB2775900FBCCB2 /* EventAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventAnnotation.m; sourceTree = "<group>"; };
+		23655E0A1ABF8F17005A3163 /* EventDetailViewBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventDetailViewBaseCell.h; sourceTree = "<group>"; };
+		23655E0B1ABF8F17005A3163 /* EventDetailViewBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventDetailViewBaseCell.m; sourceTree = "<group>"; };
 		2378BB181A90431300571BC9 /* ScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewController.h; sourceTree = "<group>"; };
 		2378BB191A90431300571BC9 /* ScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleTableViewController.m; sourceTree = "<group>"; };
 		2378BB1B1A90443700571BC9 /* ScheduleTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleTableViewCell.h; sourceTree = "<group>"; };
@@ -187,6 +190,8 @@
 				235751191A8DABF600192D24 /* EventTableViewCell.m */,
 				2357511B1A8DB81E00192D24 /* EventDetailViewController.h */,
 				2357511C1A8DB81E00192D24 /* EventDetailViewController.m */,
+				23655E0A1ABF8F17005A3163 /* EventDetailViewBaseCell.h */,
+				23655E0B1ABF8F17005A3163 /* EventDetailViewBaseCell.m */,
 			);
 			name = EventTableView;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				2357511D1A8DB81E00192D24 /* EventDetailViewController.m in Sources */,
 				23264A921AAA89F20039B845 /* AboutUsCell.m in Sources */,
 				235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */,
+				23655E0C1ABF8F17005A3163 /* EventDetailViewBaseCell.m in Sources */,
 				23EA9E291A9854B000E39921 /* SocialWebViewController.m in Sources */,
 				23E06DB11A946FDD00D01330 /* SocialViewController.m in Sources */,
 				235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */,
