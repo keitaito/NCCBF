@@ -34,3 +34,7 @@
 @interface EventLocationCell : EventDetailViewBaseCell
 @property (weak, nonatomic) IBOutlet UILabel *eventLocationLabel;
 @end
+
+@interface EventScheduleCell : EventDetailViewBaseCell
+@property (weak, nonatomic) IBOutlet UILabel *eventScheduleLabel;
+@end
