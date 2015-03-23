@@ -8,11 +8,13 @@
 
 #import "EventDetailViewController.h"
 #import "Event.h"
+#import "EventDetailViewBaseCell.h"
 
-typedef NS_ENUM (NSInteger, KeitaTableType) {
-    KeitaTableTypePicture = 0,
-    KeitaTableTypeName,
-    KeitaTableTypeDescription,
+typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
+    EventDetailViewCellTypeImage = 0,
+    EventDetailViewCellTypeName,
+    EventDetailViewCellTypeLocation,
+    EventDetailViewCellTypeDescription
 };
 
 @interface EventDetailViewController ()
@@ -27,14 +29,14 @@ typedef NS_ENUM (NSInteger, KeitaTableType) {
     // Set nav bar title.
     self.title = self.eventDetail.name;
     
-    // Set event image.
-    NSString *imageName = self.eventDetail.imageString;
-    self.detailPosterView.image = [UIImage imageNamed:imageName];
-    
-    // Set event title, time, location, description.
-    self.titleLabel.text = self.eventDetail.name;
-    self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
-    self.locationLabel.text = self.eventDetail.location;
+//    // Set event image.
+//    NSString *imageName = self.eventDetail.imageString;
+//    self.detailPosterView.image = [UIImage imageNamed:imageName];
+//    
+//    // Set event title, time, location, description.
+//    self.titleLabel.text = self.eventDetail.name;
+//    self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
+//    self.locationLabel.text = self.eventDetail.location;
 
 }
 
@@ -62,21 +64,22 @@ typedef NS_ENUM (NSInteger, KeitaTableType) {
     
     NSString *identifier = nil;
     
-    if (indexPath.row == KeitaTableTypePicture) {
+    if (indexPath.row == EventDetailViewCellTypeImage) {
         identifier = @"EventImageCell";
-    } else if (indexPath.row == KeitaTableTypeName) {
+    } else if (indexPath.row == EventDetailViewCellTypeName) {
         identifier = @"EventNameCell";
-    } else if (indexPath.row == KeitaTableTypeDescription) {
+    } else if (indexPath.row == EventDetailViewCellTypeLocation) {
+        identifier = @"EventLocationCell";
+    } else if (indexPath.row == EventDetailViewCellTypeDescription) {
         identifier = @"EventDescriptionCell";
     }
     
-    BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    EventDetailViewBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
     
     
     
     // Configure the cell...
-    Event *event = [[Event alloc] init];
-    [cell setupWithModel:event];
+    [cell setupWithModel:self.eventDetail];
     
     return cell;
 }
@@ -85,7 +88,6 @@ typedef NS_ENUM (NSInteger, KeitaTableType) {
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"UITableViewAutomationDimension");
-    
     return UITableViewAutomaticDimension;
 }
 
