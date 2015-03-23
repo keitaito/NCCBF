@@ -13,6 +13,7 @@
 typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
     EventDetailViewCellTypeImage = 0,
     EventDetailViewCellTypeName,
+    EventDetailViewCellTypeSchedule,
     EventDetailViewCellTypeLocation,
     EventDetailViewCellTypeDescription
 };
@@ -56,7 +57,7 @@ typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     //#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 4;
+    return 5;
 }
 
 
@@ -69,6 +70,9 @@ typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
     }
     else if (indexPath.row == EventDetailViewCellTypeName) {
         identifier = @"EventNameCell";
+    }
+    else if (indexPath.row == EventDetailViewCellTypeSchedule) {
+        identifier = @"EventScheduleCell";
     }
     else if (indexPath.row == EventDetailViewCellTypeLocation) {
         identifier = @"EventLocationCell";
