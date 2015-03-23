@@ -8,6 +8,15 @@
 
 #import "EventDetailViewController.h"
 #import "Event.h"
+#import "EventDetailViewBaseCell.h"
+
+typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
+    EventDetailViewCellTypeImage = 0,
+    EventDetailViewCellTypeName,
+    EventDetailViewCellTypeSchedule,
+    EventDetailViewCellTypeLocation,
+    EventDetailViewCellTypeDescription
+};
 
 @interface EventDetailViewController ()
 
@@ -20,21 +29,69 @@
     
     // Set nav bar title.
     self.title = self.eventDetail.name;
-    
-    // Set event image.
-    NSString *imageName = self.eventDetail.imageString;
-    self.detailPosterView.image = [UIImage imageNamed:imageName];
-    
-    // Set event title, time, location, description.
-    self.titleLabel.text = self.eventDetail.name;
-    self.eventDescriptionLabel.text = self.eventDetail.eventDescription;
-    self.locationLabel.text = self.eventDetail.location;
 
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Fix Cell height when view is returned from other tab views.
+    [self.tableView reloadData];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 5;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *identifier = nil;
+    
+    if (indexPath.row == EventDetailViewCellTypeImage) {
+        identifier = @"EventImageCell";
+    }
+    else if (indexPath.row == EventDetailViewCellTypeName) {
+        identifier = @"EventNameCell";
+    }
+    else if (indexPath.row == EventDetailViewCellTypeSchedule) {
+        identifier = @"EventScheduleCell";
+    }
+    else if (indexPath.row == EventDetailViewCellTypeLocation) {
+        identifier = @"EventLocationCell";
+    }
+    else if (indexPath.row == EventDetailViewCellTypeDescription) {
+        identifier = @"EventDescriptionCell";
+    }
+    
+    EventDetailViewBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    [cell setupWithModel:self.eventDetail];
+    
+    return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"UITableViewAutomationDimension");
+    return UITableViewAutomaticDimension;
 }
 
 /*

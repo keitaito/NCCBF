@@ -7,10 +7,12 @@
 //
 
 #import "AboutUsDetailViewController.h"
+#import "AboutUsDetailViewCell.h"
 
 @interface AboutUsDetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+//@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (nonatomic, copy) NSString *festDescString;
 
 @end
 
@@ -27,12 +29,12 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
     // Create dictionary to store plist's root dictionary.
     NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
-
     // Store festival description in string.
-    NSString *festDescString = dict[@"FestivalDescription"];
-    // Update text of text view.
-    self.textView.text = festDescString;
-    self.textView.editable = NO;
+    self.festDescString = dict[@"FestivalDescription"];
+    
+//     Update text of text view.
+//    self.textView.text = festDescString;
+//    self.textView.editable = NO;
     
     // Update title in nav bar.
 //    self.navigationController.navigationItem.title = @"About NCCBF";
@@ -42,6 +44,49 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    // Fix Cell height when view is returned from other tab views.
+    [self.tableView reloadData];
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 1;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *identifier = @"AboutUsDetailViewCell";
+
+    
+    AboutUsDetailViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    // Configure the cell...
+    cell.AboutUsDescriptionLabel.text = self.festDescString;
+    
+    return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"UITableViewAutomationDimension");
+    
+    return UITableViewAutomaticDimension;
 }
 
 /*

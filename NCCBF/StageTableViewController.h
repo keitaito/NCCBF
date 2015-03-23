@@ -11,5 +11,6 @@
 @interface StageTableViewController : UITableViewController
 
 @property (nonatomic, strong) NSArray *eventsArray;
+@property (nonatomic, copy) NSString *locationName;
 
 @end

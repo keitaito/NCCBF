@@ -141,6 +141,15 @@
 
 #pragma mark - UI set up methods
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    if(indexPath) {
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+}
+
 - (void)setUpUIItems {
     
     // Set tint color of nav bar back button arrow white.
@@ -264,7 +273,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
+    if ([[segue identifier] isEqualToString:@"showEventDetailViewFromEventTableView"]) {
         NSLog(@"showEventDetailView");
         
         EventDetailViewController *eventDetailViewController = [segue destinationViewController];

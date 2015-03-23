@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AboutUsDetailViewController : UIViewController
+@interface AboutUsDetailViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end

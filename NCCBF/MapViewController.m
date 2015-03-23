@@ -35,6 +35,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    // Set up UI.
+    [self setUpUIItems];
+    
     // Create Events.
     [self createEventsArray];
     
@@ -106,6 +109,15 @@
 
 
 #pragma mark - Setup Methods
+
+- (void)setUpUIItems {
+    
+    // Set tint color of nav bar back button arrow white.
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    //    self.tabBarController.tabBar.tintColor
+    
+}
 
 - (void)createEventsArray {
     // Load events data.
@@ -439,6 +451,7 @@
         StageTableViewController *stageTableVC = [segue destinationViewController];
         NSArray *eventsArray = self.selectedAnnotation.events;
         stageTableVC.eventsArray = eventsArray;
+        stageTableVC.locationName = self.selectedAnnotation.title;
     }
 }
 

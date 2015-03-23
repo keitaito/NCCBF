@@ -45,6 +45,15 @@
 
 #pragma mark - Set up UI methods
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    if(indexPath) {
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+}
+
 - (void)setUpUIItems {
     
     // Set tint color of nav bar back button arrow white.

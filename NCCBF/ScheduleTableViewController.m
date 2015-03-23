@@ -94,6 +94,15 @@
 
 #pragma mark - UI set up methods
 
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    if(indexPath) {
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
+}
+
 - (void)setUpUIItems {
     
     // Set tint color of nav bar back button arrow white.
@@ -236,8 +245,8 @@
 //    NSLog(@"%@", eventStartTimeString);
     
     // Set event time label.
-    cell.startTimeLabel.text = [NSString stringWithFormat:@"Start: %@", eventStartTimeString];
-    cell.EndTimeLabel.text = [NSString stringWithFormat:@"End: %@", eventEndTimeString];
+    cell.startTimeLabel.text = [NSString stringWithFormat:@"%@", eventStartTimeString];
+    cell.EndTimeLabel.text = [NSString stringWithFormat:@"%@", eventEndTimeString];
     
     return cell;
 }
@@ -342,7 +351,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    if ([[segue identifier] isEqualToString:@"showEventDetailView"]) {
+    if ([[segue identifier] isEqualToString:@"showEventDetailViewFromScheduleTableView"]) {
         NSLog(@"showEventDetailView");
         
         EventDetailViewController *eventDetailViewController = [segue destinationViewController];

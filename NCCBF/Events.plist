@@ -6,21 +6,19 @@
 	<array>
 		<dict>
 			<key>name</key>
-			<string>Event 1</string>
+			<string>San Francisco Taiko Dojo</string>
 			<key>start_at</key>
-			<string>2015-04-19 01:00 PM</string>
+			<string>2015-04-11 12:15 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-19 01:15 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>SF Taiko Dojo</string>
 			<key>description</key>
-			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
 		</dict>
 		<dict>
 			<key>name</key>
