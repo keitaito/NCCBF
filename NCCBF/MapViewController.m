@@ -451,6 +451,7 @@
         StageTableViewController *stageTableVC = [segue destinationViewController];
         NSArray *eventsArray = self.selectedAnnotation.events;
         stageTableVC.eventsArray = eventsArray;
+        stageTableVC.locationName = self.selectedAnnotation.title;
     }
 }
 
