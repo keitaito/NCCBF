@@ -94,7 +94,7 @@
     NSString *eventEndTimeString = [endTimeFormatter stringFromDate:eventEndTime];
     
     // Create event schedule string.
-    NSString *eventScheduleString = [NSString stringWithFormat:@"%@ %@ - %@", eventDateString, eventStartTimeString, eventEndTimeString];
+    NSString *eventScheduleString = [NSString stringWithFormat:@"%@, %@ - %@", eventDateString, eventStartTimeString, eventEndTimeString];
     
     // Pass schedule string in eventScheduleLabel.
     self.eventScheduleLabel.text = eventScheduleString;
