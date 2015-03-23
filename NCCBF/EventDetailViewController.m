@@ -9,6 +9,12 @@
 #import "EventDetailViewController.h"
 #import "Event.h"
 
+typedef NS_ENUM (NSInteger, KeitaTableType) {
+    KeitaTableTypePicture = 0,
+    KeitaTableTypeName,
+    KeitaTableTypeDescription,
+};
+
 @interface EventDetailViewController ()
 
 @end
@@ -35,6 +41,52 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    //#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    //#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 3;
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *identifier = nil;
+    
+    if (indexPath.row == KeitaTableTypePicture) {
+        identifier = @"EventImageCell";
+    } else if (indexPath.row == KeitaTableTypeName) {
+        identifier = @"EventNameCell";
+    } else if (indexPath.row == KeitaTableTypeDescription) {
+        identifier = @"EventDescriptionCell";
+    }
+    
+    BaseTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    
+    
+    // Configure the cell...
+    Event *event = [[Event alloc] init];
+    [cell setupWithModel:event];
+    
+    return cell;
+}
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"UITableViewAutomationDimension");
+    
+    return UITableViewAutomaticDimension;
 }
 
 /*

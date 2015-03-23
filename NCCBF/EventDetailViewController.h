@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 @class Event;
 
-@interface EventDetailViewController : UIViewController
+@interface EventDetailViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UIImageView *detailPosterView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
