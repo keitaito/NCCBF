@@ -10,7 +10,7 @@
 			<key>start_at</key>
 			<string>2015-04-11 12:15 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 01:15 PM</string>
+			<string>2015-04-11 01:15 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -26,7 +26,7 @@
 			<key>start_at</key>
 			<string>2015-04-11 01:15 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 01:30 PM</string>
+			<string>2015-04-11 01:30 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -42,7 +42,7 @@
 			<key>start_at</key>
 			<string>2015-04-11 01:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-11 02:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -58,7 +58,7 @@
 			<key>start_at</key>
 			<string>2015-04-11 02:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:30 PM</string>
+			<string>2015-04-11 02:30 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -74,7 +74,7 @@
 			<key>start_at</key>
 			<string>2015-04-11 02:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 03:00 PM</string>
+			<string>2015-04-11 03:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -90,7 +90,7 @@
 			<key>start_at</key>
 			<string>2015-04-11 03:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 03:15 PM</string>
+			<string>2015-04-11 03:15 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -99,14 +99,368 @@
 			<string>filler-10</string>
 			<key>description</key>
 			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Essence</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Essence is a Japanese music ensemble featuring Masayuki Koga and Tim Hamano on shakuhachi, Jimi Nakagawa on taiko, Shota Osabe on piano.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Minyo - Mariko Kosugi</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Minyo has been handed down from generation to generation. These dances evolved from ancient traditions when people danced and sang to pray for good harvest and honor their ancestors. Nearly every district of Japan has a rich heritage of songs that reveal the characteristics of the local people
+and their history. There are rice planting and fishing songs, as well as songs of carpenters, miners, sailors and craftsmen. Some lyrics praise scenic beauty, and others tell stories of historical figures and festivals. The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sakura Minyo Doo Koo Kai</string>
+			<key>start_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Minyo has been handed down from generation to generation. These dances evolved from ancient traditions when people danced and sang to pray for good harvest and honor their ancestors. Nearly every district of Japan has a rich heritage of songs that reveal the characteristics of the local people
+and their history. There are rice planting and fishing songs, as well as songs of carpenters, miners, sailors and craftsmen. Some lyrics praise scenic beauty, and others tell stories of historical figures and festivals. The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tojokan Shinkendo Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-11 04:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-09</string>
+			<key>description</key>
+			<string>Tojokan Shinkendo Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>El Cerrito High School Japanese Club</string>
+			<key>start_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-10</string>
+			<key>description</key>
+			<string>El Cerrito High School is in the East Bay. They have a thriving Japanese language program that has existed for over 15 years. Their Soran Bushi Club was born out of a group of students who were studying Japanese. This is the club’s fifth year performing at the San Francisco Cherry Blossom Festival.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Northern California Naginata Federation</string>
+			<key>start_at</key>
+			<string>2015-04-11 05:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Northern California Naginata Federation</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Yamasho Kai</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:15 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 11:45 AM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Yamasho Kai</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>2015 Senior Appreciation Brunch Honorees</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:45 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 12:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>The seniors in our community have paved the way for future generations and left their mark in their communities and professions. The annual Senior Appreciation Brunch will honor several outstanding Japanese Americans for their personal achievements and service to the Japanese and Japanese American communities. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>2015 Queen and Court</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 12:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>queen-contest</string>
+			<key>description</key>
+			<string>2015 Queen and Court</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Taiko Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>SF Taiko Dojo</string>
+			<key>description</key>
+			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Soko Joshi Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Soko Joshi Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ensohza Minyoshu</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Ensohza Minyoshu is a Japanese folk ensemble based in the San Francisco Bay Area. They perform music and dance that evokes the festival spirit of Japan’s diverse rural communities. With lively vocals accompanied by fue and shakuhachi (bamboo flutes), shamisen (three-stringed instrument) and the beat of the taiko drum, Ensohza Minyoshu transports listeners and viewers to Japan’s mountain and fishing villages with traditional folk songs and festival dances. For more information, go to www.ensohza. org.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Wushu Team</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 03:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>San Francisco Wushu Team</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shorinji Kempo</string>
+			<key>start_at</key>
+			<string>2015-04-12 03:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 03:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-09</string>
+			<key>description</key>
+			<string>Shorinji Kempo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kendama USA</string>
+			<key>start_at</key>
+			<string>2015-04-12 03:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 04:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-10</string>
+			<key>description</key>
+			<string>Kendama USA</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese Club of Sacred Heart Cathedral Oshiro Karate Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-12 04:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Japanese Club of Sacred Heart Cathedral Oshiro Karate Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Chie Kwon-Treagus</string>
+			<key>start_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Chie Kwon-Treagus</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Taiko Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 12:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>SF Taiko Dojo</string>
+			<key>description</key>
+			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Grass Valley Taiko</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 01:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Grass Valley Taiko is located in the beautiful foothills of the Sierra Nevada. Mitzi Garnett, a student of Grand Master Tanaka, founded the group in 2000. For more information, go to www.grassvalleytaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rosa Parks School Japanese Bilingual Bicultural Program</string>
+			<key>start_at</key>
+			<string>2015-04-18 01:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 01:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Rosa Parks School Japanese Bilingual Bicultural Program</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rinka Buyo Group</string>
+			<key>start_at</key>
+			<string>2015-04-18 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 02:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Performing in the Bay Area since 2009, Rinko Buyo&apos;s style is based mainly on Japanese minyo (folk) style dance with inspiration from other styles of Nihon Buyo.</string>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>Children’s Tsuzumi Challenge</string>
 			<key>start_at</key>
-			<string>2015-04-11 03:00 PM</string>
+			<string>2015-04-18 02:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 03:15 PM</string>
+			<string>2015-04-18 02:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-09</string>
+			<key>description</key>
+			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Yoko and the Sunshine Girls</string>
+			<key>start_at</key>
+			<string>2015-04-18 02:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 02:30 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -114,43 +468,251 @@
 			<key>image_name</key>
 			<string>filler-10</string>
 			<key>description</key>
-			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
+			<string>Yoko Fitzpatrick, choreographer and dance instructor of “Yoko &amp; Sunshine Girls,” holds dance classes at the Richmond Annex Senior Center and North Berkeley Nikkei Senior Center. She teaches modern dance with Japanese popular songs. The group has been performing at various locations for all kind of occasions several times a year.</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 2</string>
+			<string>La Sakura Ladies</string>
 			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
+			<string>2015-04-18 02:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
+			<string>2015-04-18 03:00 PM</string>
 			<key>location_id</key>
-			<string>1</string>
+			<string>0</string>
 			<key>location</key>
-			<string>Place A</string>
+			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>taiko</string>
+			<string>filler-03</string>
 			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+			<string>La Sakura Ladies</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 2</string>
+			<string>Maiko</string>
 			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
+			<string>2015-04-18 03:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
+			<string>2015-04-18 03:20 PM</string>
 			<key>location_id</key>
-			<string>1</string>
+			<string>0</string>
 			<key>location</key>
-			<string>Place A</string>
+			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>taiko</string>
+			<string>maiko</string>
 			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
+			<string>Maiko</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 2</string>
+			<string>Eden Aoba Taiko</string>
+			<key>start_at</key>
+			<string>2015-04-18 03:20 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 03:50 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-09</string>
+			<key>description</key>
+			<string>Eden Aoba Taiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Fukushima University</string>
+			<key>start_at</key>
+			<string>2015-04-18 03:50 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-10</string>
+			<key>description</key>
+			<string>Fukushima University</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Okinawa Kenjin Kai</string>
+			<key>start_at</key>
+			<string>2015-04-18 04:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>The San Francisco Okinawa Kenjin-Kai is a social organization serving the local Bay Area community. The goal of the club is to share Okinawan culture with people around the world. For more information, go to www.okksf.com</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Zanshin Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-18 04:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 05:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Zanshin Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>UC Berkeley Yosakoi Group</string>
+			<key>start_at</key>
+			<string>2015-04-18 05:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 05:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Yosakoi fuses traditional and modern Japanese dance, combining the fluid motions of the fishermen’s dance, Soran Bushi, with high energy and contemporary music. NSU Yosakoi, a subgroup of UC Berkeley’s Nikkei Student Union (NSU), is one of the few recognized teams in the United States.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Zeros from Anime Jungle</string>
+			<key>start_at</key>
+			<string>2015-04-18 05:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 06:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-09</string>
+			<key>description</key>
+			<string>Zeros from Anime Jungle</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Kendo Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-19 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-19 12:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-10</string>
+			<key>description</key>
+			<string>San Francisco Kendo Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Enshin Karate</string>
+			<key>start_at</key>
+			<string>2015-04-19 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 12:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Enshin Karate</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Parade</string>
+			<key>start_at</key>
+			<string>2015-04-19 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 03:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>parade</string>
+			<key>description</key>
+			<string>Japanese classical (buyo) and folk dance (minyo) groups from the Bay Area will perform throughout the parade route, and Boy Scouts from Japanese American communities will represent their troops. A number of performers from Japan will also grace us with their presence. World-renowned San Francisco Taiko Dojo will energize the parade with the thundering sound of the taiko, and the 2015 Cherry Blossom Queen and her court will glide on their floats toward Japantown. An especially exciting spectacle is the Taru Mikoshi (portable shrine made of sake barrels), which will be hoisted on the shoulders of over one hundred people from around the Bay Area.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Awakko-ren Awa Odori </string>
+			<key>start_at</key>
+			<string>2015-04-19 03:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>awaodori</string>
+			<key>description</key>
+			<string>Awakko-Ren is a Bay Area dance group founded in 2011. Its main focus is Awa-Odori, a traditional dance from Tokushima Prefecture on the island of Shikoku. Please join us in enjoying this simple and cheerful dance. For more information, go to http://bayarea-awakko.blogspot.com/</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anime Talent Show</string>
+			<key>start_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Anime Talent Show</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sakura Ren Awa Odori</string>
+			<key>start_at</key>
+			<string>2015-04-19 04:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 05:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>awaodori</string>
+			<key>description</key>
+			<string>Sakura Ren Awa Odori</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Raffle Drawing</string>
+			<key>start_at</key>
+			<string>2015-04-19 05:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 05:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Raffle Drawing</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>above events are input</string>
 			<key>start_at</key>
 			<string>2015-04-11 11:00 AM</string>
 			<key>end_at</key>
