@@ -57,7 +57,7 @@ static NSDictionary *locations;
     // Prepare dateFormatter.
     NSDateFormatter *parseFormatter = [[NSDateFormatter alloc] init];
     //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
-    [parseFormatter setDateFormat:@"yyyy-MM-dd HH:mm a"];
+    [parseFormatter setDateFormat:@"yyyy-MM-dd hh:mm a"];
     
     NSString *dateString = dictionary[@"start_at"];
     self.date = [parseFormatter dateFromString:dateString];
