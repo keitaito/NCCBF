@@ -3,10 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>Peace Plaza Stage</key>
-	<string>{37.78518, -122.429713}</string>
-	<key>JCCNC Stage</key>
-	<string>{37.785237, -122.431239}</string>
+	<string>{37.785274, -122.429671}</string>
+	<key>JCCCNC Stage</key>
+	<string>{37.786558, -122.430799}</string>
+	<key>Webster Street Stage</key>
+	<string>{37.785184, -122.429661}</string>
 	<key>Sakura 360 Stage</key>
 	<string>{37.785504, -122.430526}</string>
+	<key>Japan Center East Mall - Suite 525</key>
+	<string>{37.785331, -122.429541}</string>
+	<key>JCCCNC Exhibit Spaces</key>
+	<string>{37.786558, -122.430799}</string>
+	<key>Tateuchi Auditorium Tea Ceremony</key>
+	<string>{37.786676, -122.430548}</string>
+	<key>National JACL</key>
+	<string>{37.786568, -122.4292}</string>
+	<key>Union Bank Community Room</key>
+	<string>{37.7852847, -122.429177}</string>
+	<key>Sequola&apos;s Auditorium</key>
+	<string>{37.7855853, -122.4264471}</string>
+	<key>National Japanese American Historical Society</key>
+	<string>{37.7858735, -122.4294946}</string>
+	<key>Hokka Nichibei-kai Tea Ceremony</key>
+	<string>{37.7864059, -122.4291876}</string>
 </dict>
 </plist>
