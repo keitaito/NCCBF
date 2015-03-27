@@ -39,7 +39,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rlQ-8E-3lL" id="oXB-fS-ap5">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djP-zN-mxL">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djP-zN-mxL">
                                             <rect key="frame" x="150" y="8" width="300" height="150"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="300" id="Gpq-t8-pqr"/>
@@ -619,6 +619,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="08X-X0-3tU"/>
+        <segue reference="MSZ-a4-kMI"/>
     </inferredMetricsTieBreakers>
 </document>
