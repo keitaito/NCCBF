@@ -25,18 +25,17 @@ static NSDictionary *locations;
 + (void)initialize
 {
     locations = @{@0: @"Peace Plaza Stage",
-                  @1: @"JCCNC Stage",
+                  @1: @"JCCCNC Stage",
                   @2: @"Webster Street Stage",
                   @3: @"Sakura 360 Stage",
-                  
                   @4: @"Japan Center East Mall - Suite 525",
-                  @5: @"JCCNC Exhibit Spaces",
-                  @6: @"Tateuchi Audtorium",
+                  @5: @"JCCCNC Exhibit Spaces",
+                  @6: @"Tateuchi Auditorium Tea Ceremony",
                   @7: @"National JACL",
                   @8: @"Union Bank Community Room",
                   @9: @"Sequola's Auditorium",
                   @10: @"National Japanese American Historical Society",
-                  @11: @"Hokka Nichibei-kai"};
+                  @11: @"Hokka Nichibei-kai Tea Ceremony"};
     
 //    CLLocationCoordinate2D theCoordinate;
 //    theCoordinate.latitude = 37.785257;
