@@ -41,29 +41,87 @@ static NSDictionary *locationCoordinates;
     
     // Coordinates vars.
     CLLocationCoordinate2D peacePlazaStageCoord;
-    CLLocationCoordinate2D JCCNCStageCoord;
+    CLLocationCoordinate2D JCCCNCStageCoord;
+    CLLocationCoordinate2D WebsterCoord;
     CLLocationCoordinate2D sakura360StageCoord;
+    CLLocationCoordinate2D JapanCenterCoord;
+    CLLocationCoordinate2D JCCCNCExhibitCoord;
+    CLLocationCoordinate2D TateuchiCoord;
+    CLLocationCoordinate2D JACLCoord;
+    CLLocationCoordinate2D UnionBankCoord;
+    CLLocationCoordinate2D SequoiaCoord;
+    CLLocationCoordinate2D NJAHSCoord;
+    CLLocationCoordinate2D HokkaCoord;
     
     // Create coordinates from CGPoint from string in plist.
     CGPoint peacePlazaStageCGPoint = CGPointFromString(coordinates[@"Peace Plaza Stage"]);
     peacePlazaStageCoord = CLLocationCoordinate2DMake(peacePlazaStageCGPoint.x, peacePlazaStageCGPoint.y);
     
-    CGPoint JCCNCStageCGPoint = CGPointFromString(coordinates[@"JCCNC Stage"]);
-    JCCNCStageCoord = CLLocationCoordinate2DMake(JCCNCStageCGPoint.x, JCCNCStageCGPoint.y);
+    CGPoint JCCCNCStageCGPoint = CGPointFromString(coordinates[@"JCCCNC Stage"]);
+    JCCCNCStageCoord = CLLocationCoordinate2DMake(JCCCNCStageCGPoint.x, JCCCNCStageCGPoint.y);
+    
+    CGPoint WebsterCGPoint = CGPointFromString(coordinates[@"Webster Street Stage"]);
+    WebsterCoord = CLLocationCoordinate2DMake(WebsterCGPoint.x, WebsterCGPoint.y);
     
     CGPoint sakura360StageCGPoint = CGPointFromString(coordinates[@"Sakura 360 Stage"]);
     sakura360StageCoord = CLLocationCoordinate2DMake(sakura360StageCGPoint.x, sakura360StageCGPoint.y);
     
+    CGPoint JapanCenterCGPoint = CGPointFromString(coordinates[@"Japan Center East Mall - Suite 525"]);
+    JapanCenterCoord = CLLocationCoordinate2DMake(JapanCenterCGPoint.x, JapanCenterCGPoint.y);
+
+    CGPoint JCCCNCExhibitCGPoint = CGPointFromString(coordinates[@"JCCCNC Exhibit Spaces"]);
+    JCCCNCExhibitCoord = CLLocationCoordinate2DMake(JCCCNCExhibitCGPoint.x, JCCCNCExhibitCGPoint.y);
+    
+    CGPoint TateuchiCGPoint = CGPointFromString(coordinates[@"Tateuchi Auditorium Tea Ceremony"]);
+    TateuchiCoord = CLLocationCoordinate2DMake(TateuchiCGPoint.x, TateuchiCGPoint.y);
+
+    CGPoint JACLCGPoint = CGPointFromString(coordinates[@"National JACL"]);
+    JACLCoord = CLLocationCoordinate2DMake(JACLCGPoint.x, JACLCGPoint.y);
+    
+    CGPoint UnionBankCGPoint = CGPointFromString(coordinates[@"Union Bank Community Room"]);
+    UnionBankCoord = CLLocationCoordinate2DMake(UnionBankCGPoint.x, UnionBankCGPoint.y);
+
+    CGPoint SequoiaCGPoint = CGPointFromString(coordinates[@"Sequola's Auditorium"]);
+    SequoiaCoord = CLLocationCoordinate2DMake(SequoiaCGPoint.x, SequoiaCGPoint.y);
+    
+    CGPoint NJAHSCGPoint = CGPointFromString(coordinates[@"National Japanese American Historical Society"]);
+    NJAHSCoord = CLLocationCoordinate2DMake(NJAHSCGPoint.x, NJAHSCGPoint.y);
+    
+    CGPoint HokkaCGPoint = CGPointFromString(coordinates[@"Hokka Nichibei-kai Tea Ceremony"]);
+    HokkaCoord = CLLocationCoordinate2DMake(HokkaCGPoint.x, HokkaCGPoint.y);
+    
     // Convert coordinates to NSValue to store in dictionary.
-    NSValue *peacePlazaStageCoordValue = [NSValue valueWithMKCoordinate:peacePlazaStageCoord];
-    NSValue *JCCNCStageCoordValue = [NSValue valueWithMKCoordinate:JCCNCStageCoord];
-    NSValue *sakura360StageCoordValue = [NSValue valueWithMKCoordinate:sakura360StageCoord];
+    NSValue *peacePlazaStageCV = [NSValue valueWithMKCoordinate:peacePlazaStageCoord];
+    NSValue *JCCCNCStageCV = [NSValue valueWithMKCoordinate:JCCCNCStageCoord];
+    NSValue *websterCV = [NSValue valueWithMKCoordinate:WebsterCoord];
+    NSValue *sakura360CV = [NSValue valueWithMKCoordinate:sakura360StageCoord];
+    NSValue *japanCenterCV = [NSValue valueWithMKCoordinate:JapanCenterCoord];
+    NSValue *JCCCNCExhibitCV = [NSValue valueWithMKCoordinate:JCCCNCExhibitCoord];
+    NSValue *tateuchiCV = [NSValue valueWithMKCoordinate:TateuchiCoord];
+    NSValue *JACLCV = [NSValue valueWithMKCoordinate:JACLCoord];
+    NSValue *UnionBankCV = [NSValue valueWithMKCoordinate:UnionBankCoord];
+    NSValue *sequoiaCV = [NSValue valueWithMKCoordinate:SequoiaCoord];
+    NSValue *NJAHSCV = [NSValue valueWithMKCoordinate:NJAHSCoord];
+    NSValue *hokkaCV = [NSValue valueWithMKCoordinate:HokkaCoord];
+    
+    
+    
     
     ///////////////////////////
     
-    locationCoordinates = @{@0: peacePlazaStageCoordValue,
-                            @1: JCCNCStageCoordValue,
-                            @2: sakura360StageCoordValue};
+    locationCoordinates = @{@0: peacePlazaStageCV,
+                            @1: JCCCNCStageCV,
+                            @2: websterCV,
+                            @3: sakura360CV,
+                            @4: japanCenterCV,
+                            @5: JCCCNCExhibitCV,
+                            @6: tateuchiCV,
+                            @7: JACLCV,
+                            @8: UnionBankCV,
+                            @9: sequoiaCV,
+                            @10: NJAHSCV,
+                            @11: hokkaCV
+                            };
 }
 
 - (instancetype)init
