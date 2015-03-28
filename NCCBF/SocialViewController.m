@@ -11,6 +11,15 @@
 #import "AboutUsCell.h"
 #import "SocialWebViewController.h"
 
+typedef NS_ENUM (NSInteger, SocialViewCellType) {
+    SocialViewCellTypeFacebook = 0,
+    SocialViewCellTypeTwitter,
+    SocialViewCellTypeInstagram,
+    SocialViewCellTypeNCCBFWebsite,
+    SocialViewCellTypeAboutNCCBF,
+    SocialViewCellTypePrivacyPolicy
+};
+
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -72,7 +81,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == 4) {
+    if (indexPath.row == SocialViewCellTypeAboutNCCBF) {
         AboutUsCell *aboutUsCell = [tableView dequeueReusableCellWithIdentifier:@"AboutUsCell" forIndexPath:indexPath];
         
         NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
