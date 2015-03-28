@@ -44,6 +44,12 @@ typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
     [self.tableView reloadData];
 }
 
+-(void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    
+    NSLog(@"Rotated");
+    [self.tableView reloadData];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
