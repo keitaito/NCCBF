@@ -10,4 +10,6 @@
 
 @interface AboutUsDetailViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource>
 
+@property (nonatomic, copy) NSString *festDescString;
+
 @end

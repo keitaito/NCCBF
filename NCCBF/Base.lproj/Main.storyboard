@@ -407,7 +407,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="3y3-b9-AlL" kind="show" id="fNf-bE-vmH"/>
+                                            <segue destination="3y3-b9-AlL" kind="show" identifier="showAboutUsDetailView" id="fNf-bE-vmH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

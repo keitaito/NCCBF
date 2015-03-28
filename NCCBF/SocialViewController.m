@@ -10,6 +10,7 @@
 #import "SocialViewCell.h"
 #import "AboutUsCell.h"
 #import "SocialWebViewController.h"
+#import "AboutUsDetailViewController.h"
 
 typedef NS_ENUM (NSInteger, SocialViewCellType) {
     SocialViewCellTypeFacebook = 0,
@@ -17,7 +18,7 @@ typedef NS_ENUM (NSInteger, SocialViewCellType) {
     SocialViewCellTypeInstagram,
     SocialViewCellTypeNCCBFWebsite,
     SocialViewCellTypeAboutNCCBF,
-    SocialViewCellTypePrivacyPolicy
+    SocialViewCellTypeCopyright
 };
 
 @interface SocialViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -89,7 +90,16 @@ typedef NS_ENUM (NSInteger, SocialViewCellType) {
         aboutUsCell.textLabel.text = socialDict[@"name"];
         
         return aboutUsCell;
-    } else {
+    }
+    else if (indexPath.row == SocialViewCellTypeCopyright) {
+        AboutUsCell *aboutUsCell = [tableView dequeueReusableCellWithIdentifier:@"AboutUsCell" forIndexPath:indexPath];
+        
+        NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
+        aboutUsCell.textLabel.text = socialDict[@"name"];
+        
+        return aboutUsCell;
+    }
+    else {
         SocialViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SocialViewCell" forIndexPath:indexPath];
         
         NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
@@ -112,16 +122,27 @@ typedef NS_ENUM (NSInteger, SocialViewCellType) {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    NSDictionary *socialMediaDict = self.socialMediaArray[indexPath.row];
+    NSString *nameString = socialMediaDict[@"name"];
+    
     if ([[segue identifier] isEqualToString:@"showSocialWebView"]) {
         NSLog(@"show SocialWebView");
         
         SocialWebViewController *SWVC = [segue destinationViewController];
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         
-        NSDictionary *socialMediaDict = self.socialMediaArray[indexPath.row];
         NSString *urlString = socialMediaDict[@"URL"];
         SWVC.urlString = urlString;
-        SWVC.title = socialMediaDict[@"name"];
+        SWVC.title = nameString;
+    }
+    else if ([[segue identifier] isEqualToString:@"showAboutUsDetailView"]) {
+        
+        AboutUsDetailViewController *AUVC = [segue destinationViewController];
+        
+        AUVC.title = nameString;
+        
+        NSString *descriptionString = socialMediaDict[@"description"];
+        AUVC.festDescString = descriptionString;
     }
     
 }
