@@ -10,7 +10,7 @@
 
 @interface SocialViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+//@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) NSString *urlString;
 
 @end

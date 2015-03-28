@@ -85,7 +85,8 @@ typedef NS_ENUM (NSInteger, SocialViewCellType) {
         AboutUsCell *aboutUsCell = [tableView dequeueReusableCellWithIdentifier:@"AboutUsCell" forIndexPath:indexPath];
         
         NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
-        aboutUsCell.titleLabel.text = socialDict[@"name"];
+//        aboutUsCell.titleLabel.text = socialDict[@"name"];
+        aboutUsCell.textLabel.text = socialDict[@"name"];
         
         return aboutUsCell;
     } else {
@@ -93,7 +94,9 @@ typedef NS_ENUM (NSInteger, SocialViewCellType) {
         
         NSDictionary *socialDict = self.socialMediaArray[indexPath.row];
         
-        cell.titleLabel.text = socialDict[@"name"];
+//        cell.titleLabel.text = socialDict[@"name"];
+        cell.textLabel.text = socialDict[@"name"];
+
         cell.urlString = socialDict[@"URL"];
         
         return cell;
