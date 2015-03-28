@@ -530,7 +530,7 @@
         <scene sceneID="ENk-LD-zom">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V4C-XI-Vwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" id="YiA-5g-Kcd"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="favorites" id="YiA-5g-Kcd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e1C-6q-1RW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -553,7 +553,7 @@
         <scene sceneID="Imd-gz-57a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tt0-pA-fB6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="CMF-A6-He6"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="recents" id="CMF-A6-He6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P4t-f7-IUT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -576,7 +576,7 @@
         <scene sceneID="bWT-fb-mal">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dLq-gI-4R8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" id="1yW-eh-LRO"/>
+                    <tabBarItem key="tabBarItem" title="Social" image="more" id="1yW-eh-LRO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="you-LN-SYd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -599,7 +599,7 @@
         <scene sceneID="E3c-yV-TXu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIN-8y-WdN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="Wzo-cl-bBd"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="near" id="Wzo-cl-bBd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1lc-vP-a0g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -619,6 +619,12 @@
             <point key="canvasLocation" x="943.125" y="-1639.4366197183097"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="favorites" width="32" height="32"/>
+        <image name="more" width="32" height="32"/>
+        <image name="near" width="32" height="32"/>
+        <image name="recents" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="OJ2-SP-4K5"/>
     </inferredMetricsTieBreakers>
