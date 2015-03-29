@@ -421,7 +421,7 @@
                             <constraint firstAttribute="bottom" secondItem="2fH-76-Cpw" secondAttribute="bottom" id="oZz-rf-k5z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Social" id="jAm-cM-Mlz"/>
+                    <navigationItem key="navigationItem" title="More" id="jAm-cM-Mlz"/>
                     <connections>
                         <outlet property="tableView" destination="2fH-76-Cpw" id="LZg-Y3-4KZ"/>
                     </connections>
@@ -554,11 +554,11 @@
             </objects>
             <point key="canvasLocation" x="943.125" y="-2371.4788732394363"/>
         </scene>
-        <!--Social-->
+        <!--More-->
         <scene sceneID="bWT-fb-mal">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dLq-gI-4R8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" image="more" id="1yW-eh-LRO"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="1yW-eh-LRO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="you-LN-SYd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
