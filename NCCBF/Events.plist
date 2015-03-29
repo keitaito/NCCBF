@@ -22,7 +22,7 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Opening Ceremony and Announcement of new US Stamp “Gifts of Friendship Joint Issue with Japan“</string>
+			<string>Opening Ceremony</string>
 			<key>start_at</key>
 			<string>2015-04-11 01:00 PM</string>
 			<key>end_at</key>
@@ -152,27 +152,11 @@ and their history. There are rice planting and fishing songs, as well as songs o
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Tojokan Shinkendo Dojo</string>
+			<string>El Cerrito High School Japanese Club</string>
 			<key>start_at</key>
 			<string>2015-04-11 04:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 05:00 PM</string>
-			<key>location_id</key>
-			<string>0</string>
-			<key>location</key>
-			<string>Peace Plaza Stage</string>
-			<key>image_name</key>
-			<string>tojokan-shinkendo</string>
-			<key>description</key>
-			<string>Tojokan Shinkendo Dojo</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>El Cerrito High School Japanese Club</string>
-			<key>start_at</key>
-			<string>2015-04-11 05:00 PM</string>
-			<key>end_at</key>
-			<string>2015-04-11 05:15 PM</string>
+			<string>2015-04-11 04:45 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -186,9 +170,9 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>name</key>
 			<string>Northern California Naginata Federation</string>
 			<key>start_at</key>
-			<string>2015-04-11 05:15 PM</string>
+			<string>2015-04-11 04:45 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 05:45 PM</string>
+			<string>2015-04-11 05:15 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -520,7 +504,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Maiko</string>
+			<string>Mayuko</string>
 			<key>start_at</key>
 			<string>2015-04-18 03:00 PM</string>
 			<key>end_at</key>
@@ -530,9 +514,9 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>maiko</string>
+			<string>filler-07</string>
 			<key>description</key>
-			<string>Maiko</string>
+			<string>Mayuko</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -738,7 +722,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>JCCCNC-01</string>
 			<key>description</key>
 			<string>The Japanese Music Institute of America (JMI) is a non- profit organization that offers ongoing shakuhachi (bamboo flute) lessons instructed by Masayuki Koga in the San Francisco Bay Area, and Boulder, Colorado.JMI offers a unique method of instruction that breathes new life into traditional and modern Japanese music. Beyond teaching traditional notation, rhythm and music history, the JMI method concentrates on the development of musical ability through cultivating natural posture and movement.</string>
 		</dict>
@@ -754,7 +738,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-01</string>
 			<key>description</key>
 			<string>The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
 		</dict>
@@ -770,7 +754,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>JCCCNC-02</string>
 			<key>description</key>
 			<string>Marimo Kai and Yukari Sakaguchi</string>
 		</dict>
@@ -786,24 +770,24 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>JCCCNC-03</string>
 			<key>description</key>
 			<string>The Seiha USA Orchestra is a subsidiary of Seiha Music School of Japan, which is one of the oldest and largest koto school in Japan. The school celebrated its 100th anniversary in 2013. All members have attained honorary titles from Japan
 for their high skills and artistry in the performance of koto and sangen music.</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Northern California Seiha USA Orchestra</string>
+			<string>Shigin (Japanese Poetry in Singing Form)</string>
 			<key>start_at</key>
 			<string>2015-04-11 06:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 06:00 PM</string>
+			<string>2015-04-11 07:00 PM</string>
 			<key>location_id</key>
 			<string>1</string>
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-02</string>
 			<key>description</key>
 			<string>Shigin is the art of chanting. Japanese or Chinese poems are often sung to express the feeling of joy or sorrow, the beauty of nature, or to offer a spiritual message. </string>
 		</dict>
@@ -819,7 +803,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-03</string>
 			<key>description</key>
 			<string>Seiha Sato Masazuka Kai</string>
 		</dict>
@@ -835,7 +819,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-04</string>
 			<key>description</key>
 			<string>Nishikawa Ryu</string>
 		</dict>
@@ -867,7 +851,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-05</string>
 			<key>description</key>
 			<string>Shimaoka Kuzusa Kai</string>
 		</dict>
@@ -883,7 +867,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-06</string>
 			<key>description</key>
 			<string>The Wesley Ukulele Band was founded in 2004 at Wesley United Methodist Church in San Jose Japanwotn for fun and fellowship. There are over 50 members, about half of whom are the active core group.</string>
 		</dict>
@@ -899,7 +883,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-07</string>
 			<key>description</key>
 			<string>Chorale May</string>
 		</dict>
@@ -915,13 +899,13 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-01</string>
 			<key>description</key>
 			<string>Nishi Kaigen Iaido</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Azama Honryu Seifu Ishisenkai USA, Kinuko Mototake Dance Academ And Eisa Shima Daiko</string>
+			<string>Azama Honryu Seifu Ishisenkai USA</string>
 			<key>start_at</key>
 			<string>2015-04-18 02:00 PM</string>
 			<key>end_at</key>
@@ -931,13 +915,13 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-02</string>
 			<key>description</key>
-			<string>Azama Honryu Seifu Ishisenkai USA, Kinuko Mototake Dance Academ And Eisa Shima Daiko</string>
+			<string>Azama Honryu Seifu Ishisenkai USA, Kinuko Mototake Dance Academy And Eisa Shima Daiko</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Shodo and music</string>
+			<string>With Love From Ishinomaki City</string>
 			<key>start_at</key>
 			<string>2015-04-18 03:00 PM</string>
 			<key>end_at</key>
@@ -947,9 +931,25 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-03</string>
 			<key>description</key>
-			<string>Shodo and music</string>
+			<string>With Love From Ishinomaki City</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Edo Ensemble</string>
+			<key>start_at</key>
+			<string>2015-04-18 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Edo Ensemble</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -963,7 +963,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>SF Taiko Dojo</string>
 			<key>description</key>
 			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
 		</dict>
@@ -979,7 +979,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>Japan Center East Mall- Suite 525</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-05</string>
 			<key>description</key>
 			<string>April 11 to May 22</string>
 		</dict>
@@ -1173,7 +1173,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>Tateuchi Auditorium</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Tea Ceremony-1</string>
 			<key>description</key>
 			<string>Omotosenke Domankai</string>
 		</dict>
@@ -1189,7 +1189,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>Tateuchi Auditorium</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Tea Ceremony-1</string>
 			<key>description</key>
 			<string>Ura Senke Tankokai</string>
 		</dict>
@@ -1197,15 +1197,15 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>Urasenke Foundation</string>
 			<key>start_at</key>
-			<string>2015-04-18 01:00 PM</string>
+			<string>2015-04-18 12:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-18 04:00 PM</string>
+			<string>2015-04-18 03:00 PM</string>
 			<key>location_id</key>
 			<string>6</string>
 			<key>location</key>
 			<string>Tateuchi Auditorium</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Tea Ceremony-1</string>
 			<key>description</key>
 			<string>Urasenke Foundation</string>
 		</dict>
@@ -1213,15 +1213,15 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>Origami Exhibit and Demonstration</string>
 			<key>start_at</key>
-			<string></string>
+			<string>2015-04-11 11:00 AM</string>
 			<key>end_at</key>
-			<string></string>
+			<string>2015-04-11 06:00 PM</string>
 			<key>location_id</key>
 			<string>7</string>
 			<key>location</key>
 			<string>National JACL</string>
 			<key>image_name</key>
-			<string></string>
+			<string>origami</string>
 			<key>description</key>
 			<string>The art of folding paper has been practiced for centuries in Japan as a tradition handed down from parents to their children. Origami is an art where anything is possible. Origami clubs have been formed all around the world and folders meet often to share models and techniques. Members of San Francisco’s Bay Area Rapid Folders and other Northern California folders will be teaching during the Festival and welcome everyone to come and try your hand at origami.</string>
 		</dict>
@@ -1229,15 +1229,15 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>Japanese Sword Club on April 11</string>
 			<key>start_at</key>
-			<string></string>
+			<string>2015-04-11 11:00 AM</string>
 			<key>end_at</key>
-			<string></string>
+			<string>2015-04-11 06:00 PM</string>
 			<key>location_id</key>
 			<string>8</string>
 			<key>location</key>
 			<string>Union Bank Community Room</string>
 			<key>image_name</key>
-			<string></string>
+			<string>JapaneseSwordClub</string>
 			<key>description</key>
 			<string>Born of the kendo schools within San Francisco’s early Japanese American community, the Northern California Japanese Sword Club now boasts an international membership and stands as one of the premier organizations for the student and collector of fine Japanese swords and armor. The annual San Francisco To-ken Taikai is the largest sword show and sale in the United States. For more information, speak to our members or visit www.NCJSC.org.</string>
 		</dict>
@@ -1245,15 +1245,15 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>Japanese Sword Club on April 12</string>
 			<key>start_at</key>
-			<string></string>
+			<string>2015-04-12 11:00 AM</string>
 			<key>end_at</key>
-			<string></string>
+			<string>2015-04-12 06:00 PM</string>
 			<key>location_id</key>
 			<string>8</string>
 			<key>location</key>
 			<string>Union Bank Community Room</string>
 			<key>image_name</key>
-			<string></string>
+			<string>JapaneseSwordClub</string>
 			<key>description</key>
 			<string>Born of the kendo schools within San Francisco’s early Japanese American community, the Northern California Japanese Sword Club now boasts an international membership and stands as one of the premier organizations for the student and collector of fine Japanese swords and armor. The annual San Francisco To-ken Taikai is the largest sword show and sale in the United States. For more information, speak to our members or visit www.NCJSC.org.</string>
 		</dict>
@@ -1261,15 +1261,15 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>Mataro Dolls Exhibit on April 18</string>
 			<key>start_at</key>
-			<string></string>
+			<string>2015-04-18 11:00 AM</string>
 			<key>end_at</key>
-			<string></string>
+			<string>2015-04-18 06:00 PM</string>
 			<key>location_id</key>
 			<string>8</string>
 			<key>location</key>
 			<string>Union Bank Community Room</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-01</string>
 			<key>description</key>
 			<string> Mataro Kanabayashi I (1897-1984) studied and perfected the dollmaking technique. He was the founder of the Mataro Doll Craft Academy in Tokyo. The Mataro dolls take their themes and ideas often from the Heian period (784-1191). Many of the dolls are based on the characters from “The Tale of Genji.” There are also dolls representing characters from Japanese folktales, noh dramas and kabuki plays. </string>
 		</dict>
@@ -1277,15 +1277,15 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>Mataro Dolls Exhibit on April 19</string>
 			<key>start_at</key>
-			<string></string>
+			<string>2015-04-19 11:00 AM</string>
 			<key>end_at</key>
-			<string></string>
+			<string>2015-04-19 06:00 PM</string>
 			<key>location_id</key>
 			<string>8</string>
 			<key>location</key>
 			<string>Union Bank Community Room</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-02</string>
 			<key>description</key>
 			<string> Mataro Kanabayashi I (1897-1984) studied and perfected the dollmaking technique. He was the founder of the Mataro Doll Craft Academy in Tokyo. The Mataro dolls take their themes and ideas often from the Heian period (784-1191). Many of the dolls are based on the characters from “The Tale of Genji.” There are also dolls representing characters from Japanese folktales, noh dramas and kabuki plays. </string>
 		</dict>
@@ -1301,7 +1301,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>Sequoia&apos;s Auditorium</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-03</string>
 			<key>description</key>
 			<string>Japanese American Music Program</string>
 		</dict>
@@ -1309,17 +1309,17 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>name</key>
 			<string>100 Years of San Francisco’s Japantown</string>
 			<key>start_at</key>
-			<string>2015-04-11, 12, 18, 19</string>
+			<string>2015-04-11 11:00 AM</string>
 			<key>end_at</key>
-			<string>2015-04-11, 12, 18, 19</string>
+			<string>2015-04-11 06:00 PM</string>
 			<key>location_id</key>
 			<string>10</string>
 			<key>location</key>
 			<string>National Japanese American Historical Society</string>
 			<key>image_name</key>
-			<string></string>
+			<string>filler-04</string>
 			<key>description</key>
-			<string>100 Years of San Francisco’s Japantown</string>
+			<string>April 11, 12, 18, 19</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -1333,7 +1333,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>National Japanese American Historical Society</string>
 			<key>image_name</key>
-			<string></string>
+			<string>JapaneseSwordClub</string>
 			<key>description</key>
 			<string>Japanese Sword Society displays</string>
 		</dict>
@@ -1349,7 +1349,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>Hokka Nichibei-Kai Tea Ceremoney</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Tea Ceremony</string>
 			<key>description</key>
 			<string>Urasenke – 12:45p, 1:45p, 2:45p, 3:45p
 CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Tea), is one of the most highly refined traditional arts of Japan. The Cherry Blossom Festival’s chanoyu demonstrations are on Saturday, April 11 and Sunday, April 12, and are under the auspices of the Northern California/ San Francisco Chapters of the Ura-Senke and Omote-Senke Schools. Each session will be about 30 minutes in length, and there will be tea cakes and tea served to a few members of the audience afterwards.</string>
@@ -1366,7 +1366,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Hokka Nichibei-Kai Tea Ceremoney</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Tea Ceremony</string>
 			<key>description</key>
 			<string>Omoto Senke – 12:45p, 1:45p, 2:45p, 3:45p
 CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Tea), is one of the most highly refined traditional arts of Japan. The Cherry Blossom Festival’s chanoyu demonstrations are on Saturday, April 11 and Sunday, April 12, and are under the auspices of the Northern California/ San Francisco Chapters of the Ura-Senke and Omote-Senke Schools. Each session will be about 30 minutes in length, and there will be tea cakes and tea served to a few members of the audience afterwards.</string>
@@ -1597,7 +1597,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Opening Ceremony</string>
+			<string>Sakura 360 Stage Opening Ceremony</string>
 			<key>start_at</key>
 			<string>2015-04-11 11:00 AM</string>
 			<key>end_at</key>
@@ -1729,7 +1729,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>start_at</key>
 			<string>2015-04-12 10:30 AM</string>
 			<key>end_at</key>
-			<string>2015-04-11 06:00 PM</string>
+			<string>2015-04-12 11:00 AM</string>
 			<key>location_id</key>
 			<string>3</string>
 			<key>location</key>
@@ -1757,7 +1757,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>TBD</string>
+			<string>TBD 1</string>
 			<key>start_at</key>
 			<string>2015-04-12 02:00 PM</string>
 			<key>end_at</key>
@@ -1769,7 +1769,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>image_name</key>
 			<string>sakura360</string>
 			<key>description</key>
-			<string>TBD</string>
+			<string>TBD 1</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -1789,7 +1789,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>TBD</string>
+			<string>TBD 2</string>
 			<key>start_at</key>
 			<string>2015-04-12 03:30 PM</string>
 			<key>end_at</key>
@@ -1801,7 +1801,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>image_name</key>
 			<string>sakura360</string>
 			<key>description</key>
-			<string>TBD</string>
+			<string>TBD 2</string>
 		</dict>
 		<dict>
 			<key>name</key>
