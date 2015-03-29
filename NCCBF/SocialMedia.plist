@@ -36,13 +36,15 @@ The Northern California Cherry Blossom Festival is said to be the second largest
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>NCCBF Live Stream</string>
+			<string>NCCBF® Website</string>
 			<key>URL</key>
-			<string>http://nccbf.org</string>
+			<string>http://sfcherryblossom.org</string>
 		</dict>
 		<dict>
 			<key>name</key>
 			<string>About NCCBF®</string>
+			<key>URL</key>
+			<string></string>
 			<key>description</key>
 			<string>The 2015 Northern California Cherry Blossom Festival® now celebrating its 48th year, is one of California’s most prominent celebrations of Asian traditions. Each year, over 200,000 people attend this dazzling display showcasing the color and grace of the Japanese culture and the diversity of the Japanese American Community. Please join us and become a sponsor of this popular Japanese American community event. The event is free and open to the public. Vendors will be charging for their food goods and some retail products; and some specialized events will require a fee.
 
@@ -55,6 +57,8 @@ The Northern California Cherry Blossom Festival® is said to be the second large
 		<dict>
 			<key>name</key>
 			<string>Copyright</string>
+			<key>URL</key>
+			<string></string>
 			<key>description</key>
 			<string>copyright</string>
 		</dict>
