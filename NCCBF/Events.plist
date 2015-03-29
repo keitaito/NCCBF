@@ -746,7 +746,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>name</key>
 			<string>Minyo Minbu Festival</string>
 			<key>start_at</key>
-			<string>2015-04-11 01:30 PM</string>
+			<string>2015-04-11 01:45 PM</string>
 			<key>end_at</key>
 			<string>2015-04-11 03:00 PM</string>
 			<key>location_id</key>
@@ -841,7 +841,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Gen Ryu Arts Presents Shimaoka</string>
+			<string>Gen Ryu Arts Presents</string>
 			<key>start_at</key>
 			<string>2015-04-12 02:00 PM</string>
 			<key>end_at</key>
@@ -857,7 +857,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Kuzusa Kai</string>
+			<string>Shimaoka Kuzusa Kai</string>
 			<key>start_at</key>
 			<string>2015-04-12 02:30 PM</string>
 			<key>end_at</key>
@@ -869,7 +869,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>image_name</key>
 			<string></string>
 			<key>description</key>
-			<string>Kuzusa Kai</string>
+			<string>Shimaoka Kuzusa Kai</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -957,7 +957,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>start_at</key>
 			<string>2015-04-18 07:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-18 07:00 PM</string>
+			<string>2015-04-18 10:00 PM</string>
 			<key>location_id</key>
 			<string>1</string>
 			<key>location</key>
@@ -981,7 +981,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>image_name</key>
 			<string></string>
 			<key>description</key>
-			<string>April 11 - May 22</string>
+			<string>April 11 to May 22</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -995,7 +995,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>ikebana</string>
 			<key>description</key>
 			<string>Ikebana is one of the most famed Japanese traditional arts, and traces its origin back hundreds of years. The Ikebana Teachers Federation consists of seven different schools and will display works of leading teachers throughout the Bay Area at the Cherry Blossom Festival.</string>
 		</dict>
@@ -1005,13 +1005,13 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>start_at</key>
 			<string>2015-04-12 11:00 AM</string>
 			<key>end_at</key>
-			<string>2015-04-12 05:00 PM</string>
+			<string>2015-04-12 04:00 PM</string>
 			<key>location_id</key>
 			<string>5</string>
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>ikebana</string>
 			<key>description</key>
 			<string>Ikebana is one of the most famed Japanese traditional arts, and traces its origin back hundreds of years. The Ikebana Teachers Federation consists of seven different schools and will display works of leading teachers throughout the Bay Area at the Cherry Blossom Festival.</string>
 		</dict>
@@ -1027,7 +1027,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>bonsai</string>
 			<key>description</key>
 			<string>Bonsai, the art of growing miniature trees and plants, is a manifestation of the Japanese people’s love of nature. The objective of bonsai is to capture the grandeur and beauty of nature on a reduced scale. The bonsai and suiseki display at the festival represent local bonsai clubs and the Bonsai Garden at Lake Merritt in Oakland.</string>
 		</dict>
@@ -1043,23 +1043,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
-			<key>description</key>
-			<string>Bonsai, the art of growing miniature trees and plants, is a manifestation of the Japanese people’s love of nature. The objective of bonsai is to capture the grandeur and beauty of nature on a reduced scale. The bonsai and suiseki display at the festival represent local bonsai clubs and the Bonsai Garden at Lake Merritt in Oakland.</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Bonsai/Suiseki Exhbit on April 19</string>
-			<key>start_at</key>
-			<string>2015-04-19 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-19 04:00 PM</string>
-			<key>location_id</key>
-			<string>5</string>
-			<key>location</key>
-			<string>JCCCNC Exhibit Spaces</string>
-			<key>image_name</key>
-			<string></string>
+			<string>bonsai</string>
 			<key>description</key>
 			<string>Bonsai, the art of growing miniature trees and plants, is a manifestation of the Japanese people’s love of nature. The objective of bonsai is to capture the grandeur and beauty of nature on a reduced scale. The bonsai and suiseki display at the festival represent local bonsai clubs and the Bonsai Garden at Lake Merritt in Oakland.</string>
 		</dict>
@@ -1075,7 +1059,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>ningyo</string>
 			<key>description</key>
 			<string>The dolls are made from Japanese washi paper and cotton. It takes about two to three hours to make a simple doll. Most washi ningyo do not have eyes, a nose or a mouth.</string>
 		</dict>
@@ -1091,7 +1075,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>ningyo</string>
 			<key>description</key>
 			<string>The dolls are made from Japanese washi paper and cotton. It takes about two to three hours to make a simple doll. Most washi ningyo do not have eyes, a nose or a mouth.</string>
 		</dict>
@@ -1107,7 +1091,7 @@ for their high skills and artistry in the performance of koto and sangen music.<
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>shodo</string>
 			<key>description</key>
 			<string>The Bay Area Shodo Group allows people who enjoy Japanese calligraphy (shodo) to connect with each other.
 At their exhibit they will showcase the works of experienced calligraphers and Japanese students. Those in attendance will also have an opportunity to try shodo themselves.</string>
@@ -1124,7 +1108,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>shodo</string>
 			<key>description</key>
 			<string>The Bay Area Shodo Group allows people who enjoy Japanese calligraphy (shodo) to connect with each other.
 At their exhibit they will showcase the works of experienced calligraphers and Japanese students. Those in attendance will also have an opportunity to try shodo themselves.</string>
@@ -1141,7 +1125,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>shishu</string>
 			<key>description</key>
 			<string>The traditions of silk and metal thread embroidery came to Japan 1,600 years ago from China via Korea. After more than a thousand years, the materials, stitches, color schemes, and designs became uniquely Japanese. </string>
 		</dict>
@@ -1157,7 +1141,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>shishu</string>
 			<key>description</key>
 			<string>The traditions of silk and metal thread embroidery came to Japan 1,600 years ago from China via Korea. After more than a thousand years, the materials, stitches, color schemes, and designs became uniquely Japanese. </string>
 		</dict>
@@ -1173,7 +1157,7 @@ At their exhibit they will showcase the works of experienced calligraphers and J
 			<key>location</key>
 			<string>JCCCNC Exhibit Spaces</string>
 			<key>image_name</key>
-			<string></string>
+			<string>karuta</string>
 			<key>description</key>
 			<string>The San Francisco Karuta Kai, the Satsuki Kai Karuta Kai and the San Francisco Murasame Kai will demonstrate karuta, a Japanese classical poetry card game. Karuta is also called “hyakunin isshu” in Japanese, which means “one hundred poems by one hundred poets.” It combines 100 tanka (a form of Japanese poetry) from the 7th century to the 13th century, which were incorporated into a card game in the 16th century.</string>
 		</dict>
@@ -1399,7 +1383,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>7thGenRise</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1415,7 +1399,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Manny Cruz Latin Jazz</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1431,7 +1415,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Big City Revue</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1447,7 +1431,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Ayakashi</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1463,7 +1447,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Rendezvous</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1479,7 +1463,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Humanistic</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1495,7 +1479,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Big City Revue</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1511,7 +1495,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Tricia Bulos Friends</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1527,7 +1511,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Jest Jammin</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1543,7 +1527,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Kickback</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1559,7 +1543,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>D. Groove</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
@@ -1575,7 +1559,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>Live Performance</string>
 			<key>description</key>
 			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
