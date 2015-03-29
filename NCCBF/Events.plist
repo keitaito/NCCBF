@@ -8,9 +8,9 @@
 			<key>name</key>
 			<string>San Francisco Taiko Dojo</string>
 			<key>start_at</key>
-			<string>2015-04-11 12:15 PM</string>
+			<string>2015-04-11 12:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 01:15 PM</string>
+			<string>2015-04-11 01:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -22,9 +22,9 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Opening Ceremony</string>
+			<string>Opening Ceremony and Announcement of new US Stamp “Gifts of Friendship Joint Issue with Japan“</string>
 			<key>start_at</key>
-			<string>2015-04-11 01:15 PM</string>
+			<string>2015-04-11 01:00 PM</string>
 			<key>end_at</key>
 			<string>2015-04-11 01:30 PM</string>
 			<key>location_id</key>
@@ -32,9 +32,9 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-05</string>
+			<string>CherryBlossomLogo</string>
 			<key>description</key>
-			<string>Opening Ceremony</string>
+			<string>Opening Ceremony and Announcement of new US Stamp “Gifts of Friendship Joint Issue with Japan“</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -48,7 +48,7 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-09</string>
+			<string>michiya</string>
 			<key>description</key>
 			<string>Michiya Hanayagi and Michisuya Hanayagi Kai</string>
 		</dict>
@@ -64,7 +64,7 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>nihon-buyo-kinomoto</string>
 			<key>description</key>
 			<string>Nihon Buyo Kiyonomoto</string>
 		</dict>
@@ -80,7 +80,7 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>oyama-karate</string>
 			<key>description</key>
 			<string>World Oyama Karate</string>
 		</dict>
@@ -96,7 +96,7 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-10</string>
+			<string>filler-03</string>
 			<key>description</key>
 			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
 		</dict>
@@ -112,7 +112,7 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>essence</string>
 			<key>description</key>
 			<string>Essence is a Japanese music ensemble featuring Masayuki Koga and Tim Hamano on shakuhachi, Jimi Nakagawa on taiko, Shota Osabe on piano.</string>
 		</dict>
@@ -128,7 +128,7 @@
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>filler-05</string>
 			<key>description</key>
 			<string>Minyo has been handed down from generation to generation. These dances evolved from ancient traditions when people danced and sang to pray for good harvest and honor their ancestors. Nearly every district of Japan has a rich heritage of songs that reveal the characteristics of the local people
 and their history. There are rice planting and fishing songs, as well as songs of carpenters, miners, sailors and craftsmen. Some lyrics praise scenic beauty, and others tell stories of historical figures and festivals. The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
@@ -145,7 +145,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-05</string>
+			<string>filler-06</string>
 			<key>description</key>
 			<string>Minyo has been handed down from generation to generation. These dances evolved from ancient traditions when people danced and sang to pray for good harvest and honor their ancestors. Nearly every district of Japan has a rich heritage of songs that reveal the characteristics of the local people
 and their history. There are rice planting and fishing songs, as well as songs of carpenters, miners, sailors and craftsmen. Some lyrics praise scenic beauty, and others tell stories of historical figures and festivals. The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
@@ -162,7 +162,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-09</string>
+			<string>tojokan-shinkendo</string>
 			<key>description</key>
 			<string>Tojokan Shinkendo Dojo</string>
 		</dict>
@@ -178,7 +178,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-10</string>
+			<string>filler-01</string>
 			<key>description</key>
 			<string>El Cerrito High School is in the East Bay. They have a thriving Japanese language program that has existed for over 15 years. Their Soran Bushi Club was born out of a group of students who were studying Japanese. This is the club’s fifth year performing at the San Francisco Cherry Blossom Festival.</string>
 		</dict>
@@ -194,7 +194,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>naginata</string>
 			<key>description</key>
 			<string>Northern California Naginata Federation</string>
 		</dict>
@@ -210,7 +210,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>yamasho-kai</string>
 			<key>description</key>
 			<string>Yamasho Kai</string>
 		</dict>
@@ -226,7 +226,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>senior</string>
 			<key>description</key>
 			<string>The seniors in our community have paved the way for future generations and left their mark in their communities and professions. The annual Senior Appreciation Brunch will honor several outstanding Japanese Americans for their personal achievements and service to the Japanese and Japanese American communities. </string>
 		</dict>
@@ -242,7 +242,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>queen-contest</string>
+			<string>queen</string>
 			<key>description</key>
 			<string>2015 Queen and Court</string>
 		</dict>
@@ -290,9 +290,25 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>ensohza-minyoshu</string>
 			<key>description</key>
 			<string>Ensohza Minyoshu is a Japanese folk ensemble based in the San Francisco Bay Area. They perform music and dance that evokes the festival spirit of Japan’s diverse rural communities. With lively vocals accompanied by fue and shakuhachi (bamboo flutes), shamisen (three-stringed instrument) and the beat of the taiko drum, Ensohza Minyoshu transports listeners and viewers to Japan’s mountain and fishing villages with traditional folk songs and festival dances. For more information, go to www.ensohza. org.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Reigen Fujii Shamisen</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Reigen Fujii Shamisen</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -306,7 +322,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-05</string>
+			<string>filler-06</string>
 			<key>description</key>
 			<string>San Francisco Wushu Team</string>
 		</dict>
@@ -322,7 +338,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-09</string>
+			<string>filler-07</string>
 			<key>description</key>
 			<string>Shorinji Kempo</string>
 		</dict>
@@ -338,13 +354,13 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-10</string>
+			<string>kendama</string>
 			<key>description</key>
 			<string>Kendama USA</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Japanese Club of Sacred Heart Cathedral Oshiro Karate Dojo</string>
+			<string>Japanese Club of Sacred Heart Cathedral</string>
 			<key>start_at</key>
 			<string>2015-04-12 04:45 PM</string>
 			<key>end_at</key>
@@ -354,13 +370,13 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>filler-01</string>
 			<key>description</key>
-			<string>Japanese Club of Sacred Heart Cathedral Oshiro Karate Dojo</string>
+			<string>Japanese Club of Sacred Heart Cathedral</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Chie Kwon-Treagus</string>
+			<string>Oshiro Karate Dojo</string>
 			<key>start_at</key>
 			<string>2015-04-12 05:00 PM</string>
 			<key>end_at</key>
@@ -370,7 +386,23 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>filler-02</string>
+			<key>description</key>
+			<string>Oshiro Karate Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Chie Kwon-Treagus</string>
+			<key>start_at</key>
+			<string>2015-04-12 05:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 06:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
 			<key>description</key>
 			<string>Chie Kwon-Treagus</string>
 		</dict>
@@ -402,7 +434,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>filler-04</string>
 			<key>description</key>
 			<string>Grass Valley Taiko is located in the beautiful foothills of the Sierra Nevada. Mitzi Garnett, a student of Grand Master Tanaka, founded the group in 2000. For more information, go to www.grassvalleytaiko.com.</string>
 		</dict>
@@ -418,7 +450,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>filler-05</string>
 			<key>description</key>
 			<string>Rosa Parks School Japanese Bilingual Bicultural Program</string>
 		</dict>
@@ -434,7 +466,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-05</string>
+			<string>maiko</string>
 			<key>description</key>
 			<string>Performing in the Bay Area since 2009, Rinko Buyo&apos;s style is based mainly on Japanese minyo (folk) style dance with inspiration from other styles of Nihon Buyo.</string>
 		</dict>
@@ -450,7 +482,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-09</string>
+			<string>filler-07</string>
 			<key>description</key>
 			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
 		</dict>
@@ -466,7 +498,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-10</string>
+			<string>yoko-sunshine</string>
 			<key>description</key>
 			<string>Yoko Fitzpatrick, choreographer and dance instructor of “Yoko &amp; Sunshine Girls,” holds dance classes at the Richmond Annex Senior Center and North Berkeley Nikkei Senior Center. She teaches modern dance with Japanese popular songs. The group has been performing at various locations for all kind of occasions several times a year.</string>
 		</dict>
@@ -482,7 +514,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>filler-02</string>
 			<key>description</key>
 			<string>La Sakura Ladies</string>
 		</dict>
@@ -514,7 +546,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-09</string>
+			<string>filler-03</string>
 			<key>description</key>
 			<string>Eden Aoba Taiko</string>
 		</dict>
@@ -530,7 +562,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-10</string>
+			<string>filler-04</string>
 			<key>description</key>
 			<string>Fukushima University</string>
 		</dict>
@@ -546,7 +578,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>okinawa-kenjin-kai</string>
 			<key>description</key>
 			<string>The San Francisco Okinawa Kenjin-Kai is a social organization serving the local Bay Area community. The goal of the club is to share Okinawan culture with people around the world. For more information, go to www.okksf.com</string>
 		</dict>
@@ -562,7 +594,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-04</string>
+			<string>filler-06</string>
 			<key>description</key>
 			<string>Zanshin Dojo</string>
 		</dict>
@@ -578,7 +610,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-05</string>
+			<string>UCB-yosakoi</string>
 			<key>description</key>
 			<string>Yosakoi fuses traditional and modern Japanese dance, combining the fluid motions of the fishermen’s dance, Soran Bushi, with high energy and contemporary music. NSU Yosakoi, a subgroup of UC Berkeley’s Nikkei Student Union (NSU), is one of the few recognized teams in the United States.</string>
 		</dict>
@@ -594,7 +626,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-09</string>
+			<string>filler-01</string>
 			<key>description</key>
 			<string>Zeros from Anime Jungle</string>
 		</dict>
@@ -610,7 +642,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-10</string>
+			<string>filler-02</string>
 			<key>description</key>
 			<string>San Francisco Kendo Dojo</string>
 		</dict>
@@ -658,7 +690,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>awaodori</string>
+			<string>awakko-ren</string>
 			<key>description</key>
 			<string>Awakko-Ren is a Bay Area dance group founded in 2011. Its main focus is Awa-Odori, a traditional dance from Tokushima Prefecture on the island of Shikoku. Please join us in enjoying this simple and cheerful dance. For more information, go to http://bayarea-awakko.blogspot.com/</string>
 		</dict>
@@ -674,7 +706,7 @@ and their history. There are rice planting and fishing songs, as well as songs o
 			<key>location</key>
 			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>filler-03</string>
+			<string>filler-04</string>
 			<key>description</key>
 			<string>Anime Talent Show</string>
 		</dict>
@@ -696,27 +728,11 @@ and their history. There are rice planting and fishing songs, as well as songs o
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Raffle Drawing</string>
-			<key>start_at</key>
-			<string>2015-04-19 05:00 PM</string>
-			<key>end_at</key>
-			<string>2015-04-19 05:30 PM</string>
-			<key>location_id</key>
-			<string>0</string>
-			<key>location</key>
-			<string>Peace Plaza Stage</string>
-			<key>image_name</key>
-			<string>filler-04</string>
-			<key>description</key>
-			<string>Raffle Drawing</string>
-		</dict>
-		<dict>
-			<key>name</key>
 			<string>Japanese Music Institute of America</string>
 			<key>start_at</key>
-			<string>2015-04-11 12:30 PM</string>
+			<string>2015-04-11 12:45 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 01:30 PM</string>
+			<string>2015-04-11 01:45 PM</string>
 			<key>location_id</key>
 			<string>1</string>
 			<key>location</key>
@@ -1575,7 +1591,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Scavenger Hunt</string>
 		</dict>
@@ -1591,7 +1607,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Games and Prizes – Sempai Says on April 11</string>
 		</dict>
@@ -1607,7 +1623,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Opening Ceremony</string>
 		</dict>
@@ -1623,7 +1639,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Games and Prizes on April 11</string>
 		</dict>
@@ -1639,7 +1655,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Samurai Geisha Fest – DJ Coco</string>
 		</dict>
@@ -1655,7 +1671,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Cosplay Chess</string>
 		</dict>
@@ -1671,7 +1687,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Ti@Mi Dance Performance</string>
 		</dict>
@@ -1687,7 +1703,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>All Cosplay Gathering on April 11</string>
 		</dict>
@@ -1703,7 +1719,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>After Party</string>
 		</dict>
@@ -1719,7 +1735,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Scavenger Hunt on April 12</string>
 		</dict>
@@ -1735,7 +1751,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Games and Prizes – Sempai Says on April 12</string>
 		</dict>
@@ -1751,7 +1767,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Games and Prizes on April 12</string>
 		</dict>
@@ -1767,7 +1783,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>TBD</string>
 		</dict>
@@ -1783,7 +1799,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>Cosplay Chess on April 12</string>
 		</dict>
@@ -1799,7 +1815,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>TBD</string>
 		</dict>
@@ -1815,7 +1831,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string></string>
+			<string>sakura360</string>
 			<key>description</key>
 			<string>All Cosplay Gathering on April 12</string>
 		</dict>
