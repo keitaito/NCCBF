@@ -157,7 +157,9 @@
 - (NSDictionary *)loadDataFromDocDir {
     
     // create path to Events.plist in documents directory.
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    
     NSString *documentsDirectory = [paths firstObject];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
     NSLog(@"path to plist file in documents directory --> \n%@", path);

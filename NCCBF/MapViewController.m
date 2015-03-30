@@ -289,6 +289,9 @@
     MKCoordinateSpan span = MKCoordinateSpanMake(fabsf(latDelta), 0.0);
     NSLog(@"%f %f", span.latitudeDelta, span.longitudeDelta);
     
+    span.latitudeDelta = 0.006;
+    span.longitudeDelta = 0.005;
+    
     // Create region with midCoordinate and span.
     MKCoordinateRegion region = MKCoordinateRegionMake(midCoordinate, span);
     

@@ -26,7 +26,7 @@ static NSDictionary *locations;
 {
     locations = @{@0: @"Peace Plaza Stage",
                   @1: @"JCCCNC Stage",
-                  @2: @"WEBSTER xfinity Stage",
+                  @2: @"Webster xfinity Stage",
                   @3: @"Sakura 360 Stage",
                   @4: @"Japan Center East Mall - Suite 525",
                   @5: @"JCCCNC Exhibit Spaces",
