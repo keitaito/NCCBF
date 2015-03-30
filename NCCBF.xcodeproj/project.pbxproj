@@ -15,7 +15,6 @@
 		235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EE1A8DA24C00192D24 /* AppDelegate.m */; };
 		235750F51A8DA24C00192D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235750F31A8DA24C00192D24 /* Main.storyboard */; };
 		235750F71A8DA24C00192D24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235750F61A8DA24C00192D24 /* Images.xcassets */; };
-		235750FA1A8DA24C00192D24 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235750F81A8DA24C00192D24 /* LaunchScreen.xib */; };
 		235751061A8DA24C00192D24 /* NCCBFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751051A8DA24C00192D24 /* NCCBFTests.m */; };
 		235751171A8DA7F300192D24 /* EventTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751161A8DA7F300192D24 /* EventTableViewController.m */; };
 		2357511A1A8DABF600192D24 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 235751191A8DABF600192D24 /* EventTableViewCell.m */; };
@@ -62,7 +61,6 @@
 		235750EE1A8DA24C00192D24 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		235750F41A8DA24C00192D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		235750F61A8DA24C00192D24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		235750F91A8DA24C00192D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		235750FF1A8DA24C00192D24 /* NCCBFTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NCCBFTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		235751041A8DA24C00192D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235751051A8DA24C00192D24 /* NCCBFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NCCBFTests.m; sourceTree = "<group>"; };
@@ -151,7 +149,6 @@
 				2378BB1E1A904B1B00571BC9 /* MapView */,
 				2378BB1F1A904B2300571BC9 /* SocialView */,
 				235750F61A8DA24C00192D24 /* Images.xcassets */,
-				235750F81A8DA24C00192D24 /* LaunchScreen.xib */,
 				234556551AC8E1CA00D234A6 /* Launch Screen-1.xib */,
 				235750E91A8DA24C00192D24 /* Supporting Files */,
 			);
@@ -332,7 +329,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				235750F51A8DA24C00192D24 /* Main.storyboard in Resources */,
-				235750FA1A8DA24C00192D24 /* LaunchScreen.xib in Resources */,
 				23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */,
 				23AF9C7E1AB4E83200C53A60 /* LocationCoordinates.plist in Resources */,
 				235750F71A8DA24C00192D24 /* Images.xcassets in Resources */,
@@ -402,14 +398,6 @@
 				235750F41A8DA24C00192D24 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		235750F81A8DA24C00192D24 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				235750F91A8DA24C00192D24 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
