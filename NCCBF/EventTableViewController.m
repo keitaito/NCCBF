@@ -43,7 +43,7 @@
     NSString *urlString = @"http://sfjapantown.org/smartphone_app/document.json";
     
     // For test
-    urlString = nil;
+//    urlString = nil;
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -166,7 +166,9 @@
 - (void)loadDataFromDocDir {
     
     // create path to Events.plist in documents directory.
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+
     NSString *documentsDirectory = [paths firstObject];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
     NSLog(@"path to plist file in documents directory --> \n%@", path);
@@ -210,7 +212,9 @@
 - (void)saveData:(id)object {
     
     // Get path to Events.plist.
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+//    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+
     NSString *documentsDirectory = [paths firstObject];
     NSString *path = [documentsDirectory stringByAppendingPathComponent:@"Events.plist"];
     
