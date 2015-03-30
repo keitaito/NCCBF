@@ -43,7 +43,7 @@
     NSString *urlString = @"http://sfjapantown.org/smartphone_app/document.json";
     
     // For test
-//    urlString = nil;
+    urlString = nil;
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -155,8 +155,10 @@
     // Set tint color of nav bar back button arrow white.
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
-//    self.tabBarController.tabBar.tintColor
-    
+    // Set tint color of tab bar items' selected color.
+    // custom pink color
+    UIColor *customPinkColor = [UIColor colorWithRed:0.957 green:0.549 blue:0.62 alpha:1.0];
+    self.tabBarController.tabBar.tintColor = customPinkColor;
 }
 
 #pragma mark - Load and Save methods

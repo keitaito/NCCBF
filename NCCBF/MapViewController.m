@@ -137,7 +137,16 @@
     NSMutableArray *eventsAtLocation0 = [[NSMutableArray alloc] init];
     NSMutableArray *eventsAtLocation1 = [[NSMutableArray alloc] init];
     NSMutableArray *eventsAtLocation2 = [[NSMutableArray alloc] init];
-    
+    NSMutableArray *eventsAtLocation3 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation4 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation5 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation6 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation7 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation8 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation9 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation10 = [[NSMutableArray alloc] init];
+    NSMutableArray *eventsAtLocation11 = [[NSMutableArray alloc] init];
+
     for (int i = 0; i < tmpArray.count; i++) {
         Event *event = tmpArray[i];
         NSInteger locationId = event.locationId;
@@ -152,13 +161,52 @@
             case 2:
                 [eventsAtLocation2 addObject:event];
                 break;
+            case 3:
+                [eventsAtLocation3 addObject:event];
+                break;
+            case 4:
+                [eventsAtLocation4 addObject:event];
+                break;
+            case 5:
+                [eventsAtLocation5 addObject:event];
+                break;
+            case 6:
+                [eventsAtLocation6 addObject:event];
+                break;
+            case 7:
+                [eventsAtLocation7 addObject:event];
+                break;
+            case 8:
+                [eventsAtLocation8 addObject:event];
+                break;
+            case 9:
+                [eventsAtLocation9 addObject:event];
+                break;
+            case 10:
+                [eventsAtLocation10 addObject:event];
+                break;
+            case 11:
+                [eventsAtLocation11 addObject:event];
+                break;
                 
             default:
                 break;
         }
     }
 
-    self.eventsSortedByLocation = @[eventsAtLocation0, eventsAtLocation1, eventsAtLocation2];
+    self.eventsSortedByLocation = @[eventsAtLocation0,
+                                    eventsAtLocation1,
+                                    eventsAtLocation2,
+                                    eventsAtLocation3,
+                                    eventsAtLocation4,
+                                    eventsAtLocation5,
+                                    eventsAtLocation6,
+                                    eventsAtLocation7,
+                                    eventsAtLocation8,
+                                    eventsAtLocation9,
+                                    eventsAtLocation10,
+                                    eventsAtLocation11
+                                    ];
     
     
     ///////////

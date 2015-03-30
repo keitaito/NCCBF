@@ -8,9 +8,9 @@
 			<key>name</key>
 			<string>San Francisco Taiko Dojo</string>
 			<key>start_at</key>
-			<string>2015-04-11 12:15 PM</string>
+			<string>2015-04-11 12:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 01:15 PM</string>
+			<string>2015-04-11 01:00 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
@@ -22,255 +22,1812 @@
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 2</string>
+			<string>Opening Ceremony</string>
 			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
+			<string>2015-04-11 01:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 2</string>
-			<key>start_at</key>
-			<string>2015-04-11 11:00 AM</string>
-			<key>end_at</key>
-			<string>2015-04-11 12:00 PM</string>
-			<key>location_id</key>
-			<string>1</string>
-			<key>location</key>
-			<string>Place A</string>
-			<key>image_name</key>
-			<string>taiko</string>
-			<key>description</key>
-			<string>TaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaikoTaiko</string>
-		</dict>
-		<dict>
-			<key>name</key>
-			<string>Event 1</string>
-			<key>start_at</key>
-			<string>2015-04-19 01:00 PM</string>
-			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-11 01:30 PM</string>
 			<key>location_id</key>
 			<string>0</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Peace Plaza Stage</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>CherryBlossomLogo</string>
 			<key>description</key>
-			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+			<string>Opening Ceremony and Announcement of new US Stamp “Gifts of Friendship Joint Issue with Japan“</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 3</string>
+			<string>Michiya Hanayagi and Michisuya Hanayagi Kai</string>
+			<key>start_at</key>
+			<string>2015-04-11 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 02:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>michiya</string>
+			<key>description</key>
+			<string>Michiya Hanayagi and Michisuya Hanayagi Kai
+Photo by Dave Golden © 2013</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nihon Buyo Kiyonomoto</string>
+			<key>start_at</key>
+			<string>2015-04-11 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 02:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>nihon-buyo-kinomoto</string>
+			<key>description</key>
+			<string>Nihon Buyo Kiyonomoto
+Photo by Dave Golden © 2014</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>World Oyama Karate</string>
+			<key>start_at</key>
+			<string>2015-04-11 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>oyama-karate</string>
+			<key>description</key>
+			<string>World Oyama Karate
+Photo by Dave Golden © 2012</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Children’s Tsuzumi Challenge</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Essence</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>essence</string>
+			<key>description</key>
+			<string>Essence is a Japanese music ensemble featuring Masayuki Koga and Tim Hamano on shakuhachi, Jimi Nakagawa on taiko, Shota Osabe on piano.
+Photo by Dave Golden © 2014</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Minyo - Mariko Kosugi</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Minyo has been handed down from generation to generation. These dances evolved from ancient traditions when people danced and sang to pray for good harvest and honor their ancestors. Nearly every district of Japan has a rich heritage of songs that reveal the characteristics of the local people
+and their history. There are rice planting and fishing songs, as well as songs of carpenters, miners, sailors and craftsmen. Some lyrics praise scenic beauty, and others tell stories of historical figures and festivals. The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sakura Minyo Doo Koo Kai</string>
+			<key>start_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-06</string>
+			<key>description</key>
+			<string>Minyo has been handed down from generation to generation. These dances evolved from ancient traditions when people danced and sang to pray for good harvest and honor their ancestors. Nearly every district of Japan has a rich heritage of songs that reveal the characteristics of the local people
+and their history. There are rice planting and fishing songs, as well as songs of carpenters, miners, sailors and craftsmen. Some lyrics praise scenic beauty, and others tell stories of historical figures and festivals. The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>El Cerrito High School Japanese Club</string>
+			<key>start_at</key>
+			<string>2015-04-11 04:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-01</string>
+			<key>description</key>
+			<string>El Cerrito High School is in the East Bay. They have a thriving Japanese language program that has existed for over 15 years. Their Soran Bushi Club was born out of a group of students who were studying Japanese. This is the club’s fifth year performing at the San Francisco Cherry Blossom Festival.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Northern California Naginata Federation</string>
+			<key>start_at</key>
+			<string>2015-04-11 04:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>naginata</string>
+			<key>description</key>
+			<string>Northern California Naginata Federation</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Yamasho Kai</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:15 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 11:45 AM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>yamasho-kai</string>
+			<key>description</key>
+			<string>Yamasho Kai 
+Photo by Dave Golden © 2014</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>2015 Senior Appreciation Brunch Honorees</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:45 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 12:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>senior</string>
+			<key>description</key>
+			<string>The seniors in our community have paved the way for future generations and left their mark in their communities and professions. The annual Senior Appreciation Brunch will honor several outstanding Japanese Americans for their personal achievements and service to the Japanese and Japanese American communities. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>2015 Queen and Court</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 12:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>queen</string>
+			<key>description</key>
+			<string>2015 Queen and Court
+Photo by Dave Golden © 2014</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Taiko Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>SF Taiko Dojo</string>
+			<key>description</key>
+			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Soko Joshi Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Soko Joshi Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ensohza Minyoshu</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>ensohza-minyoshu</string>
+			<key>description</key>
+			<string>Ensohza Minyoshu is a Japanese folk ensemble based in the San Francisco Bay Area. They perform music and dance that evokes the festival spirit of Japan’s diverse rural communities. With lively vocals accompanied by fue and shakuhachi (bamboo flutes), shamisen (three-stringed instrument) and the beat of the taiko drum, Ensohza Minyoshu transports listeners and viewers to Japan’s mountain and fishing villages with traditional folk songs and festival dances. For more information, go to www.ensohza. org.
+Photo by Dave Golden © 2012</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Reigen Fujii Shamisen</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Reigen Fujii Shamisen</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Wushu Team</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 03:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-06</string>
+			<key>description</key>
+			<string>San Francisco Wushu Team</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shorinji Kempo</string>
+			<key>start_at</key>
+			<string>2015-04-12 03:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 03:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-07</string>
+			<key>description</key>
+			<string>Shorinji Kempo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Kendama USA</string>
+			<key>start_at</key>
+			<string>2015-04-12 03:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 04:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>kendama</string>
+			<key>description</key>
+			<string>Kendama USA</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese Club of Sacred Heart Cathedral</string>
+			<key>start_at</key>
+			<string>2015-04-12 04:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-01</string>
+			<key>description</key>
+			<string>Japanese Club of Sacred Heart Cathedral</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Oshiro Karate Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-02</string>
+			<key>description</key>
+			<string>Oshiro Karate Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Chie Kwon-Treagus</string>
+			<key>start_at</key>
+			<string>2015-04-12 05:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 06:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Chie Kwon-Treagus</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Taiko Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 12:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>SF Taiko Dojo</string>
+			<key>description</key>
+			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Grass Valley Taiko</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 01:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Grass Valley Taiko is located in the beautiful foothills of the Sierra Nevada. Mitzi Garnett, a student of Grand Master Tanaka, founded the group in 2000. For more information, go to www.grassvalleytaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rosa Parks School Japanese Bilingual Bicultural Program</string>
+			<key>start_at</key>
+			<string>2015-04-18 01:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 01:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Rosa Parks School Japanese Bilingual Bicultural Program</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rinka Buyo Group</string>
+			<key>start_at</key>
+			<string>2015-04-18 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 02:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>maiko</string>
+			<key>description</key>
+			<string>Performing in the Bay Area since 2009, Rinko Buyo&apos;s style is based mainly on Japanese minyo (folk) style dance with inspiration from other styles of Nihon Buyo.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Children’s Tsuzumi Challenge</string>
+			<key>start_at</key>
+			<string>2015-04-18 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 02:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-07</string>
+			<key>description</key>
+			<string>The tsuzumi is a two-headed Japanese drum with an hourglass-shaped body, and is often found in the music of noh and kabuki theater. The Children’s Tsuzumi Challenge is a six-year-old after-school program, run by NPO Infusion, that teaches elementary school students at the Clarendon School in San Francisco and Willow Creek Academy in Sausalito how to play the drum.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Yoko and the Sunshine Girls</string>
+			<key>start_at</key>
+			<string>2015-04-18 02:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 02:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>yoko-sunshine</string>
+			<key>description</key>
+			<string>Yoko Fitzpatrick, choreographer and dance instructor of “Yoko &amp; Sunshine Girls,” holds dance classes at the Richmond Annex Senior Center and North Berkeley Nikkei Senior Center. She teaches modern dance with Japanese popular songs. The group has been performing at various locations for all kind of occasions several times a year.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>La Sakura Ladies</string>
+			<key>start_at</key>
+			<string>2015-04-18 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 03:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-02</string>
+			<key>description</key>
+			<string>La Sakura Ladies</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mayuko</string>
+			<key>start_at</key>
+			<string>2015-04-18 03:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 03:20 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-07</string>
+			<key>description</key>
+			<string>Mayuko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Eden Aoba Taiko</string>
+			<key>start_at</key>
+			<string>2015-04-18 03:20 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 03:50 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Eden Aoba Taiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Fukushima University</string>
+			<key>start_at</key>
+			<string>2015-04-18 03:50 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Fukushima University</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Okinawa Kenjin Kai</string>
+			<key>start_at</key>
+			<string>2015-04-18 04:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:45 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>okinawa-kenjin-kai</string>
+			<key>description</key>
+			<string>The San Francisco Okinawa Kenjin-Kai is a social organization serving the local Bay Area community. The goal of the club is to share Okinawan culture with people around the world. For more information, go to www.okksf.com
+Photo by Dave Golden © 2013</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Zanshin Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-18 04:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 05:15 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-06</string>
+			<key>description</key>
+			<string>Zanshin Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>UC Berkeley Yosakoi Group</string>
+			<key>start_at</key>
+			<string>2015-04-18 05:15 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 05:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>UCB-yosakoi</string>
+			<key>description</key>
+			<string>Yosakoi fuses traditional and modern Japanese dance, combining the fluid motions of the fishermen’s dance, Soran Bushi, with high energy and contemporary music. NSU Yosakoi, a subgroup of UC Berkeley’s Nikkei Student Union (NSU), is one of the few recognized teams in the United States.
+Photo by Dave Golden © 2013</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Zeros from Anime Jungle</string>
+			<key>start_at</key>
+			<string>2015-04-18 05:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 06:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-01</string>
+			<key>description</key>
+			<string>Zeros from Anime Jungle</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Kendo Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-19 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-19 12:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-02</string>
+			<key>description</key>
+			<string>San Francisco Kendo Dojo</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Enshin Karate</string>
+			<key>start_at</key>
+			<string>2015-04-19 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 12:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Enshin Karate</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Parade</string>
+			<key>start_at</key>
+			<string>2015-04-19 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 03:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>parade</string>
+			<key>description</key>
+			<string>Japanese classical (buyo) and folk dance (minyo) groups from the Bay Area will perform throughout the parade route, and Boy Scouts from Japanese American communities will represent their troops. A number of performers from Japan will also grace us with their presence. World-renowned San Francisco Taiko Dojo will energize the parade with the thundering sound of the taiko, and the 2015 Cherry Blossom Queen and her court will glide on their floats toward Japantown. An especially exciting spectacle is the Taru Mikoshi (portable shrine made of sake barrels), which will be hoisted on the shoulders of over one hundred people from around the Bay Area.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>San Francisco Awakko-ren Awa Odori </string>
+			<key>start_at</key>
+			<string>2015-04-19 03:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>awakko-ren</string>
+			<key>description</key>
+			<string>Awakko-Ren is a Bay Area dance group founded in 2011. Its main focus is Awa-Odori, a traditional dance from Tokushima Prefecture on the island of Shikoku. Please join us in enjoying this simple and cheerful dance. For more information, go to http://bayarea-awakko.blogspot.com/
+Photo by Dave Golden © 2013</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Anime Talent Show</string>
+			<key>start_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:30 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Anime Talent Show</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sakura Ren Awa Odori</string>
+			<key>start_at</key>
+			<string>2015-04-19 04:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 05:00 PM</string>
+			<key>location_id</key>
+			<string>0</string>
+			<key>location</key>
+			<string>Peace Plaza Stage</string>
+			<key>image_name</key>
+			<string>awaodori</string>
+			<key>description</key>
+			<string>Sakura Ren Awa Odori</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese Music Institute of America</string>
+			<key>start_at</key>
+			<string>2015-04-11 12:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 01:45 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>JCCCNC-01</string>
+			<key>description</key>
+			<string>The Japanese Music Institute of America (JMI) is a non- profit organization that offers ongoing shakuhachi (bamboo flute) lessons instructed by Masayuki Koga in the San Francisco Bay Area, and Boulder, Colorado.JMI offers a unique method of instruction that breathes new life into traditional and modern Japanese music. Beyond teaching traditional notation, rhythm and music history, the JMI method concentrates on the development of musical ability through cultivating natural posture and movement.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Minyo Minbu Festival</string>
+			<key>start_at</key>
+			<string>2015-04-11 01:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-01</string>
+			<key>description</key>
+			<string>The performances at the Minyo Minbu Festival during the Cherry Blossom Festival will include singing and dancing to Japanese folk songs and shamisen gasso (shamisen mass playing).</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Marimo Kai and Yukari Sakaguchi</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>JCCCNC-02</string>
+			<key>description</key>
+			<string>Marimo Kai and Yukari Sakaguchi</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Northern California Seiha USA Orchestra</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>JCCCNC-03</string>
+			<key>description</key>
+			<string>The Seiha USA Orchestra is a subsidiary of Seiha Music School of Japan, which is one of the oldest and largest koto school in Japan. The school celebrated its 100th anniversary in 2013. All members have attained honorary titles from Japan
+for their high skills and artistry in the performance of koto and sangen music.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shigin (Japanese Poetry in Singing Form)</string>
+			<key>start_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 07:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-02</string>
+			<key>description</key>
+			<string>Shigin is the art of chanting. Japanese or Chinese poems are often sung to express the feeling of joy or sorrow, the beauty of nature, or to offer a spiritual message. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Seiha Sato Masazuka Kai</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Seiha Sato Masazuka Kai</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nishikawa Ryu</string>
+			<key>start_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Nishikawa Ryu</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Gen Ryu Arts Presents</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>genryu-arts</string>
+			<key>description</key>
+			<string>GenRyu Arts has been offering taiko and dance classes at the Japanese Cultural and Community Center of Northern California for over 17 years. ed by Melody Takata, GenRyu Arts pursues engagement in creating artful pieces that merge Japanese cultural forms. For more information, go to www.genryuarts.org</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shimaoka Kuzusa Kai</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 03:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>Shimaoka Kuzusa Kai</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Wesley Ukulele Band</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 01:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-06</string>
+			<key>description</key>
+			<string>The Wesley Ukulele Band was founded in 2004 at Wesley United Methodist Church in San Jose Japanwotn for fun and fellowship. There are over 50 members, about half of whom are the active core group.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Chorale May</string>
+			<key>start_at</key>
+			<string>2015-04-18 01:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 01:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-07</string>
+			<key>description</key>
+			<string>Chorale May</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Nishi Kaigen Iaido</string>
+			<key>start_at</key>
+			<string>2015-04-18 01:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 02:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-01</string>
+			<key>description</key>
+			<string>Nishi Kaigen Iaido</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Azama Honryu Seifu Ishisenkai USA</string>
+			<key>start_at</key>
+			<string>2015-04-18 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 03:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-02</string>
+			<key>description</key>
+			<string>Azama Honryu Seifu Ishisenkai USA, Kinuko Mototake Dance Academy And Eisa Shima Daiko</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>With Love From Ishinomaki City</string>
+			<key>start_at</key>
+			<string>2015-04-18 03:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>With Love From Ishinomaki City</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Edo Ensemble</string>
+			<key>start_at</key>
+			<string>2015-04-18 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:30 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>Edo Ensemble</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Taiko Festival by San Francisco Taiko Dojo</string>
+			<key>start_at</key>
+			<string>2015-04-18 07:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 10:00 PM</string>
+			<key>location_id</key>
+			<string>1</string>
+			<key>location</key>
+			<string>JCCCNC Stage</string>
+			<key>image_name</key>
+			<string>SF Taiko Dojo</string>
+			<key>description</key>
+			<string>Grandmaster Seiichi Tanaka founded the San Francisco Taiko Dojo in 1968 and introduced the taiko art form to America. Over the years, Grandmaster Tanaka’s students have traveled around the globe. San Francisco Taiko Dojo still remains the most exciting and dynamic taiko group in the world. Grandmaster Tanaka’s style has developed the taiko from a primitive folk art to a powerful, sophisticated synthesis of rhythm, harmony and body movements. For more information, go to www.sftaiko.com.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>First Voice “Suite J-Town”</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>location_id</key>
+			<string>4</string>
+			<key>location</key>
+			<string>Japan Center East Mall- Suite 525</string>
+			<key>image_name</key>
+			<string>filler-05</string>
+			<key>description</key>
+			<string>April 11 to May 22</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ikebana Exhibit on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>ikebana</string>
+			<key>description</key>
+			<string>Ikebana is one of the most famed Japanese traditional arts, and traces its origin back hundreds of years. The Ikebana Teachers Federation consists of seven different schools and will display works of leading teachers throughout the Bay Area at the Cherry Blossom Festival.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ikebana Exhibit on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>ikebana</string>
+			<key>description</key>
+			<string>Ikebana is one of the most famed Japanese traditional arts, and traces its origin back hundreds of years. The Ikebana Teachers Federation consists of seven different schools and will display works of leading teachers throughout the Bay Area at the Cherry Blossom Festival.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bonsai/Suiseki Exhbit on April 18</string>
+			<key>start_at</key>
+			<string>2015-04-18 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>bonsai</string>
+			<key>description</key>
+			<string>Bonsai, the art of growing miniature trees and plants, is a manifestation of the Japanese people’s love of nature. The objective of bonsai is to capture the grandeur and beauty of nature on a reduced scale. The bonsai and suiseki display at the festival represent local bonsai clubs and the Bonsai Garden at Lake Merritt in Oakland.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Bonsai/Suiseki Exhbit on April 19</string>
+			<key>start_at</key>
+			<string>2015-04-19 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>bonsai</string>
+			<key>description</key>
+			<string>Bonsai, the art of growing miniature trees and plants, is a manifestation of the Japanese people’s love of nature. The objective of bonsai is to capture the grandeur and beauty of nature on a reduced scale. The bonsai and suiseki display at the festival represent local bonsai clubs and the Bonsai Garden at Lake Merritt in Oakland.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Washi Ningyo Classes on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>ningyo</string>
+			<key>description</key>
+			<string>The dolls are made from Japanese washi paper and cotton. It takes about two to three hours to make a simple doll. Most washi ningyo do not have eyes, a nose or a mouth.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Washi Ningyo Classes on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>ningyo</string>
+			<key>description</key>
+			<string>The dolls are made from Japanese washi paper and cotton. It takes about two to three hours to make a simple doll. Most washi ningyo do not have eyes, a nose or a mouth.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shodo on April 18</string>
+			<key>start_at</key>
+			<string>2015-04-18 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>shodo</string>
+			<key>description</key>
+			<string>The Bay Area Shodo Group allows people who enjoy Japanese calligraphy (shodo) to connect with each other.
+At their exhibit they will showcase the works of experienced calligraphers and Japanese students. Those in attendance will also have an opportunity to try shodo themselves.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shodo on April 19</string>
+			<key>start_at</key>
+			<string>2015-04-19 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>shodo</string>
+			<key>description</key>
+			<string>The Bay Area Shodo Group allows people who enjoy Japanese calligraphy (shodo) to connect with each other.
+At their exhibit they will showcase the works of experienced calligraphers and Japanese students. Those in attendance will also have an opportunity to try shodo themselves.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shishu on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>shishu</string>
+			<key>description</key>
+			<string>The traditions of silk and metal thread embroidery came to Japan 1,600 years ago from China via Korea. After more than a thousand years, the materials, stitches, color schemes, and designs became uniquely Japanese. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Shishu on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>shishu</string>
+			<key>description</key>
+			<string>The traditions of silk and metal thread embroidery came to Japan 1,600 years ago from China via Korea. After more than a thousand years, the materials, stitches, color schemes, and designs became uniquely Japanese. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Karuta</string>
+			<key>start_at</key>
+			<string>2015-04-18 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-18 04:00 PM</string>
+			<key>location_id</key>
+			<string>5</string>
+			<key>location</key>
+			<string>JCCCNC Exhibit Spaces</string>
+			<key>image_name</key>
+			<string>karuta</string>
+			<key>description</key>
+			<string>The San Francisco Karuta Kai, the Satsuki Kai Karuta Kai and the San Francisco Murasame Kai will demonstrate karuta, a Japanese classical poetry card game. Karuta is also called “hyakunin isshu” in Japanese, which means “one hundred poems by one hundred poets.” It combines 100 tanka (a form of Japanese poetry) from the 7th century to the 13th century, which were incorporated into a card game in the 16th century.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Omotosenke Domankai</string>
+			<key>start_at</key>
+			<string>2015-04-11 01:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>location_id</key>
+			<string>6</string>
+			<key>location</key>
+			<string>Tateuchi Auditorium</string>
+			<key>image_name</key>
+			<string>Tea Ceremony-1</string>
+			<key>description</key>
+			<string>Omotosenke Domankai</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ura Senke Tankokai</string>
 			<key>start_at</key>
 			<string>2015-04-12 01:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 04:00 PM</string>
+			<key>location_id</key>
+			<string>6</string>
+			<key>location</key>
+			<string>Tateuchi Auditorium</string>
+			<key>image_name</key>
+			<string>Tea Ceremony-1</string>
+			<key>description</key>
+			<string>Ura Senke Tankokai</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Urasenke Foundation</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 03:00 PM</string>
+			<key>location_id</key>
+			<string>6</string>
+			<key>location</key>
+			<string>Tateuchi Auditorium</string>
+			<key>image_name</key>
+			<string>Tea Ceremony-1</string>
+			<key>description</key>
+			<string>Urasenke Foundation</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Origami Exhibit and Demonstration</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>location_id</key>
+			<string>7</string>
+			<key>location</key>
+			<string>National JACL</string>
+			<key>image_name</key>
+			<string>origami</string>
+			<key>description</key>
+			<string>The art of folding paper has been practiced for centuries in Japan as a tradition handed down from parents to their children. Origami is an art where anything is possible. Origami clubs have been formed all around the world and folders meet often to share models and techniques. Members of San Francisco’s Bay Area Rapid Folders and other Northern California folders will be teaching during the Festival and welcome everyone to come and try your hand at origami.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese Sword Club on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>location_id</key>
+			<string>8</string>
+			<key>location</key>
+			<string>Union Bank Community Room</string>
+			<key>image_name</key>
+			<string>JapaneseSwordClub</string>
+			<key>description</key>
+			<string>Born of the kendo schools within San Francisco’s early Japanese American community, the Northern California Japanese Sword Club now boasts an international membership and stands as one of the premier organizations for the student and collector of fine Japanese swords and armor. The annual San Francisco To-ken Taikai is the largest sword show and sale in the United States. For more information, speak to our members or visit www.NCJSC.org.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese Sword Club on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 06:00 PM</string>
+			<key>location_id</key>
+			<string>8</string>
+			<key>location</key>
+			<string>Union Bank Community Room</string>
+			<key>image_name</key>
+			<string>JapaneseSwordClub</string>
+			<key>description</key>
+			<string>Born of the kendo schools within San Francisco’s early Japanese American community, the Northern California Japanese Sword Club now boasts an international membership and stands as one of the premier organizations for the student and collector of fine Japanese swords and armor. The annual San Francisco To-ken Taikai is the largest sword show and sale in the United States. For more information, speak to our members or visit www.NCJSC.org.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mataro Dolls Exhibit on April 18</string>
+			<key>start_at</key>
+			<string>2015-04-18 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-18 06:00 PM</string>
+			<key>location_id</key>
+			<string>8</string>
+			<key>location</key>
+			<string>Union Bank Community Room</string>
+			<key>image_name</key>
+			<string>filler-01</string>
+			<key>description</key>
+			<string> Mataro Kanabayashi I (1897-1984) studied and perfected the dollmaking technique. He was the founder of the Mataro Doll Craft Academy in Tokyo. The Mataro dolls take their themes and ideas often from the Heian period (784-1191). Many of the dolls are based on the characters from “The Tale of Genji.” There are also dolls representing characters from Japanese folktales, noh dramas and kabuki plays. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Mataro Dolls Exhibit on April 19</string>
+			<key>start_at</key>
+			<string>2015-04-19 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-19 06:00 PM</string>
+			<key>location_id</key>
+			<string>8</string>
+			<key>location</key>
+			<string>Union Bank Community Room</string>
+			<key>image_name</key>
+			<string>filler-02</string>
+			<key>description</key>
+			<string> Mataro Kanabayashi I (1897-1984) studied and perfected the dollmaking technique. He was the founder of the Mataro Doll Craft Academy in Tokyo. The Mataro dolls take their themes and ideas often from the Heian period (784-1191). Many of the dolls are based on the characters from “The Tale of Genji.” There are also dolls representing characters from Japanese folktales, noh dramas and kabuki plays. </string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese American Music Program</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>location_id</key>
+			<string>9</string>
+			<key>location</key>
+			<string>Sequoia&apos;s Auditorium</string>
+			<key>image_name</key>
+			<string>filler-03</string>
+			<key>description</key>
+			<string>Japanese American Music Program</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>100 Years of San Francisco’s Japantown</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>location_id</key>
+			<string>10</string>
+			<key>location</key>
+			<string>National Japanese American Historical Society</string>
+			<key>image_name</key>
+			<string>filler-04</string>
+			<key>description</key>
+			<string>April 11, 12, 18, 19</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Japanese Sword Society displays</string>
+			<key>start_at</key>
+			<string>2015-04-18 12:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-18 05:00 PM</string>
+			<key>location_id</key>
+			<string>10</string>
+			<key>location</key>
+			<string>National Japanese American Historical Society</string>
+			<key>image_name</key>
+			<string>JapaneseSwordClub</string>
+			<key>description</key>
+			<string>Japanese Sword Society displays</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tea at Ocha Room “Kan So An” by Tea Society</string>
+			<key>start_at</key>
+			<string>2015-04-11 12:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>location_id</key>
+			<string>11</string>
+			<key>location</key>
+			<string>Hokka Nichibei-Kai Tea Ceremoney</string>
+			<key>image_name</key>
+			<string>Tea Ceremony</string>
+			<key>description</key>
+			<string>Urasenke – 12:45p, 1:45p, 2:45p, 3:45p
+CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Tea), is one of the most highly refined traditional arts of Japan. The Cherry Blossom Festival’s chanoyu demonstrations are on Saturday, April 11 and Sunday, April 12, and are under the auspices of the Northern California/ San Francisco Chapters of the Ura-Senke and Omote-Senke Schools. Each session will be about 30 minutes in length, and there will be tea cakes and tea served to a few members of the audience afterwards.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Tea at Ocha Room “Kan So An” by Tea Society</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:45 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>location_id</key>
+			<string>11</string>
+			<key>location</key>
+			<string>Hokka Nichibei-Kai Tea Ceremoney</string>
+			<key>image_name</key>
+			<string>Tea Ceremony</string>
+			<key>description</key>
+			<string>Omoto Senke – 12:45p, 1:45p, 2:45p, 3:45p
+CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Tea), is one of the most highly refined traditional arts of Japan. The Cherry Blossom Festival’s chanoyu demonstrations are on Saturday, April 11 and Sunday, April 12, and are under the auspices of the Northern California/ San Francisco Chapters of the Ura-Senke and Omote-Senke Schools. Each session will be about 30 minutes in length, and there will be tea cakes and tea served to a few members of the audience afterwards.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>7th Generation Rise</string>
+			<key>start_at</key>
+			<string>2015-04-11 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 01:30 PM</string>
+			<key>location_id</key>
+			<string>2</string>
+			<key>location</key>
+			<string>Webster Street Stage</string>
+			<key>image_name</key>
+			<string>7thGenRise</string>
+			<key>description</key>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Manny Cruz Latin Jazz</string>
+			<key>start_at</key>
+			<string>2015-04-11 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:00 PM</string>
+			<key>location_id</key>
+			<string>2</string>
+			<key>location</key>
+			<string>Webster Street Stage</string>
+			<key>image_name</key>
+			<string>Manny Cruz Latin Jazz</string>
+			<key>description</key>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>The Bernal Beat</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:30 PM</string>
+			<key>location_id</key>
+			<string>2</string>
+			<key>location</key>
+			<string>Webster Street Stage</string>
+			<key>image_name</key>
+			<string>Big City Revue</string>
+			<key>description</key>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ayakashi</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:30 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 12:15 PM</string>
+			<key>location_id</key>
+			<string>2</string>
+			<key>location</key>
+			<string>Webster Street Stage</string>
+			<key>image_name</key>
+			<string>Ayakashi</string>
+			<key>description</key>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Rendezvous</string>
+			<key>start_at</key>
+			<string>2015-04-12 12:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 01:30 PM</string>
+			<key>location_id</key>
+			<string>2</string>
+			<key>location</key>
+			<string>Webster Street Stage</string>
+			<key>image_name</key>
+			<string>Rendezvous</string>
+			<key>description</key>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Humanistic</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:00 PM</string>
 			<key>end_at</key>
 			<string>2015-04-12 03:00 PM</string>
 			<key>location_id</key>
 			<string>2</string>
 			<key>location</key>
-			<string>Place B</string>
+			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string>queen-contest</string>
+			<string>Humanistic</string>
 			<key>description</key>
-			<string>Queen ContestQueen ContestQueen ContestQueen ContestQueen Contest
-Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</string>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Sample Event</string>
+			<string>Big City Revue</string>
 			<key>start_at</key>
-			<string>2015-04-18 10:00 AM</string>
+			<string>2015-04-12 03:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-18 01:00 PM</string>
+			<string>2015-04-12 04:30 PM</string>
 			<key>location_id</key>
 			<string>2</string>
 			<key>location</key>
-			<string>Place B</string>
+			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string>queen-contest</string>
+			<string>Big City Revue</string>
 			<key>description</key>
-			<string>Queen ContestQueen ContestQueen ContestQueen ContestQueen Contest
-Queen ContestQueen ContestQueen ContestQueen ContestQueen ContestQueen Contest</string>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 1</string>
+			<string>Tricia Bulos &amp; Friends</string>
 			<key>start_at</key>
-			<string>2015-04-19 01:00 PM</string>
+			<string>2015-04-18 11:00 AM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-18 12:00 PM</string>
 			<key>location_id</key>
-			<string>0</string>
+			<string>2</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>Tricia Bulos Friends</string>
 			<key>description</key>
-			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 1</string>
+			<string>Jest Jammin&apos;</string>
 			<key>start_at</key>
-			<string>2015-04-19 01:00 PM</string>
+			<string>2015-04-18 12:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-18 01:30 PM</string>
 			<key>location_id</key>
-			<string>0</string>
+			<string>2</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>Jest Jammin</string>
 			<key>description</key>
-			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 1</string>
+			<string>Kickback</string>
 			<key>start_at</key>
-			<string>2015-04-19 01:00 PM</string>
+			<string>2015-04-18 02:00 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-18 03:00 PM</string>
 			<key>location_id</key>
-			<string>0</string>
+			<string>2</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>Kickback</string>
 			<key>description</key>
-			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>Event 1</string>
+			<string>D. Groove</string>
 			<key>start_at</key>
-			<string>2015-04-19 01:00 PM</string>
+			<string>2015-04-18 03:30 PM</string>
 			<key>end_at</key>
-			<string>2015-04-19 02:00 PM</string>
+			<string>2015-04-18 04:30 PM</string>
 			<key>location_id</key>
-			<string>0</string>
+			<string>2</string>
 			<key>location</key>
-			<string>Post St</string>
+			<string>Webster Street Stage</string>
 			<key>image_name</key>
-			<string>taru-mikoshi</string>
+			<string>D. Groove</string>
 			<key>description</key>
-			<string>Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. 
-Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. Taru Mikoshi. </string>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Live Performance</string>
+			<key>start_at</key>
+			<string>2015-04-19 03:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-19 04:00 PM</string>
+			<key>location_id</key>
+			<string>2</string>
+			<key>location</key>
+			<string>Webster Street Stage</string>
+			<key>image_name</key>
+			<string>Live Performance</string>
+			<key>description</key>
+			<string>The Webster Street Comcast Stage began more than ten years ago to promote Bay Area contemporary musicians and performing artists. It has provided Asian Americans, as well as other ethnic entertainers, a venue to showcase their talents. From hip-hop to Polynesian dancers, jazz to Top 40 R&amp;B, acapella, to taiko, the Webster Street Comcast Stage lineup has always been exciting to watch. Come join us in a full day of music and fun!</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Scavenger Hunt on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 10:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Scavenger Hunt</string>
+			<key>description</key>
+			<string>Scavenger Hunt</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Games and Prizes – Sempai Says on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 10:30 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Sempai Says</string>
+			<key>description</key>
+			<string>Games and Prizes – Sempai Says on April 11</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Sakura 360 Stage Opening Ceremony</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 11:15 AM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Opening Ceremony</string>
+			<key>description</key>
+			<string>Sakura 360 Stage Opening Ceremony</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Games and Prizes on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 11:15 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 02:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Games and Prizes</string>
+			<key>description</key>
+			<string>Games and Prizes on April 11</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Samurai Geisha Fest – DJ Coco</string>
+			<key>start_at</key>
+			<string>2015-04-11 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 02:30 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Samurai Geisha Fest</string>
+			<key>description</key>
+			<string>Samurai Geisha Fest – DJ Coco</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Cosplay Chess on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 03:30 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Cosplay Chess</string>
+			<key>description</key>
+			<string>Cosplay Chess</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ti@Mi Dance Performance</string>
+			<key>start_at</key>
+			<string>2015-04-11 03:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Ti@Mi Dance Performance</string>
+			<key>description</key>
+			<string>Ti@Mi Dance Performance</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>All Cosplay Gathering on April 11</string>
+			<key>start_at</key>
+			<string>2015-04-11 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>All Cosplay Gathering</string>
+			<key>description</key>
+			<string>All Cosplay Gathering on April 11</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>After Party</string>
+			<key>start_at</key>
+			<string>2015-04-11 05:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-11 07:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>After Party</string>
+			<key>description</key>
+			<string>After Party</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Scavenger Hunt on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 10:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-11 06:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Scavenger Hunt-1</string>
+			<key>description</key>
+			<string>Scavenger Hunt on April 12</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Games and Prizes – Sempai Says on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 10:30 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 11:00 AM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Sempai Says-1</string>
+			<key>description</key>
+			<string>Games and Prizes – Sempai Says on April 12</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Games and Prizes on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 11:00 AM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Games and Prizes-1</string>
+			<key>description</key>
+			<string>Games and Prizes on April 12</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TBD 1</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>TBD</string>
+			<key>description</key>
+			<string>TBD 1</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Cosplay Chess on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 02:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 03:30 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>Cosplay Chess-1</string>
+			<key>description</key>
+			<string>Cosplay Chess on April 12</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>TBD 2</string>
+			<key>start_at</key>
+			<string>2015-04-12 03:30 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 04:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>TBD</string>
+			<key>description</key>
+			<string>TBD 2</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>All Cosplay Gathering on April 12</string>
+			<key>start_at</key>
+			<string>2015-04-12 04:00 PM</string>
+			<key>end_at</key>
+			<string>2015-04-12 05:00 PM</string>
+			<key>location_id</key>
+			<string>3</string>
+			<key>location</key>
+			<string>Sakura 360 Stage</string>
+			<key>image_name</key>
+			<string>All Cosplay Gathering-1</string>
+			<key>description</key>
+			<string>All Cosplay Gathering on April 12</string>
 		</dict>
 	</array>
 </dict>

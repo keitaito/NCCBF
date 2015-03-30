@@ -12,7 +12,7 @@
 @interface AboutUsDetailViewController ()
 
 //@property (weak, nonatomic) IBOutlet UITextView *textView;
-@property (nonatomic, copy) NSString *festDescString;
+//@property (nonatomic, copy) NSString *festDescString;
 
 @end
 
@@ -23,14 +23,14 @@
     // Do any additional setup after loading the view.
     
     // Set up nav bar title.
-    self.title = @"About NCCBF";
+//    self.title = @"About NCCBF";
     
     // Create path for plist.
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
-    // Create dictionary to store plist's root dictionary.
-    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"SocialMedia" ofType:@"plist"];
+//     Create dictionary to store plist's root dictionary.
+//    NSDictionary *dict = [[NSDictionary alloc] initWithContentsOfFile:path];
     // Store festival description in string.
-    self.festDescString = dict[@"FestivalDescription"];
+//    self.festDescString = dict[@"FestivalDescription"];
     
 //     Update text of text view.
 //    self.textView.text = festDescString;

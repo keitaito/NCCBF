@@ -25,18 +25,17 @@ static NSDictionary *locations;
 + (void)initialize
 {
     locations = @{@0: @"Peace Plaza Stage",
-                  @1: @"JCCNC Stage",
-                  @2: @"Webster Street Stage",
+                  @1: @"JCCCNC Stage",
+                  @2: @"WEBSTER xfinity Stage",
                   @3: @"Sakura 360 Stage",
-                  
                   @4: @"Japan Center East Mall - Suite 525",
-                  @5: @"JCCNC Exhibit Spaces",
-                  @6: @"Tateuchi Audtorium",
+                  @5: @"JCCCNC Exhibit Spaces",
+                  @6: @"Tateuchi Auditorium Tea Ceremony",
                   @7: @"National JACL",
                   @8: @"Union Bank Community Room",
                   @9: @"Sequola's Auditorium",
                   @10: @"National Japanese American Historical Society",
-                  @11: @"Hokka Nichibei-kai"};
+                  @11: @"Hokka Nichibei-kai Tea Ceremony"};
     
 //    CLLocationCoordinate2D theCoordinate;
 //    theCoordinate.latitude = 37.785257;
@@ -57,7 +56,7 @@ static NSDictionary *locations;
     // Prepare dateFormatter.
     NSDateFormatter *parseFormatter = [[NSDateFormatter alloc] init];
     //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
-    [parseFormatter setDateFormat:@"yyyy-MM-dd HH:mm a"];
+    [parseFormatter setDateFormat:@"yyyy-MM-dd hh:mm a"];
     
     NSString *dateString = dictionary[@"start_at"];
     self.date = [parseFormatter dateFromString:dateString];

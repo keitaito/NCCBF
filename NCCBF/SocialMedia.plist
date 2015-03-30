@@ -10,6 +10,10 @@ This year’s Northern California Cherry Blossom Festival will be held on Saturd
 The festival will be held on Post Street between Laguna and Fillmore Streets. There will be food booths, cultural performances, martial arts, live bands, the annual Queen Program, and more. The Grand Parade will be held on Sunday, April 19, beginning at City Hall and concluding in Japantown.
 
 The Northern California Cherry Blossom Festival is said to be the second largest festival outside of Washington, D.C. to celebrate the blooming of cherry blossoms; and held at one of three remaining Japantowns in the United States.</string>
+	<key>PrivacyPolicyDescription</key>
+	<string></string>
+	<key>CopyrightDescription</key>
+	<string></string>
 	<key>SocialMedia</key>
 	<array>
 		<dict>
@@ -32,15 +36,38 @@ The Northern California Cherry Blossom Festival is said to be the second largest
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>NCCBF Live Stream</string>
+			<string>NCCBF® Website</string>
 			<key>URL</key>
-			<string>http://nccbf.org</string>
+			<string>http://sfcherryblossom.org</string>
 		</dict>
 		<dict>
 			<key>name</key>
-			<string>About NCCBF</string>
+			<string>About NCCBF®</string>
 			<key>URL</key>
 			<string></string>
+			<key>description</key>
+			<string>The 2015 Northern California Cherry Blossom Festival® now celebrating its 48th year, is one of California’s most prominent celebrations of Asian traditions. Each year, over 200,000 people attend this dazzling display showcasing the color and grace of the Japanese culture and the diversity of the Japanese American Community. Please join us and become a sponsor of this popular Japanese American community event. The event is free and open to the public. Vendors will be charging for their food goods and some retail products; and some specialized events will require a fee.
+
+This year’s Northern California Cherry Blossom Festival® will be held on Saturday and Sunday April 11-12 and April 18-19, 2015. All are welcome to join in the festivities as we celebrate Japanese and Japanese American culture in San Francisco’s Japantown!
+
+The festival will be held on Post Street between Laguna and Fillmore Streets. There will be food booths, cultural performances, martial arts, live bands, the annual Queen Program, and more. The Grand Parade will be held on Sunday, April 19, beginning at City Hall and concluding in Japantown.
+
+The Northern California Cherry Blossom Festival® is said to be the second largest festival outside of Washington, D.C. to celebrate the blooming of cherry blossoms; and held at one of three remaining Japantowns in the United States.</string>
+		</dict>
+		<dict>
+			<key>name</key>
+			<string>Copyright</string>
+			<key>URL</key>
+			<string></string>
+			<key>description</key>
+			<string>NCCBF is the official mobile app for Northern California Cherry Blossom Festival®, developed by Keita Ito and icon designed by Vincent Chavez.
+
+Images which have the ©Dave Golden Photography watermark are the copyrighted property of Dave Golden: http://dave-golden.com
+The rest of images on this app are the copyrighted property of their respective owners and may not be used without expressed permission from the Northern California Cherry Blossom Festival®. No usage in any public works is allowed without our written permission by the Northern California Cherry Blossom Festival®.
+
+About Northern California Cherry Blossom Festival® and NCCBF® names, the “Northern California Cherry Blossom Festival”® name and &quot;NCCBF&quot;® names are registered trademarks of the Sakura Matsuri Inc. Northern California Cherry Blossom Festival trademarks may not be used in connection with any product or service that is not Northern California Cherry Blossom Festival’s, in any manner that is likely to cause confusion among customers or in any manner that disparages or discredits Northern California Cherry Blossom Festival. Other products or company names used on this website may be trademarks of their respective owners.
+
+About tab bar icons, this app uses free tab bar icons from 100 free iOS 7 &amp; iOS 8 icons (c) by Pixel Love Ltd: http://www.pixellove.com/free-ios-and-android-icons 100 free iOS 7 &amp; iOS 8 icons is licensed under a Creative Commons Attribution 4.0 International License. You should have received a copy of the license along with this work. If not, see the following link: http://creativecommons.org/licenses/by/4.0/</string>
 		</dict>
 	</array>
 </dict>

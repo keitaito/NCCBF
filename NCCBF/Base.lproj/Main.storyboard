@@ -39,7 +39,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rlQ-8E-3lL" id="oXB-fS-ap5">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djP-zN-mxL">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="djP-zN-mxL">
                                             <rect key="frame" x="150" y="8" width="300" height="150"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="300" id="Gpq-t8-pqr"/>
@@ -123,7 +123,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b5h-Gz-txP">
                                             <rect key="frame" x="8" y="8" width="584" height="27"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -147,7 +147,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event schedule" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zwg-ZS-seZ">
                                             <rect key="frame" x="8" y="8" width="584" height="27"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -171,7 +171,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event location" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZnN-ZM-Dbd">
                                             <rect key="frame" x="8" y="8" width="584" height="27"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -195,7 +195,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="event description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-fC-UQm">
                                             <rect key="frame" x="8" y="8" width="584" height="27"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -241,6 +241,7 @@
                                         <segment title="Apr 18"/>
                                         <segment title="Apr 19"/>
                                     </segments>
+                                    <color key="tintColor" red="0.95686274510000002" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <connections>
                                         <action selector="switchDate:" destination="sBf-qf-R2h" eventType="valueChanged" id="bC8-57-NIg"/>
                                     </connections>
@@ -394,17 +395,8 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="J2z-OX-Fz1" id="aNM-qj-KaX">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qZK-Lx-Cdf">
-                                                    <rect key="frame" x="51" y="11" width="236" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="titleLabel" destination="qZK-Lx-Cdf" id="69k-al-Cci"/>
                                             <segue destination="Oqq-YC-y2Y" kind="show" identifier="showSocialWebView" id="TpJ-pW-d22"/>
                                         </connections>
                                     </tableViewCell>
@@ -413,18 +405,9 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sMT-tH-aAT" id="rda-Kp-QSD">
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVy-p1-xW3">
-                                                    <rect key="frame" x="51" y="11" width="236" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="titleLabel" destination="jVy-p1-xW3" id="jw1-Tc-BUE"/>
-                                            <segue destination="3y3-b9-AlL" kind="show" id="fNf-bE-vmH"/>
+                                            <segue destination="3y3-b9-AlL" kind="show" identifier="showAboutUsDetailView" id="fNf-bE-vmH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -438,7 +421,7 @@
                             <constraint firstAttribute="bottom" secondItem="2fH-76-Cpw" secondAttribute="bottom" id="oZz-rf-k5z"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Social" id="jAm-cM-Mlz"/>
+                    <navigationItem key="navigationItem" title="More" id="jAm-cM-Mlz"/>
                     <connections>
                         <outlet property="tableView" destination="2fH-76-Cpw" id="LZg-Y3-4KZ"/>
                     </connections>
@@ -529,12 +512,12 @@
         <scene sceneID="ENk-LD-zom">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="V4C-XI-Vwo" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" id="YiA-5g-Kcd"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="favorites" id="YiA-5g-Kcd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e1C-6q-1RW">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.2196078431372549" green="0.32549019607843138" blue="0.64313725490196083" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.95686274509803926" green="0.5490196078431373" blue="0.61960784313725492" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -552,12 +535,12 @@
         <scene sceneID="Imd-gz-57a">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tt0-pA-fB6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Schedule" id="CMF-A6-He6"/>
+                    <tabBarItem key="tabBarItem" title="Schedule" image="recents" id="CMF-A6-He6"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P4t-f7-IUT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.32549019610000002" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -571,16 +554,16 @@
             </objects>
             <point key="canvasLocation" x="943.125" y="-2371.4788732394363"/>
         </scene>
-        <!--Social-->
+        <!--More-->
         <scene sceneID="bWT-fb-mal">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dLq-gI-4R8" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Social" id="1yW-eh-LRO"/>
+                    <tabBarItem key="tabBarItem" title="More" image="more" id="1yW-eh-LRO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="you-LN-SYd">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.32549019610000002" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -598,12 +581,12 @@
         <scene sceneID="E3c-yV-TXu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cIN-8y-WdN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="Wzo-cl-bBd"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="near" id="Wzo-cl-bBd"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1lc-vP-a0g">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.21960784310000001" green="0.32549019610000002" blue="0.64313725489999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.95686274510000002" green="0.54901960780000003" blue="0.61960784310000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </textAttributes>
@@ -618,7 +601,13 @@
             <point key="canvasLocation" x="943.125" y="-1639.4366197183097"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="favorites" width="32" height="32"/>
+        <image name="more" width="32" height="32"/>
+        <image name="near" width="32" height="32"/>
+        <image name="recents" width="32" height="32"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="08X-X0-3tU"/>
+        <segue reference="MSZ-a4-kMI"/>
     </inferredMetricsTieBreakers>
 </document>
