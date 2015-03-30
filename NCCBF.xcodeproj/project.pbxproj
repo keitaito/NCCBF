@@ -10,6 +10,7 @@
 		230C66FF1AB531E200D77F20 /* StageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 230C66FE1AB531E200D77F20 /* StageTableViewController.m */; };
 		23264A921AAA89F20039B845 /* AboutUsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A911AAA89F20039B845 /* AboutUsCell.m */; };
 		23264A951AAA8DF30039B845 /* AboutUsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */; };
+		234556561AC8E1CA00D234A6 /* Launch Screen-1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234556551AC8E1CA00D234A6 /* Launch Screen-1.xib */; };
 		235750EC1A8DA24C00192D24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EB1A8DA24C00192D24 /* main.m */; };
 		235750EF1A8DA24C00192D24 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 235750EE1A8DA24C00192D24 /* AppDelegate.m */; };
 		235750F51A8DA24C00192D24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 235750F31A8DA24C00192D24 /* Main.storyboard */; };
@@ -53,6 +54,7 @@
 		23264A911AAA89F20039B845 /* AboutUsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsCell.m; sourceTree = "<group>"; };
 		23264A931AAA8DF30039B845 /* AboutUsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsDetailViewController.h; sourceTree = "<group>"; };
 		23264A941AAA8DF30039B845 /* AboutUsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsDetailViewController.m; sourceTree = "<group>"; };
+		234556551AC8E1CA00D234A6 /* Launch Screen-1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Launch Screen-1.xib"; sourceTree = "<group>"; };
 		235750E61A8DA24C00192D24 /* NCCBF.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NCCBF.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		235750EA1A8DA24C00192D24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		235750EB1A8DA24C00192D24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				2378BB1F1A904B2300571BC9 /* SocialView */,
 				235750F61A8DA24C00192D24 /* Images.xcassets */,
 				235750F81A8DA24C00192D24 /* LaunchScreen.xib */,
+				234556551AC8E1CA00D234A6 /* Launch Screen-1.xib */,
 				235750E91A8DA24C00192D24 /* Supporting Files */,
 			);
 			path = NCCBF;
@@ -333,6 +336,7 @@
 				23E06DB61A947B6500D01330 /* SocialMedia.plist in Resources */,
 				23AF9C7E1AB4E83200C53A60 /* LocationCoordinates.plist in Resources */,
 				235750F71A8DA24C00192D24 /* Images.xcassets in Resources */,
+				234556561AC8E1CA00D234A6 /* Launch Screen-1.xib in Resources */,
 				23E06DB81A94855400D01330 /* Events.plist in Resources */,
 				23AD6C7A1AAE803A007119F9 /* Japantown.plist in Resources */,
 			);
