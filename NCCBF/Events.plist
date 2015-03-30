@@ -1585,7 +1585,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Scavenger Hunt</string>
 			<key>description</key>
 			<string>Scavenger Hunt</string>
 		</dict>
@@ -1601,7 +1601,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Sempai Says</string>
 			<key>description</key>
 			<string>Games and Prizes – Sempai Says on April 11</string>
 		</dict>
@@ -1617,9 +1617,9 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
-			<key>description</key>
 			<string>Opening Ceremony</string>
+			<key>description</key>
+			<string>Sakura 360 Stage Opening Ceremony</string>
 		</dict>
 		<dict>
 			<key>name</key>
@@ -1633,7 +1633,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Games and Prizes</string>
 			<key>description</key>
 			<string>Games and Prizes on April 11</string>
 		</dict>
@@ -1649,7 +1649,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Samurai Geisha Fest</string>
 			<key>description</key>
 			<string>Samurai Geisha Fest – DJ Coco</string>
 		</dict>
@@ -1665,7 +1665,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Cosplay Chess</string>
 			<key>description</key>
 			<string>Cosplay Chess</string>
 		</dict>
@@ -1681,7 +1681,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Ti@Mi Dance Performance</string>
 			<key>description</key>
 			<string>Ti@Mi Dance Performance</string>
 		</dict>
@@ -1697,7 +1697,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>All Cosplay Gathering</string>
 			<key>description</key>
 			<string>All Cosplay Gathering on April 11</string>
 		</dict>
@@ -1713,7 +1713,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>After Party</string>
 			<key>description</key>
 			<string>After Party</string>
 		</dict>
@@ -1729,7 +1729,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Scavenger Hunt-1</string>
 			<key>description</key>
 			<string>Scavenger Hunt on April 12</string>
 		</dict>
@@ -1745,7 +1745,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Sempai Says-1</string>
 			<key>description</key>
 			<string>Games and Prizes – Sempai Says on April 12</string>
 		</dict>
@@ -1761,7 +1761,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Games and Prizes-1</string>
 			<key>description</key>
 			<string>Games and Prizes on April 12</string>
 		</dict>
@@ -1777,7 +1777,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>TBD</string>
 			<key>description</key>
 			<string>TBD 1</string>
 		</dict>
@@ -1793,7 +1793,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>Cosplay Chess-1</string>
 			<key>description</key>
 			<string>Cosplay Chess on April 12</string>
 		</dict>
@@ -1809,7 +1809,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>TBD</string>
 			<key>description</key>
 			<string>TBD 2</string>
 		</dict>
@@ -1825,7 +1825,7 @@ CHA-NO-YU (literally, hot water for tea), or SA-DÔ (also CHA-DÔ, the Way of Te
 			<key>location</key>
 			<string>Sakura 360 Stage</string>
 			<key>image_name</key>
-			<string>sakura360</string>
+			<string>All Cosplay Gathering-1</string>
 			<key>description</key>
 			<string>All Cosplay Gathering on April 12</string>
 		</dict>
