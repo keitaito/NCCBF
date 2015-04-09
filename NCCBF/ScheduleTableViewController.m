@@ -117,6 +117,11 @@
     // Prepare dateFormatter.
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+    
+    // Set locale with formatter to prevent bug with 24-Hour time and language/region settings.
+    NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+    [dateFormatter setLocale:enUSPOSIXLocale];
+    
     [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
     //    [dateFormatter setTimeZone:tz];
     
@@ -238,6 +243,11 @@
     
     // Instantiate NSDateFormatter
     NSDateFormatter *timeFormatter = [[NSDateFormatter alloc] init];
+    
+    // Set locale with formatter to prevent bug with 24-Hour time and language/region settings.
+    NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+    [timeFormatter setLocale:enUSPOSIXLocale];
+    
     // set dateFormat.
     [timeFormatter setDateFormat:@"h:mm a"];
     // create date string from eventDate with dateFormatter.
