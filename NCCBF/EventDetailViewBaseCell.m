@@ -78,18 +78,24 @@
     NSDate *eventDateAndStartTime = event.date;
     NSDate *eventEndTime = event.endTime;
     
+    // Set locale with formatter to prevent bug with 24-Hour time and language/region settings.
+    NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+    
     // Create string of event's date.
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setLocale:enUSPOSIXLocale];
     [dateFormatter setDateFormat:@"MMM dd"];
     NSString *eventDateString = [dateFormatter stringFromDate:eventDateAndStartTime];
     
     // Create string of event's start time.
     NSDateFormatter *startTimeFormatter = [[NSDateFormatter alloc] init];
+    [startTimeFormatter setLocale:enUSPOSIXLocale];
     [startTimeFormatter setDateFormat:@"h:mm a"];
     NSString *eventStartTimeString = [startTimeFormatter stringFromDate:eventDateAndStartTime];
 
     // Create string of event's end time.
     NSDateFormatter *endTimeFormatter = [[NSDateFormatter alloc] init];
+    [endTimeFormatter setLocale:enUSPOSIXLocale];
     [endTimeFormatter setDateFormat:@"h:mm a"];
     NSString *eventEndTimeString = [endTimeFormatter stringFromDate:eventEndTime];
     
