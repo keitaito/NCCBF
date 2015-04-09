@@ -56,6 +56,11 @@ static NSDictionary *locations;
     // Prepare dateFormatter.
     NSDateFormatter *parseFormatter = [[NSDateFormatter alloc] init];
     //    NSTimeZone *tz = [NSTimeZone timeZoneWithName:@"America/Los_Angeles"];
+    
+    // Set locale with formatter to prevent bug with 24-Hour time and language/region settings.
+    NSLocale *enUSPOSIXLocale = [NSLocale localeWithLocaleIdentifier:@"en_US_POSIX"];
+    [parseFormatter setLocale:enUSPOSIXLocale];
+    
     [parseFormatter setDateFormat:@"yyyy-MM-dd hh:mm a"];
     
     NSString *dateString = dictionary[@"start_at"];
