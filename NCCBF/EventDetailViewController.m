@@ -96,8 +96,12 @@ typedef NS_ENUM (NSInteger, EventDetailViewCellType) {
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"UITableViewAutomationDimension for tableView:heightForRowAtIndexPath");
-    return UITableViewAutomaticDimension;
+    if (indexPath.row == EventDetailViewCellTypeImage) {
+        return 300;
+    } else {
+        NSLog(@"UITableViewAutomationDimension for tableView:heightForRowAtIndexPath");
+        return UITableViewAutomaticDimension;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
