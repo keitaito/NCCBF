@@ -1,5 +1,7 @@
 # NCCBF
 
+Available on the App Store: https://itunes.apple.com/us/app/nccbf/id981016442?mt=8
+
 NCCBF is the official mobile app for Northern California Cherry Blossom Festival®, developed by Keita Ito and icon designed by Vincent Chavez.
 
 Images which have the ©Dave Golden Photography watermark are the copyrighted property of Dave Golden: http://dave-golden.com
